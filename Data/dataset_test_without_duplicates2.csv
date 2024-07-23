@@ -1,0 +1,4 @@
+text_tokens;tags;polarities
+['La', 'comida', 'estuvo', 'muy', 'sabrosa', '.'];[0, 1, 0, 0, 0, 0];[-1, 1, -1, -1, -1, -1]
+['Quien', 'sea', 'amante', 'de', 'la', 'carne', 'tiene', 'una', 'carta', 'bastante', 'amplia', 'para', 'elegir', '.,', 'aunque', 'ayer', 'no', 'tenían', 'chuleton', '.'];[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0];[-1, -1, -1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+['El', 'Servicio', 'y', 'la', 'atencion', ',', 'Impresionante', '.'];[0, 1, 0, 0, 0, 0, 0, 0];[-1, 1, -1, -1, -1, -1, -1, -1]
