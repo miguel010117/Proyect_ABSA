@@ -1,4 +1,8 @@
 text_tokens;tags;polarities
 ['La', 'comida', 'estuvo', 'muy', 'sabrosa', '.'];[0, 1, 0, 0, 0, 0];[-1, 1, -1, -1, -1, -1]
-['Quien', 'sea', 'amante', 'de', 'la', 'carne', 'tiene', 'una', 'carta', 'bastante', 'amplia', 'para', 'elegir', '.,', 'aunque', 'ayer', 'no', 'tenían', 'chuleton', '.'];[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0];[-1, -1, -1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
-['El', 'Servicio', 'y', 'la', 'atencion', ',', 'Impresionante', '.'];[0, 1, 0, 0, 0, 0, 0, 0];[-1, 1, -1, -1, -1, -1, -1, -1]
+['Quien', 'sea', 'amante', 'de', 'la', 'carne', 'tiene', 'una', 'carta', 'bastante', 'amplia', 'para', 'elegir', '.,', 'aunque', 'ayer', 'no', 'tenían', 'chuleton', '.'];[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];[-1, -1, -1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+['El', 'Servicio', 'y', 'la', 'atencion', ',', 'Impresionante', '.'];[0, 1, 0, 0, 1, 0, 0, 0];[-1, 1, -1, -1, 1, -1, -1, -1]
+['La', 'Carne', ',', 'Phenomenal'];[0, 1, 0, 0];[-1, 1, -1, -1]
+['Las', 'Tapas', ',', 'Bebidas', ',', 'el', 'Ambiente', ',', 'Extraurinadio'];[0, 1, 0, 1, 0, 0, 1, 0, 0];[-1, 1, -1, -1, -1, -1, -1, -1, -1]
+['Reservar', 'Mesa', ',', 'que', 'en', '9', 'Reinas', 'merece', 'la', 'pena', '.'];[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0];[-1, -1, -1, -1, -1, 1, 1, -1, -1, -1, -1]
+['La', 'atención', 'del', 'personal', 'impecable', '.'];[0, 1, 1, 1, 0, 0];[-1, 1, 1, 1, -1, -1]

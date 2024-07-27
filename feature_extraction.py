@@ -51,3 +51,34 @@ class ExtractFeauresByWindows:
         text = re.sub(r'[^\w\s]', ' ', text)
         text = unidecode(text)
         return text
+
+# def process_data(self, new_file_to_save_name, window_size):
+#         """
+#             Processes the data by creating new sentences and saving the processed data in a new csv file.
+
+#             Args:
+#                 new_file_to_save_name (str): The name of the new csv file to save the processed data
+#                 window_size (int): The size of the windows to extract the new sentences.
+#             Returns:
+#                 None. The processed data is saved in a new csv file.
+#         """
+#         data = pd.read_csv(self.data_file_path, sep=';')
+#         data = data[data['polarity'] != 'conflict']
+#         data['reviews'] = data['reviews'].apply(self.clean_text)
+#         data.dropna(inplace=True)
+
+#         new_sentences = []
+#         polarities = []
+#         for i in range(len(data)):
+#             sentence = data.iloc[i]['reviews']
+#             word_or_phrase = data.iloc[i]['aspect']
+#             new_sentence = self.create_new_sentence(sentence, word_or_phrase, windows_size=window_size)
+#             polarity = data.iloc[i]['polarity']
+#             if new_sentence is not None:
+#                 new_sentences.append(new_sentence)
+#                 polarities.append(polarity)
+
+#         new_data = pd.DataFrame({'new_sentences': new_sentences, 'polarity': polarities})
+#         new_data.drop_duplicates(inplace=True)
+#         new_data.to_csv(new_file_to_save_name, index=False)
+

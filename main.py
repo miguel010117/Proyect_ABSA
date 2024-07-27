@@ -13,11 +13,14 @@ class ABSAPipeline:
     def __init__(self, aspect_model):
         self.aspect_model = AspectTermExtraction(model=aspect_model, tokenizer=aspect_model, seed=50)
 
-    def train_aspect_model(self, train_file, model_type, batch_size, num_epochs):
+    def train_aspect_model(self, train_file, test_file, model_type, batch_size, num_epochs):
         train_ds_aspect = DatasetLoaderAspect(pd.read_csv(train_file, sep=';'), model_type)
+        test_ds_aspect = DatasetLoaderAspect(pd.read_csv(test_file, sep=';'), model_type)
         aspect_train_loader = DataLoader(train_ds_aspect, batch_size=batch_size,
                                          collate_fn=self.aspect_model.create_mini_batch)
-        self.aspect_model.train(aspect_train_loader, num_epochs)
+        aspect_test_loader = DataLoader(test_ds_aspect, batch_size=batch_size,
+                                        collate_fn=self.aspect_model.create_mini_batch)
+        self.aspect_model.train(aspect_train_loader, aspect_test_loader,num_epochs)
 
     def predict_aspect(self, text):
         max_length = 512  # Longitud máxima de la secuencia admitida por BERT
@@ -28,10 +31,17 @@ class ABSAPipeline:
 if __name__ == '__main__':
 #VARIABLES
     BETO = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bert-base-spanish-uncased'
-    modelo = BETO
+    BERT = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bert-base-multilingual-uncased'
+    BERTIN_BASE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bertin-roberta-base-spanish'
+    BERTIN_LARGE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bertin-roberta-large-spanish'
+    ALBERT_BASE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/albert-base-spanish'
+    ALBERT_LARGE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/albert-large-spanish'
+
+    modelo = BERT
+
     predict_data= "Data/dataset_test_without_duplicates.csv"
     train_data= "Data/dataset_train_without_duplicates.csv"
-    trained_model=r'F:/MIGUEL/Estudio/Programación/VSC_Proyects/Proyectos/Proyecto_sofia/bert_ATE_spanish_epoch_1.pkl'
+    trained_model=r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/bertin_base_spanish_epoch_4.pkl'
 #FUNCIONES
     def presentacion():
         print(Style.BRIGHT + Fore.BLUE + "╔══════════════════════════════════════════════╗")
@@ -50,7 +60,7 @@ if __name__ == '__main__':
         print("\n" + Fore.YELLOW + "Inicializando pesos de los modelos pre-entrenados..." + Style.RESET_ALL)
         pipeline = ABSAPipeline(modelo)
         print(Fore.YELLOW + "Comenzando entrenamiento de la extracción de aspectos..." + Style.RESET_ALL)
-        pipeline.train_aspect_model(train_data, modelo, batch_size=8, num_epochs=5)
+        pipeline.train_aspect_model(train_data,predict_data, modelo, batch_size=8, num_epochs=5)
         print(Fore.YELLOW + "¡Entrenamiento completado con éxito!" + Style.RESET_ALL)
 
     def predecir():
@@ -65,7 +75,7 @@ if __name__ == '__main__':
         predicted_labels = []
         tabla_resultados = PrettyTable()
         tabla_resultados.field_names = ["Aspecto", "Parte de la reseña donde aparece"]
-
+      
         for rev in reviews:
             tokens, aspects = pipeline.predict_aspect(rev)
             
@@ -73,23 +83,24 @@ if __name__ == '__main__':
             print(Fore.GREEN + "Lista de aspectos: " + Style.RESET_ALL, aspects)
             
             predicted_labels.append(predicted_bitmask(eval(rev), aspects))
-            
-            for aspect in aspects:
-                aspect_cleaned = windows_creator.clean_text(aspect)
-                part_of_review = windows_creator.create_new_sentence(windows_creator.clean_text(rev), aspect_cleaned.strip(), 5)
+    
+            # for aspect in aspects:
+            #     aspect_cleaned = windows_creator.clean_text(aspect)
+            #     part_of_review = windows_creator.create_new_sentence(windows_creator.clean_text(rev), aspect_cleaned.strip(), 5)
                 
-                if part_of_review is not None:
-                    print(Fore.GREEN + 'Aspecto: '+ Style.RESET_ALL, aspect, 
-                        Fore.GREEN + ' Parte de la reseña donde aparece: '+ Style.RESET_ALL, part_of_review)
+            #     if part_of_review is not None:
+            #         print(Fore.GREEN + 'Aspecto: '+ Style.RESET_ALL, aspect, 
+            #             Fore.GREEN + ' Parte de la reseña donde aparece: '+ Style.RESET_ALL, part_of_review)
                     
-                    if aspect not in aspectos:
-                        aspectos[aspect] = {'total': 1}
-                    else:
-                        aspectos[aspect]['total'] += 1
-                    tabla_resultados.add_row([aspect, part_of_review])
+            #         if aspect not in aspectos:
+            #             aspectos[aspect] = {'total': 1}
+            #         else:
+            #             aspectos[aspect]['total'] += 1
+            #         tabla_resultados.add_row([aspect, part_of_review])
                     
-        print("\n" + Fore.CYAN + "Resultados:" + Style.RESET_ALL)
-        print(tabla_resultados)
+        # print("\n" + Fore.CYAN + "Resultados:" + Style.RESET_ALL)
+        # print(tabla_resultados)
+
         print("\n" + Fore.CYAN + "Métricas:" + Style.RESET_ALL)
         metrics(true_labels, predicted_labels)
 

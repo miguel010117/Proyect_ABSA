@@ -23,6 +23,11 @@ class AbsaModel(ABC):
         
         pass
     
+    # @abstractmethod
+    # def test(self, loader):
+       
+    #     pass
+    
     @abstractmethod
     def predict(self, text, model):
         
