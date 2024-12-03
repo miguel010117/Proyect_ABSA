@@ -1,47 +1,52 @@
-from torch.utils.data import DataLoader
-from colorama import Fore, Style
-from aspect_extraction import AspectTermExtraction, DatasetLoaderAspect
 import pandas as pd
-from sklearn.metrics import classification_report
-from feature_extraction import ExtractFeauresByWindows
-from prettytable import PrettyTable
+from Aspect_extraction.absapipeline import ABSAPipeline,metrics,predicted_bitmask
 from colorama import Fore, Style
+from Ensamble.ensamble import *
 
-
-
-class ABSAPipeline:
-    def __init__(self, aspect_model):
-        self.aspect_model = AspectTermExtraction(model=aspect_model, tokenizer=aspect_model, seed=50)
-
-    def train_aspect_model(self, train_file, test_file, model_type, batch_size, num_epochs):
-        train_ds_aspect = DatasetLoaderAspect(pd.read_csv(train_file, sep=';'), model_type)
-        test_ds_aspect = DatasetLoaderAspect(pd.read_csv(test_file, sep=';'), model_type)
-        aspect_train_loader = DataLoader(train_ds_aspect, batch_size=batch_size,
-                                         collate_fn=self.aspect_model.create_mini_batch)
-        aspect_test_loader = DataLoader(test_ds_aspect, batch_size=batch_size,
-                                        collate_fn=self.aspect_model.create_mini_batch)
-        self.aspect_model.train(aspect_train_loader, aspect_test_loader,num_epochs)
-
-    def predict_aspect(self, text):
-        max_length = 512  # Longitud máxima de la secuencia admitida por BERT
-        if len(text) > max_length:
-            text = text[:max_length]  
-        return self.aspect_model.predict(text, self.aspect_model.model)
 
 if __name__ == '__main__':
+ 
 #VARIABLES
+    # Modelos base
     BETO = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bert-base-spanish-uncased'
     BERT = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bert-base-multilingual-uncased'
     BERTIN_BASE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bertin-roberta-base-spanish'
     BERTIN_LARGE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bertin-roberta-large-spanish'
     ALBERT_BASE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/albert-base-spanish'
     ALBERT_LARGE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/albert-large-spanish'
+    ALBERT_XX_LARGE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/albert-xx-large-spanish'
+    ELECTRA_SMALL = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/electra-small-discriminator'
+    ELECTRA_BASE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/electra-base-discriminator'
+    GPT_2 = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/GPT-2'
 
-    modelo = BERT
+    #Modelos entrenados
+    BETO_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/beto-base-spanish/bert-base-spanish_epoch_3.pkl'
+    BERT_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/bert-base-multilingual/bert-base-multilingual_epoch_2.pkl'
+    BERTIN_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/bertin_base_spanish/bertin_base_spanish_epoch_2.pkl'
+    BERTIN_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/bertin_large_spanish/bertin_large_spanish_epoch_5.pkl'
+    ALBERT_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/albert-base-spanish/albert-base-spanish_epoch_5.pkl'
+    ALBERT_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/albert_large_spanish/albert_large_spanish_epoch_4.pkl'
+    ALBERT_XX_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/albert_xx_large_spanish/albert_xx_large_spanish_epoch_3.pkl'
+    ELECTRA_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/electra_base_spanish/electra_base_spanish_epoch_2.pkl'
+    GPT_2_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/electra_base_spanish_epoch_1.pkl'
 
-    predict_data= "Data/dataset_test_without_duplicates.csv"
+
+    #Modelo para entrenar
+    modelo = BETO
+    #Modelo entrenado 
+    trained_model = BETO_TRAIN
+    #Datos de entrenamiento
     train_data= "Data/dataset_train_without_duplicates.csv"
-    trained_model=r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/bertin_base_spanish_epoch_4.pkl'
+    #Datos para predecir
+    predict_data= "Data/dataset_test_without_duplicates.csv"
+
+    #Lista de modelos para ensamble
+    MODEL_ENSAMBLE = [BETO, BERT, ALBERT_LARGE, ALBERT_XX_LARGE]
+
+    #Lista de modelos entrenados para ensamble
+    TRAINED_MODEL_ENSABMLE = [BETO_TRAIN, BERT_TRAIN, ALBERT_LARGE_TRAIN, ALBERT_XX_LARGE_TRAIN]
+    
+    
 #FUNCIONES
     def presentacion():
         print(Style.BRIGHT + Fore.BLUE + "╔══════════════════════════════════════════════╗")
@@ -49,33 +54,29 @@ if __name__ == '__main__':
         print("║ " + Fore.WHITE + "            de Aspectos en ABSA             " + Fore.BLUE + " ║")
         print("╚══════════════════════════════════════════════╝" + Style.RESET_ALL)
 
-
     def menu_principal():
         print("\nPor favor, selecciona una opción:")
         print("  " + Fore.BLUE + "P" + Style.RESET_ALL + " - Para predecir aspectos.")
         print("  " + Fore.BLUE + "E" + Style.RESET_ALL + " - Para entrenar al modelo.")
+        print("  " + Fore.BLUE + "S" + Style.RESET_ALL + " - Para predecir con ensamble.")
         return input("Ingrese su opción: ").strip().lower()
 
     def entrenamiento():
         print("\n" + Fore.YELLOW + "Inicializando pesos de los modelos pre-entrenados..." + Style.RESET_ALL)
         pipeline = ABSAPipeline(modelo)
         print(Fore.YELLOW + "Comenzando entrenamiento de la extracción de aspectos..." + Style.RESET_ALL)
-        pipeline.train_aspect_model(train_data,predict_data, modelo, batch_size=8, num_epochs=5)
+        pipeline.train_aspect_model(train_data,predict_data, modelo, batch_size=8, num_epochs=5) #batch_size=16=4
         print(Fore.YELLOW + "¡Entrenamiento completado con éxito!" + Style.RESET_ALL)
 
     def predecir():
         print("\n" + Fore.YELLOW + "Cargando modelos..." + Style.RESET_ALL)
         pipeline = ABSAPipeline(modelo)
         pipeline.aspect_model.load_model(pipeline.aspect_model.model, trained_model)
-        windows_creator = ExtractFeauresByWindows(predict_data)
         test_reviews = pd.read_csv(predict_data, sep=';')
         reviews = test_reviews['text_tokens']
         true_labels=test_reviews['tags'].tolist()
-        aspectos = {}
         predicted_labels = []
-        tabla_resultados = PrettyTable()
-        tabla_resultados.field_names = ["Aspecto", "Parte de la reseña donde aparece"]
-      
+
         for rev in reviews:
             tokens, aspects = pipeline.predict_aspect(rev)
             
@@ -83,47 +84,13 @@ if __name__ == '__main__':
             print(Fore.GREEN + "Lista de aspectos: " + Style.RESET_ALL, aspects)
             
             predicted_labels.append(predicted_bitmask(eval(rev), aspects))
-    
-            # for aspect in aspects:
-            #     aspect_cleaned = windows_creator.clean_text(aspect)
-            #     part_of_review = windows_creator.create_new_sentence(windows_creator.clean_text(rev), aspect_cleaned.strip(), 5)
-                
-            #     if part_of_review is not None:
-            #         print(Fore.GREEN + 'Aspecto: '+ Style.RESET_ALL, aspect, 
-            #             Fore.GREEN + ' Parte de la reseña donde aparece: '+ Style.RESET_ALL, part_of_review)
-                    
-            #         if aspect not in aspectos:
-            #             aspectos[aspect] = {'total': 1}
-            #         else:
-            #             aspectos[aspect]['total'] += 1
-            #         tabla_resultados.add_row([aspect, part_of_review])
-                    
-        # print("\n" + Fore.CYAN + "Resultados:" + Style.RESET_ALL)
-        # print(tabla_resultados)
+            
 
         print("\n" + Fore.CYAN + "Métricas:" + Style.RESET_ALL)
         metrics(true_labels, predicted_labels)
 
-    def predicted_bitmask(rev,aspects):
-            binary_list = []
-            for palabra in rev:
-                if(palabra.lower() in aspects):
-                    binary_list.append(1)
-                else:
-                    binary_list.append(0)
-            return binary_list
-          
-    def metrics(true_labels, predicted_labels):
-        true = []
-        predicted = []
-        for string in true_labels:
-            tags = string[1:-1].split(',')
-            for value in tags:
-                true.append(int(value))
-        for string in predicted_labels:
-            for s in string:
-                predicted.append(s)
-        print(classification_report(true, predicted, target_names=[str(i) for i in range(2)]))
+
+
 #MAIN
     presentacion()
     opcion = menu_principal()   
@@ -131,6 +98,8 @@ if __name__ == '__main__':
         predecir()
     elif opcion == 'e':
         entrenamiento()
+    elif opcion == 's':
+        ensamble(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data)
     else:
-        print(Fore.RED + "Opción no válida. Por favor, selecciona 'P' o 'E'." + Style.RESET_ALL)
+        print(Fore.RED + "Opción no válida. Por favor, selecciona 'P' , 'E' o 'S'." + Style.RESET_ALL)
  

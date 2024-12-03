@@ -2,7 +2,7 @@ from sklearn.metrics import classification_report
 from torch.nn.utils.rnn import pad_sequence
 from torch.optim import AdamW
 from transformers import  AutoModel, AutoTokenizer
-from absa import AbsaModel
+from Aspect_extraction.absamodel import AbsaModel
 from torch.utils.data import Dataset
 import torch
 import numpy as np
@@ -41,7 +41,7 @@ class AspectTermExtraction(AbsaModel):
         self.loss_fn = torch.nn.CrossEntropyLoss()
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer, strict=False)
         self.DEVICE = DEVICE
-        self.optimizer = AdamW(self.model.parameters(), lr=1e-5)
+        self.optimizer = AdamW(self.model.parameters(), lr=1e-5) #5e-6
         logging.set_verbosity_error()
 
     def create_mini_batch(self, samples):
@@ -87,7 +87,7 @@ class AspectTermExtraction(AbsaModel):
                 print('epoch:', epoch+1, " batch:", data_processed, "/", num_data, " loss:", np.mean(losses))
 
             # Save the model a   
-            self.save_model(self.model, 'bert-base-spanish_epoch_' + str(epoch) + '.pkl')
+            self.save_model(self.model, 'electra_base_spanish_epoch_' + str(epoch+1) + '.pkl')
             # true_labels, predicted_labels = self.test(test_loader)
 
             # print(classification_report(true_labels, predicted_labels, target_names=[str(i) for i in range(2)]))
@@ -142,7 +142,7 @@ class AspectTermExtraction(AbsaModel):
 
         tokens = self.tokenizer.tokenize(sentence) 
         tokenized_sentence += tokens
-        print(tokenized_sentence)
+        #print(tokenized_sentence)
         
         
         input_ids = self.tokenizer.convert_tokens_to_ids(tokenized_sentence)
@@ -150,34 +150,62 @@ class AspectTermExtraction(AbsaModel):
         with torch.no_grad():
             outputs = model(input_tensor, None, None)
             softmax_outputs = torch.softmax(outputs, dim=2) #lleva la salida de BETO de 768 dimensiones a 2, una para cada clase (aspecto o no aspecto).
+            # print("SM", softmax_outputs)
             _, predictions = torch.max(softmax_outputs, dim=2) #SOFIA predictions tiene la bitmask en 0
+            # print("P", predictions)
+            # print("P", predictions[0].tolist())
         predicted_tokens = predictions[0].tolist() #SOFIA predicted tokens es la bitmask
         for i, flag in enumerate(predicted_tokens): #en flag guarda el valor de la bitmask
             
-            # if flag == 1:
+            if flag == 1 and tokenized_sentence[0][0] == '▁':
                 
-            #     if tokenized_sentence[i].startswith("##"):
-            #         if word:
-            #             word = word[:-1] + tokenized_sentence[i].replace("##", "") + ' '
-            #         else:
-            #             word += tokenized_sentence[i].replace("##", "") + ' '
-            #     else:
-            #         word += tokenized_sentence[i].replace("##", "") + ' '
-            # elif word:
-            #     terms.append(word.strip()) #SOFIA Guarda en terms los aspectos
-            #     word = ""
-            # if flag == 1 and i == len(tokenized_sentence) - 1:
-            #     word += tokenized_sentence[i]
-            #     terms.append(word.strip())
-            #     word = ""
-            
-            # if flag == 1:
-            #     word = tokenized_sentence[i]
-            #     terms.append(word.strip())
-            
-            if flag == 1:
+                if tokenized_sentence[i][0] != '▁':
+                    if word:
+                        word = word[:-1] + tokenized_sentence[i].replace("▁", "") + ' '
+                    else:    
+                        word = tokenized_sentence[i-1].replace("▁", "") + tokenized_sentence[i].replace("▁", "") + ' '
+                else:
+                    word = tokenized_sentence[i].replace("▁", "") + ' '
+
+                    
+
+                if len(tokenized_sentence) - 1 == i:
+                    terms.append(word.strip())
+                    word = ""
+
+                elif tokenized_sentence[i+1][0] != '▁':
+                    pass
+
+                else:
+                    terms.append(word.strip())
+                    word = ""
+
+            elif flag == 1 and tokenized_sentence[1][0] == 'Ġ':
                 
-                if tokenized_sentence[i][0]== '▁':
+                if tokenized_sentence[i][0] != 'Ġ':
+                    if word:
+                        word = word[:-1] + tokenized_sentence[i].replace("Ġ", "") + ' '
+                    else:    
+                        word = tokenized_sentence[i-1].replace("Ġ", "") + tokenized_sentence[i].replace("Ġ", "") + ' '
+                else:
+                    word = tokenized_sentence[i].replace("Ġ", "") + ' '
+
+                    
+
+                if len(tokenized_sentence) - 1 == i:
+                    terms.append(word.strip())
+                    word = ""
+
+                elif tokenized_sentence[i+1][0] != 'Ġ':
+                    pass
+
+                else:
+                    terms.append(word.strip())
+                    word = ""
+
+            elif flag == 1:
+            
+                if tokenized_sentence[i][0] == '▁':
                     word = tokenized_sentence[i].replace('▁', "")
 
                 elif tokenized_sentence[i][0]== 'Ġ':
@@ -186,11 +214,11 @@ class AspectTermExtraction(AbsaModel):
                 elif tokenized_sentence[i].startswith("##"):
                     if word:
                         word = word[:-1] + tokenized_sentence[i].replace("##", "") + ' '
-                    else:
-                        
+                    else:    
                         word = tokenized_sentence[i-1] + tokenized_sentence[i].replace("##", "") + ' '
                 else:
                     word = tokenized_sentence[i] + ' '
+
 
                 if len(tokenized_sentence) - 1 == i:
                     terms.append(word.strip())
