@@ -8,16 +8,16 @@ if __name__ == '__main__':
  
 #VARIABLES
     # Modelos base
-    BETO = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bert-base-spanish-uncased'
-    BERT = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bert-base-multilingual-uncased'
-    BERTIN_BASE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bertin-roberta-base-spanish'
-    BERTIN_LARGE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/bertin-roberta-large-spanish'
-    ALBERT_BASE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/albert-base-spanish'
-    ALBERT_LARGE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/albert-large-spanish'
-    ALBERT_XX_LARGE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/albert-xx-large-spanish'
-    ELECTRA_SMALL = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/electra-small-discriminator'
-    ELECTRA_BASE = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/electra-base-discriminator'
-    GPT_2 = r'F:/MIGUEL/Estudio/Tesis/Sentiment_Analisis/Model/GPT-2'
+    BETO = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/bert-base-spanish-uncased'
+    BERT = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/bert-base-multilingual-uncased'
+    BERTIN_BASE = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/bertin-roberta-base-spanish'
+    BERTIN_LARGE = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/bertin-roberta-large-spanish'
+    ALBERT_BASE = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/albert-base-spanish'
+    ALBERT_LARGE = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/albert-large-spanish'
+    ALBERT_XX_LARGE = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/albert-xx-large-spanish'
+    ELECTRA_SMALL = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/electra-small-discriminator'
+    ELECTRA_BASE = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/electra-base-discriminator'
+    GPT_2 = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/GPT-2'
 
     #Modelos entrenados
     BETO_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/beto-base-spanish/bert-base-spanish_epoch_3.pkl'
@@ -38,13 +38,13 @@ if __name__ == '__main__':
     #Datos de entrenamiento
     train_data= "Data/dataset_train_without_duplicates.csv"
     #Datos para predecir
-    predict_data= "Data/dataset_test_without_duplicates.csv"
+    predict_data= "Data/dataset_test_without_duplicates2.csv"
 
     #Lista de modelos para ensamble
-    MODEL_ENSAMBLE = [BETO, BERT, ALBERT_LARGE, ALBERT_XX_LARGE]
+    MODEL_ENSAMBLE = [BETO, BERT, ALBERT_LARGE,ALBERT_BASE,ELECTRA_BASE]
 
     #Lista de modelos entrenados para ensamble
-    TRAINED_MODEL_ENSABMLE = [BETO_TRAIN, BERT_TRAIN, ALBERT_LARGE_TRAIN, ALBERT_XX_LARGE_TRAIN]
+    TRAINED_MODEL_ENSABMLE = [BETO_TRAIN, BERT_TRAIN, ALBERT_LARGE_TRAIN,ALBERT_BASE_TRAIN,ELECTRA_BASE_TRAIN]
     
     
 #FUNCIONES
@@ -99,7 +99,7 @@ if __name__ == '__main__':
     elif opcion == 'e':
         entrenamiento()
     elif opcion == 's':
-        ensamble(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data)
+        ensamble_max(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data)
     else:
         print(Fore.RED + "Opción no válida. Por favor, selecciona 'P' , 'E' o 'S'." + Style.RESET_ALL)
  
