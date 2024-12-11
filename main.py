@@ -41,10 +41,10 @@ if __name__ == '__main__':
     predict_data= "Data/dataset_test_without_duplicates2.csv"
 
     #Lista de modelos para ensamble
-    MODEL_ENSAMBLE = [BETO, BERT, ALBERT_LARGE,ALBERT_BASE,ELECTRA_BASE]
+    MODEL_ENSAMBLE = [BETO, BERT, ALBERT_LARGE]
 
     #Lista de modelos entrenados para ensamble
-    TRAINED_MODEL_ENSABMLE = [BETO_TRAIN, BERT_TRAIN, ALBERT_LARGE_TRAIN,ALBERT_BASE_TRAIN,ELECTRA_BASE_TRAIN]
+    TRAINED_MODEL_ENSABMLE = [BETO_TRAIN, BERT_TRAIN, ALBERT_LARGE_TRAIN]
     
     
 #FUNCIONES
@@ -99,7 +99,7 @@ if __name__ == '__main__':
     elif opcion == 'e':
         entrenamiento()
     elif opcion == 's':
-        ensamble_max(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data)
+        ensamble_weighted_average(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data,[0.20,0.20,0.60])
     else:
         print(Fore.RED + "Opción no válida. Por favor, selecciona 'P' , 'E' o 'S'." + Style.RESET_ALL)
  
