@@ -1,4 +1,5 @@
 from sklearn.metrics import classification_report
+import torch.nn.functional as F
 from torch.nn.utils.rnn import pad_sequence
 from torch.optim import AdamW
 from transformers import  AutoModel, AutoTokenizer
@@ -142,20 +143,25 @@ class AspectTermExtraction(AbsaModel):
 
         tokens = self.tokenizer.tokenize(sentence) 
         tokenized_sentence += tokens
-        #print(tokenized_sentence)
-        
-        
         input_ids = self.tokenizer.convert_tokens_to_ids(tokenized_sentence)
         input_tensor = torch.tensor([input_ids]).to(self.DEVICE)
         with torch.no_grad():
             outputs = model(input_tensor, None, None)
-            softmax_outputs = torch.softmax(outputs, dim=2) #lleva la salida de BETO de 768 dimensiones a 2, una para cada clase (aspecto o no aspecto).
-            # print("SM", softmax_outputs)
-            _, predictions = torch.max(softmax_outputs, dim=2) #SOFIA predictions tiene la bitmask en 0
-            # print("P", predictions)
-            # print("P", predictions[0].tolist())
-        predicted_tokens = predictions[0].tolist() #SOFIA predicted tokens es la bitmask
-        for i, flag in enumerate(predicted_tokens): #en flag guarda el valor de la bitmask
+            softmax_outputs = torch.softmax(outputs, dim=2)
+
+            #PRUEBAS DE PROBABILIDAD
+            probabilidades = softmax_outputs[0, :, 1].tolist()
+
+            probabilidades_redondeadas = []
+
+            for probabilidad in probabilidades:
+                probabilidades_redondeadas.append(round(probabilidad, 4))
+
+            # FIN DE PRUEBAS
+            _, predictions = torch.max(softmax_outputs, dim=2) 
+        predicted_tokens = predictions[0].tolist() 
+
+        for i, flag in enumerate(predicted_tokens):
             
             if flag == 1 and tokenized_sentence[0][0] == '▁':
                 
@@ -233,7 +239,7 @@ class AspectTermExtraction(AbsaModel):
            
 
 
-        return tokenized_sentence, terms
+        return tokenized_sentence, terms, probabilidades_redondeadas
     
 def unir_tokens(tokens):
  

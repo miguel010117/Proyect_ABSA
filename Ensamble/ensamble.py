@@ -36,24 +36,37 @@ def ensamble_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data):
         pipeline = ABSAPipeline(MODEL_ENSAMBLE[i])
         pipeline.aspect_model.load_model(pipeline.aspect_model.model, TRAINED_MODEL_ENSAMBLE[i])
         model_predictions = []
+        all_prob = []
         for rev in tqdm(reviews):
-            tokens, aspects = pipeline.predict_aspect(rev)
+            tokens, aspects, prob_aspct = pipeline.predict_aspect(rev)
+            all_prob.append(prob_aspct)
             model_predictions.append(predicted_bitmask(eval(rev), aspects))
-        all_predictions.append(model_predictions)
+        all_predictions.append(all_prob)
+        
 
     predicted_labels_final = []
     for i in range(len(reviews)): # Iterar sobre cada revisión
-        min_len = min(len(pred[i]) for pred in all_predictions) # Longitud mínima de predicciones para esta revisión
-        predicciones = [pred[i][:min_len] for pred in all_predictions] #Considerar solo los valores comparables
+        predicciones = []
+        for pred in all_predictions:
+            if len(pred[i]) >= len_elemnt(true_labels[i]):
+                predicciones.append(pred[i][:len_elemnt(true_labels[i])])  # Recortar
+            else:
+                predicciones.append(np.pad(pred[i], (0, len_elemnt(true_labels[i]) - len(pred[i])), 'constant')) # Rellenar con ceros
 
         prediccion_final = np.mean(predicciones, axis=0)
-        prediccion_final = np.where(prediccion_final >= 0.5, 1, 0)
+        prediccion_final = np.where(prediccion_final >= 0.400, 1, 0)
         predicted_labels_final.append(prediccion_final)
-
-
+    
     print(f"\n{Fore.CYAN}Métricas:{Style.RESET_ALL}")
     metrics(true_labels, predicted_labels_final)
 
+def len_elemnt(elemnt):
+    # Eliminar los corchetes y separar los elementos
+    lista_str = elemnt[1:-1].split(',')
+    # Convertir los elementos a enteros
+    lista_int = [int(x.strip()) for x in lista_str]
+    
+    return len(lista_int)
 
 def ensamble_max(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data):
     """
@@ -85,7 +98,7 @@ def ensamble_max(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data):
 
         predicted_labels = []
         for rev in tqdm(reviews):
-            tokens, aspects = pipeline.predict_aspect(rev)
+            tokens, aspects, prob_asp = pipeline.predict_aspect(rev)
             predicted_labels.append(predicted_bitmask(eval(rev), aspects))
 
         model_predictions.append(predicted_labels)
@@ -130,7 +143,7 @@ def ensamble_weighted_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_da
         pipeline.aspect_model.load_model(pipeline.aspect_model.model, TRAINED_MODEL_ENSAMBLE[i])
         model_predictions = []
         for rev in tqdm(reviews):
-            tokens, aspects = pipeline.predict_aspect(rev)
+            tokens, aspects, prob_asp = pipeline.predict_aspect(rev)
             model_predictions.append(predicted_bitmask(eval(rev), aspects))
         all_predictions.append(model_predictions)
 

@@ -38,7 +38,7 @@ if __name__ == '__main__':
     #Datos de entrenamiento
     train_data= "Data/dataset_train_without_duplicates.csv"
     #Datos para predecir
-    predict_data= "Data/dataset_test_without_duplicates2.csv"
+    predict_data= "Data/dataset_test_without_duplicates.csv"
 
     #Lista de modelos para ensamble
     MODEL_ENSAMBLE = [BETO, BERT, ALBERT_LARGE]
@@ -99,7 +99,7 @@ if __name__ == '__main__':
     elif opcion == 'e':
         entrenamiento()
     elif opcion == 's':
-        ensamble_weighted_average(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data,[0.20,0.20,0.60])
+        ensamble_weighted_average(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data,[0.25,0.25,0.50])
     else:
         print(Fore.RED + "Opción no válida. Por favor, selecciona 'P' , 'E' o 'S'." + Style.RESET_ALL)
  
