@@ -26,10 +26,23 @@ if __name__ == '__main__':
     BERTIN_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/bertin_large_spanish/bertin_large_spanish_epoch_5.pkl'
     ALBERT_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/albert-base-spanish/albert-base-spanish_epoch_5.pkl'
     ALBERT_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/albert_large_spanish/albert_large_spanish_epoch_4.pkl'
-    ALBERT_XX_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/albert_xx_large_spanish/albert_xx_large_spanish_epoch_3.pkl'
+    ALBERT_XX_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/albert_large_xx_spanish/albert_xx_large_spanish_epoch_3.pkl'
     ELECTRA_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/electra_base_spanish/electra_base_spanish_epoch_2.pkl'
     GPT_2_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/electra_base_spanish_epoch_1.pkl'
 
+    #Modelos pesos
+    BETO_weighted = 0.85
+    BERT_weighted =	0.84
+    ALBERT_base_weighted = 0.84
+    ALBERT_large_weighted =	0.86
+    ALBERT_xx_large_weighted = 0.86
+    BERTIN_base_weighted = 0.80
+    BERTIN_large_weighted =	0.82
+    GPT_2_weighted = 0.54
+    ELECTRA_small_weighted = 0.80
+    ELECTRA_base_weighted =	0.82
+
+    #weighted = cal_weighted(0.50,0.20,0.10,0.10,0.10)
 
     #Modelo para entrenar
     modelo = BETO
@@ -41,10 +54,10 @@ if __name__ == '__main__':
     predict_data= "Data/dataset_test_without_duplicates.csv"
 
     #Lista de modelos para ensamble
-    MODEL_ENSAMBLE = [BETO, BERT, ALBERT_LARGE]
+    MODEL_ENSAMBLE = [BETO,ALBERT_LARGE,ALBERT_XX_LARGE]
 
     #Lista de modelos entrenados para ensamble
-    TRAINED_MODEL_ENSABMLE = [BETO_TRAIN, BERT_TRAIN, ALBERT_LARGE_TRAIN]
+    TRAINED_MODEL_ENSABMLE = [BETO_TRAIN,ALBERT_LARGE_TRAIN,ALBERT_XX_LARGE_TRAIN]
     
     
 #FUNCIONES
@@ -62,10 +75,16 @@ if __name__ == '__main__':
         return input("Ingrese su opción: ").strip().lower()
 
     def entrenamiento():
-        print("\n" + Fore.YELLOW + "Inicializando pesos de los modelos pre-entrenados..." + Style.RESET_ALL)
+        print("\n" + Fore.YELLOW + "Inicializando pesos de los modelos pre-entrenados..." + 
+        \
+        Style.RESET_ALL)
         pipeline = ABSAPipeline(modelo)
-        print(Fore.YELLOW + "Comenzando entrenamiento de la extracción de aspectos..." + Style.RESET_ALL)
-        pipeline.train_aspect_model(train_data,predict_data, modelo, batch_size=8, num_epochs=5) #batch_size=16=4
+        print(Fore.YELLOW + "Comenzando entrenamiento de la extracción de aspectos..." +
+        \
+         Style.RESET_ALL)
+        pipeline.train_aspect_model(train_data,predict_data, 
+                                    modelo, batch_size=8, 
+                                    num_epochs=5)
         print(Fore.YELLOW + "¡Entrenamiento completado con éxito!" + Style.RESET_ALL)
 
     def predecir():
@@ -99,7 +118,9 @@ if __name__ == '__main__':
     elif opcion == 'e':
         entrenamiento()
     elif opcion == 's':
-        ensamble_weighted_average(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data,[0.25,0.25,0.50])
+        list_model = [ "BETO", "ALBERT_BASE", "ALBERT_BASE"]
+        ensamble_weighted_average(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,
+                                  predict_data,list_model, [0.20, 0.40, 0.40])
     else:
         print(Fore.RED + "Opción no válida. Por favor, selecciona 'P' , 'E' o 'S'." + Style.RESET_ALL)
  

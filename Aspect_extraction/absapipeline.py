@@ -17,11 +17,11 @@ class ABSAPipeline:
                                         collate_fn=self.aspect_model.create_mini_batch)
         self.aspect_model.train(aspect_train_loader, aspect_test_loader,num_epochs)
 
-    def predict_aspect(self, text):
+    def predict_aspect(self, text, name):
         max_length = 512  # Longitud máxima de la secuencia admitida por BERT
         if len(text) > max_length:
             text = text[:max_length]  
-        return self.aspect_model.predict(text, self.aspect_model.model)
+        return self.aspect_model.predict(text, self.aspect_model.model,name)
     
     
     
@@ -44,4 +44,7 @@ def metrics(true_labels, predicted_labels):
     for string in predicted_labels:
         for s in string:
             predicted.append(s)
-    print(classification_report(true, predicted, target_names=[str(i) for i in range(2)], digits=4))
+    print(classification_report(true, predicted, 
+                                target_names=[str(i) for i in range(2)], 
+                                digits=4)
+    )

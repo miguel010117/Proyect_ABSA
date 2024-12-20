@@ -1,16 +1,20 @@
-from sklearn.metrics import classification_report
+import re
+import unicodedata
+import torch
 import torch.nn.functional as F
+import numpy as np
+
 from torch.nn.utils.rnn import pad_sequence
 from torch.optim import AdamW
-from transformers import  AutoModel, AutoTokenizer
-from Aspect_extraction.absamodel import AbsaModel
 from torch.utils.data import Dataset
-import torch
-import numpy as np
+from transformers import  AutoModel, AutoTokenizer
 from transformers import logging
 
-#FINE-TUNNED BERT
+from Aspect_extraction.absamodel import AbsaModel
+
+
 class ModelForAspectExtraction(torch.nn.Module):
+
     def __init__(self, model):
         super(ModelForAspectExtraction, self).__init__()
         self.model = AutoModel.from_pretrained(model)
@@ -19,7 +23,6 @@ class ModelForAspectExtraction(torch.nn.Module):
         self.loss_fn = torch.nn.CrossEntropyLoss()
 
     def forward(self, ids_tensors, tags_tensors, masks_tensors):
-    
         cls_output = self.model(input_ids=ids_tensors, attention_mask=masks_tensors, return_dict=False)
         drop_output = self.drop(cls_output[0])
         linear_outputs = self.linear(drop_output)
@@ -125,18 +128,24 @@ class AspectTermExtraction(AbsaModel):
         return true_labels, predicted_labels
     
 
-    def predict(self, sentence, model): #SOFIA devuelve el comentario tokenizado y los aspectos(terms)
+    def predict(self, sent, model,name): 
 
-        # Elimina corchetes, comillas simples y espacios
-        palabras_str = sentence.replace('[', '').replace(']', '').replace("'", '').strip()
+        # Extrae las palabras usando una expresión regular.
+        palabras = re.findall(r"'(.*?)'", sent)
+        palabras_sin_tildes = []
 
-        # Separa por comas
-        palabras = palabras_str.split(',')
+        for palabra in palabras:
+            # Solo elimina los acentos, dejando intactos otros caracteres como comas.
+            nueva_palabra = ''.join(c for c in unicodedata.normalize('NFD', palabra)
+                                    if unicodedata.category(c) != 'Mn')
+            palabras_sin_tildes.append(nueva_palabra)
 
-        # Limpia cada palabra
-        palabras_limpias = [palabra.replace(" ", "") for palabra in palabras]
-      
+
+        # Limpia las palabras (si es necesario, eliminando espacios).
+        palabras_limpias = [palabra.strip() for palabra in palabras_sin_tildes]
+
         sentence = " ".join(palabras_limpias)
+
         tokenized_sentence = []
         terms = []
         word = ""
@@ -150,12 +159,20 @@ class AspectTermExtraction(AbsaModel):
             softmax_outputs = torch.softmax(outputs, dim=2)
 
             #PRUEBAS DE PROBABILIDAD
+            
             probabilidades = softmax_outputs[0, :, 1].tolist()
 
             probabilidades_redondeadas = []
 
+            if name == "ALBERT_BASE":
+                probabilidades = setting_prob_ALBERT(palabras_limpias, tokenized_sentence, probabilidades)
+            elif name == "BETO" or name == "BERT":
+                probabilidades = setting_prob_BETO(palabras_limpias, tokenized_sentence, probabilidades)
+
             for probabilidad in probabilidades:
                 probabilidades_redondeadas.append(round(probabilidad, 4))
+
+            
 
             # FIN DE PRUEBAS
             _, predictions = torch.max(softmax_outputs, dim=2) 
@@ -171,9 +188,7 @@ class AspectTermExtraction(AbsaModel):
                     else:    
                         word = tokenized_sentence[i-1].replace("▁", "") + tokenized_sentence[i].replace("▁", "") + ' '
                 else:
-                    word = tokenized_sentence[i].replace("▁", "") + ' '
-
-                    
+                    word = tokenized_sentence[i].replace("▁", "") + ' '           
 
                 if len(tokenized_sentence) - 1 == i:
                     terms.append(word.strip())
@@ -256,6 +271,98 @@ def unir_tokens(tokens):
 
   return resultado
 
+def setting_prob_BETO(sentence,tokens, prob):
+    serie = []
+    word = ""
+    cont = 0
+    i = 0
+    while i < len(sentence):
+        
+        if sentence[i].lower() == tokens[cont].lower():
+            serie.append(cont)
+            cont += 1
+            i += 1
+        elif sentence[i].lower() == (word + tokens[cont][2:]):
+            serie.append(cont)
+            cont += 1
+            i += 1
+            word = ''
+        else:
+            if tokens[cont][:1] == "#":
+                word += tokens[cont][2:].lower()
+                cont += 1
+            else:
+                word += tokens[cont].lower()
+                cont += 1
+
+    return clasification(prob, serie)
+
+def setting_prob_ALBERT(sentence,tokens, prob):
+
+
+    serie = []
+    word = ""
+    cont = 0
+    i = 0
+    while i < len(sentence):
+        
+        if sentence[i].lower() == tokens[cont][1:].lower():
+            serie.append(cont)
+            cont += 1
+            i += 1
+
+        elif sentence[i].lower() == (word + tokens[cont]):
+            serie.append(cont)
+            cont += 1
+            i += 1
+            word = ''
+        
+        else:
+            if tokens[cont][:1] == "▁":
+                word += tokens[cont][1:].lower()
+                cont += 1
+            else:
+                word += tokens[cont].lower()
+                cont += 1
+
+        
+        
+    return clasification(prob, serie)
+
+def clasification(prob,serie):
+
+    salida = []
+    cont = 0
+    sum = 0
+    cant_sum = 1
+    for i in range(len(prob)):
+
+        if sum > 0:
+
+            if i == serie[cont]:
+                sum += prob[i]
+                valor = sum / cant_sum
+                salida.append(valor)
+                sum = 0
+                cant_sum = 1
+                cont += 1
+
+            else:
+                sum += prob[i]
+                cant_sum += 1
+                
+        elif i == serie[cont]:
+            salida.append(prob[i])
+            cont += 1
+
+        else:
+            sum += prob[i]
+            cant_sum += 1
+
+    return salida
+
+
+
 class DatasetLoaderAspect(Dataset):
 
     def __init__(self, df, tokenizer):
@@ -288,3 +395,5 @@ class DatasetLoaderAspect(Dataset):
     def __len__(self):
         
         return len(self.df)
+    
+

@@ -7,7 +7,7 @@ from collections import Counter
 from Aspect_extraction.absapipeline import metrics,predicted_bitmask
 
 
-def ensamble_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data):
+def ensamble_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data, list_model):
     """
     Realiza un ensamble de modelos mediante promediado de predicciones.
 
@@ -34,11 +34,12 @@ def ensamble_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data):
     for i in range(num_models):
         print(f"Procesando modelo {i+1} de {num_models}")
         pipeline = ABSAPipeline(MODEL_ENSAMBLE[i])
+        name_model = list_model[i]
         pipeline.aspect_model.load_model(pipeline.aspect_model.model, TRAINED_MODEL_ENSAMBLE[i])
         model_predictions = []
         all_prob = []
         for rev in tqdm(reviews):
-            tokens, aspects, prob_aspct = pipeline.predict_aspect(rev)
+            tokens, aspects, prob_aspct = pipeline.predict_aspect(rev,name_model)
             all_prob.append(prob_aspct)
             model_predictions.append(predicted_bitmask(eval(rev), aspects))
         all_predictions.append(all_prob)
@@ -54,7 +55,7 @@ def ensamble_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data):
                 predicciones.append(np.pad(pred[i], (0, len_elemnt(true_labels[i]) - len(pred[i])), 'constant')) # Rellenar con ceros
 
         prediccion_final = np.mean(predicciones, axis=0)
-        prediccion_final = np.where(prediccion_final >= 0.400, 1, 0)
+        prediccion_final = np.where(prediccion_final >= 0.500, 1, 0)
         predicted_labels_final.append(prediccion_final)
     
     print(f"\n{Fore.CYAN}Métricas:{Style.RESET_ALL}")
@@ -115,8 +116,9 @@ def ensamble_max(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data):
     print(f"\n{Fore.CYAN}Métricas:{Style.RESET_ALL}")
     metrics(true_labels, predicted_labels_final) # Asumiendo que metrics está definido en otro lugar
 
-
-def ensamble_weighted_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data, model_weights):
+# Alineado con el paréntesis que abre la función
+def ensamble_weighted_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, 
+                              predict_data, list_model, model_weights):
     """
     Ensamble de modelos con promedio ponderado, manejando longitudes variables de predicciones.
 
@@ -140,17 +142,24 @@ def ensamble_weighted_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_da
     for i in range(num_models):
         print(f"Procesando modelo {i+1} de {num_models}")
         pipeline = ABSAPipeline(MODEL_ENSAMBLE[i])
+        name_model = list_model[i]
         pipeline.aspect_model.load_model(pipeline.aspect_model.model, TRAINED_MODEL_ENSAMBLE[i])
         model_predictions = []
+        all_prob = []
         for rev in tqdm(reviews):
-            tokens, aspects, prob_asp = pipeline.predict_aspect(rev)
+            tokens, aspects, prob_asp = pipeline.predict_aspect(rev, name_model)
+            all_prob.append(prob_asp)
             model_predictions.append(predicted_bitmask(eval(rev), aspects))
-        all_predictions.append(model_predictions)
+        all_predictions.append(all_prob)
 
     predicted_labels_final = []
     for i in range(len(reviews)): # Iterar sobre cada revisión
-        min_len = min(len(pred[i]) for pred in all_predictions)
-        predicciones = [pred[i][:min_len] for pred in all_predictions]
+        predicciones = []
+        for pred in all_predictions:
+            if len(pred[i]) >= len_elemnt(true_labels[i]):
+                predicciones.append(pred[i][:len_elemnt(true_labels[i])])  # Recortar
+            else:
+                predicciones.append(np.pad(pred[i], (0, len_elemnt(true_labels[i]) - len(pred[i])), 'constant')) # Rellenar con ceros
         
         # Promedio ponderado
         weighted_average = np.average(predicciones, axis=0, weights=model_weights)
@@ -162,7 +171,6 @@ def ensamble_weighted_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_da
 
 
 def predicted_bitmask(rev, aspects):
-    # ... (Función original sin cambios) ...
     binary_list = []
     for palabra in rev:
         if palabra.lower() in aspects:
@@ -171,3 +179,11 @@ def predicted_bitmask(rev, aspects):
             binary_list.append(0)
     return binary_list
 
+def cal_weighted(w1,w2,w3):
+    sum = w1 + 15 + w2 + w3 - 15 
+
+    w1 = w1 + 15 / sum
+    w2 = w2 / sum
+    w3 = w3 - 15 / sum
+
+    return w1, w2, w3
