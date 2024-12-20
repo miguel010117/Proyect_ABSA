@@ -3,7 +3,6 @@ from Aspect_extraction.absapipeline import ABSAPipeline,metrics,predicted_bitmas
 from colorama import Fore, Style
 from Ensamble.ensamble import *
 
-
 if __name__ == '__main__':
  
 #VARIABLES
@@ -59,7 +58,6 @@ if __name__ == '__main__':
     #Lista de modelos entrenados para ensamble
     TRAINED_MODEL_ENSABMLE = [BETO_TRAIN,ALBERT_LARGE_TRAIN,ALBERT_XX_LARGE_TRAIN]
     
-    
 #FUNCIONES
     def presentacion():
         print(Style.BRIGHT + Fore.BLUE + "╔══════════════════════════════════════════════╗")
@@ -107,8 +105,6 @@ if __name__ == '__main__':
 
         print("\n" + Fore.CYAN + "Métricas:" + Style.RESET_ALL)
         metrics(true_labels, predicted_labels)
-
-
 
 #MAIN
     presentacion()
