@@ -146,6 +146,7 @@ def ensamble_weighted_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE,
         pipeline.aspect_model.load_model(pipeline.aspect_model.model, TRAINED_MODEL_ENSAMBLE[i])
         model_predictions = []
         all_prob = []
+        
         for rev in tqdm(reviews):
             tokens, aspects, prob_asp = pipeline.predict_aspect(rev, name_model)
             all_prob.append(prob_asp)
@@ -153,16 +154,19 @@ def ensamble_weighted_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE,
         all_predictions.append(all_prob)
 
     predicted_labels_final = []
-    for i in range(len(reviews)): # Iterar sobre cada revisión
+    
+    for i in range(len(reviews)): 
         predicciones = []
         for pred in all_predictions:
             if len(pred[i]) >= len_elemnt(true_labels[i]):
-                predicciones.append(pred[i][:len_elemnt(true_labels[i])])  # Recortar
+                predicciones.append(pred[i][:len_elemnt(true_labels[i])])
             else:
-                predicciones.append(np.pad(pred[i], (0, len_elemnt(true_labels[i]) - len(pred[i])), 'constant')) # Rellenar con ceros
-        
+                predicciones.append(np.pad(pred[i], 
+                                           (0, len_elemnt(true_labels[i]) - len(pred[i])),
+                                             'constant'))
         # Promedio ponderado
-        weighted_average = np.average(predicciones, axis=0, weights=model_weights)
+        weighted_average = np.average(predicciones, axis=0, 
+                                      weights=model_weights)
         prediccion_final = np.where(weighted_average >= 0.5, 1, 0)
         predicted_labels_final.append(prediccion_final)
 
