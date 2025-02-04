@@ -30,35 +30,21 @@ if __name__ == '__main__':
     ELECTRA_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/electra_base_spanish/electra_base_spanish_epoch_2.pkl'
     GPT_2_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/electra_base_spanish_epoch_1.pkl'
 
-    #Modelos pesos
-    BETO_weighted = 0.85
-    BERT_weighted =	0.84
-    ALBERT_base_weighted = 0.84
-    ALBERT_large_weighted =	0.86
-    ALBERT_xx_large_weighted = 0.86
-    BERTIN_base_weighted = 0.80
-    BERTIN_large_weighted =	0.82
-    GPT_2_weighted = 0.54
-    ELECTRA_small_weighted = 0.80
-    ELECTRA_base_weighted =	0.82
-
-    #weighted = cal_weighted(0.50,0.20,0.10,0.10,0.10)
-
     #Modelo para entrenar
     modelo = BETO
     #Modelo entrenado 
     trained_model = BETO_TRAIN
     #Datos de entrenamiento
-    train_data= "Data/dataset_train_without_duplicates.csv"
+    train_data= "Data/dataset_test_without_duplicates2.csv"
     #Datos para predecir
-    predict_data= "Data/dataset_test_without_duplicates.csv"
-
+    predict_data= "Data/dataset_test_without_duplicates2.csv"
+    
     #Lista de modelos para ensamble
-    MODEL_ENSAMBLE = [BETO,ALBERT_LARGE,ALBERT_XX_LARGE]
+    MODEL_ENSAMBLE = [BETO,BERT, ALBERT_BASE]
 
     #Lista de modelos entrenados para ensamble
-    TRAINED_MODEL_ENSABMLE = [BETO_TRAIN,ALBERT_LARGE_TRAIN,ALBERT_XX_LARGE_TRAIN]
-    
+    TRAINED_MODEL_ENSABMLE = [BETO_TRAIN,BERT_TRAIN ,ALBERT_BASE_TRAIN]
+
     
 #FUNCIONES
     def presentacion():
@@ -75,13 +61,9 @@ if __name__ == '__main__':
         return input("Ingrese su opción: ").strip().lower()
 
     def entrenamiento():
-        print("\n" + Fore.YELLOW + "Inicializando pesos de los modelos pre-entrenados..." + 
-        \
-        Style.RESET_ALL)
+        print("\n" + Fore.YELLOW + "Inicializando pesos de los modelos pre-entrenados..." + Style.RESET_ALL)
         pipeline = ABSAPipeline(modelo)
-        print(Fore.YELLOW + "Comenzando entrenamiento de la extracción de aspectos..." +
-        \
-         Style.RESET_ALL)
+        print(Fore.YELLOW + "Comenzando entrenamiento de la extracción de aspectos..." + Style.RESET_ALL)
         pipeline.train_aspect_model(train_data,predict_data, 
                                     modelo, batch_size=8, 
                                     num_epochs=5)
@@ -103,11 +85,9 @@ if __name__ == '__main__':
             print(Fore.GREEN + "Lista de aspectos: " + Style.RESET_ALL, aspects)
             
             predicted_labels.append(predicted_bitmask(eval(rev), aspects))
-            
 
         print("\n" + Fore.CYAN + "Métricas:" + Style.RESET_ALL)
         metrics(true_labels, predicted_labels)
-
 
 
 #MAIN
@@ -118,9 +98,33 @@ if __name__ == '__main__':
     elif opcion == 'e':
         entrenamiento()
     elif opcion == 's':
-        list_model = [ "BETO", "ALBERT_BASE", "ALBERT_BASE"]
-        ensamble_weighted_average(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,
-                                  predict_data,list_model, [0.20, 0.40, 0.40])
+        print("\nPor favor, selecciona una opción:")
+        print("  " + Fore.BLUE + "1" + Style.RESET_ALL + " - Ensamble votacion maxima.")
+        print("  " + Fore.BLUE + "2" + Style.RESET_ALL + " - Ensamble votacion promedio.")
+        print("  " + Fore.BLUE + "3" + Style.RESET_ALL + " - Ensamble votacion promedio ponderado.")
+        print("  " + Fore.BLUE + "4" + Style.RESET_ALL + " - Ensamble boosting.")
+        print("  " + Fore.BLUE + "5" + Style.RESET_ALL + " - Ensamble stacking.")
+        valor = input("Ingrese su opción: ").strip().lower()
+
+        if valor == "1":
+            list_model = ["","",""]
+            ensamble_max(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data,list_model)
+        elif valor == "2":
+            list_model = ["BETO","BETO","ALBERT_BASE"]
+            ensamble_average(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data,list_model)
+        elif valor == "3":
+            list_model = ["BETO","BETO","ALBERT_BASE"]
+            ensamble_weighted_average(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data,list_model,
+                                      [0.10, 0.30, 0.30])
+        elif valor == "4":
+            list_model = ["","",""]
+            ensamble_boosting(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,train_data, predict_data,list_model)
+        elif valor == "5":
+            list_model = ["","",""]
+            ensamble_staking(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,train_data, predict_data,list_model)
+        else:
+            print("Valor incorrecto")
+
     else:
         print(Fore.RED + "Opción no válida. Por favor, selecciona 'P' , 'E' o 'S'." + Style.RESET_ALL)
  

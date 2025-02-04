@@ -1,49 +1,52 @@
-from colorama import Fore, Style
-from Aspect_extraction.absapipeline import ABSAPipeline
+import ast
+import numpy as np
 import pandas as pd
 from tqdm import tqdm
-import numpy as np
-from collections import Counter
+from colorama import Fore, Style
+from sklearn.ensemble import AdaBoostClassifier 
+from sklearn.metrics import classification_report
+from sklearn.ensemble import RandomForestClassifier 
+from Aspect_extraction.absapipeline import ABSAPipeline
 from Aspect_extraction.absapipeline import metrics,predicted_bitmask
+
+def ensamble_max(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data, list_model):
+
+    reviews, true_labels = cargar_datos(predict_data)
+
+    # Lista para almacenar las predicciones de cada modelo
+    model_predictions = []
+
+    for i, (model, trained_model) in enumerate(zip(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE)):
+        name_model = list_model[i]
+        print(f"Procesando modelo {i+1}...")
+        pipeline = ABSAPipeline(model)
+        pipeline.aspect_model.load_model(pipeline.aspect_model.model, trained_model)
+
+        predicted_labels = []
+        for rev in tqdm(reviews):
+            tokens, aspects, prob_asp = pipeline.predict_aspect(rev,name_model)
+            predicted_labels.append(predicted_bitmask(eval(rev), aspects))
+
+        model_predictions.append(predicted_labels)
+
+    # Ensamblaje por votación máxima
+    predicted_labels_final = []
+    num_models = len(model_predictions)
+
+    for i in range(len(reviews)):
+        suma_votos = np.sum(np.array(model_predictions[j][i]) for j in range(num_models)) # Convierte a array NumPy
+        ensamble_votacion = suma_votos >= (num_models // 2 + 1)
+        predicted_labels_final.append(ensamble_votacion.astype(int).tolist())
+
+    print(f"\n{Fore.CYAN}Métricas:{Style.RESET_ALL}")
+    metrics(true_labels, predicted_labels_final) # Asumiendo que metrics está definido en otro lugar
 
 
 def ensamble_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data, list_model):
-    """
-    Realiza un ensamble de modelos mediante promediado de predicciones.
 
-    Args:
-        MODEL_ENSAMBLE: Lista de nombres o identificadores de los modelos.
-        TRAINED_MODEL_ENSAMBLE: Lista de los modelos entrenados cargados. Debe coincidir en longitud con MODEL_ENSAMBLE.
-        predict_data: Ruta al archivo CSV con los datos de prueba. Debe contener columnas 'text_tokens' y 'tags'.
+    reviews, true_labels = cargar_datos(predict_data)
 
-    Returns:
-        None. Imprime las métricas de evaluación.
-    """
-
-    print(f"\n{Fore.YELLOW}Cargando modelos...{Style.RESET_ALL}")
-
-    num_models = len(MODEL_ENSAMBLE)
-    if num_models != len(TRAINED_MODEL_ENSAMBLE):
-        raise ValueError("El número de modelos y modelos entrenados debe coincidir.")
-
-    all_predictions = []
-    test_reviews = pd.read_csv(predict_data, sep=';')
-    reviews = test_reviews['text_tokens']
-    true_labels = test_reviews['tags'].tolist()
-
-    for i in range(num_models):
-        print(f"Procesando modelo {i+1} de {num_models}")
-        pipeline = ABSAPipeline(MODEL_ENSAMBLE[i])
-        name_model = list_model[i]
-        pipeline.aspect_model.load_model(pipeline.aspect_model.model, TRAINED_MODEL_ENSAMBLE[i])
-        model_predictions = []
-        all_prob = []
-        for rev in tqdm(reviews):
-            tokens, aspects, prob_aspct = pipeline.predict_aspect(rev,name_model)
-            all_prob.append(prob_aspct)
-            model_predictions.append(predicted_bitmask(eval(rev), aspects))
-        all_predictions.append(all_prob)
-        
+    all_predictions = procesar_probabilidades(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, list_model, reviews, true_labels)
 
     predicted_labels_final = []
     for i in range(len(reviews)): # Iterar sobre cada revisión
@@ -61,96 +64,12 @@ def ensamble_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data, list_
     print(f"\n{Fore.CYAN}Métricas:{Style.RESET_ALL}")
     metrics(true_labels, predicted_labels_final)
 
-def len_elemnt(elemnt):
-    # Eliminar los corchetes y separar los elementos
-    lista_str = elemnt[1:-1].split(',')
-    # Convertir los elementos a enteros
-    lista_int = [int(x.strip()) for x in lista_str]
-    
-    return len(lista_int)
 
-def ensamble_max(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data):
-    """
-    Realiza un ensamble de modelos para extracción de aspectos mediante votación máxima.
+def ensamble_weighted_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data, list_model, model_weights):
 
-    Args:
-        MODEL_ENSAMBLE: Lista de modelos.
-        TRAINED_MODEL_ENSAMBLE: Lista de rutas a los modelos entrenados.
-        predict_data: Ruta al archivo CSV con los datos de prueba.
+    reviews, true_labels = cargar_datos(predict_data)
 
-    Returns:
-        None. Imprime las métricas del ensamble.
-    """
-
-    print(f"\n{Fore.YELLOW}Cargando modelos...{Style.RESET_ALL}")
-
-    # Carga los datos
-    test_reviews = pd.read_csv(predict_data, sep=';')
-    reviews = test_reviews['text_tokens'].tolist()
-    true_labels = test_reviews['tags'].tolist()
-
-    # Lista para almacenar las predicciones de cada modelo
-    model_predictions = []
-
-    for i, (model, trained_model) in enumerate(zip(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE)):
-        print(f"Procesando modelo {i+1}...")
-        pipeline = ABSAPipeline(model)
-        pipeline.aspect_model.load_model(pipeline.aspect_model.model, trained_model)
-
-        predicted_labels = []
-        for rev in tqdm(reviews):
-            tokens, aspects, prob_asp = pipeline.predict_aspect(rev)
-            predicted_labels.append(predicted_bitmask(eval(rev), aspects))
-
-        model_predictions.append(predicted_labels)
-
-    # Ensamblaje por votación máxima
-    predicted_labels_final = []
-    num_models = len(model_predictions)
-
-    for i in range(len(reviews)):
-        suma_votos = np.sum(np.array(model_predictions[j][i]) for j in range(num_models)) # Convierte a array NumPy
-        ensamble_votacion = suma_votos >= (num_models // 2 + 1)
-        predicted_labels_final.append(ensamble_votacion.astype(int).tolist())
-
-    print(f"\n{Fore.CYAN}Métricas:{Style.RESET_ALL}")
-    metrics(true_labels, predicted_labels_final) # Asumiendo que metrics está definido en otro lugar
-
-# Alineado con el paréntesis que abre la función
-def ensamble_weighted_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, 
-                              predict_data, list_model, model_weights):
-    """
-    Ensamble de modelos con promedio ponderado, manejando longitudes variables de predicciones.
-
-    Args:
-        MODEL_ENSAMBLE: Lista de nombres o identificadores de los modelos.
-        TRAINED_MODEL_ENSAMBLE: Lista de los modelos entrenados cargados.
-        predict_data: Ruta al archivo CSV con los datos de prueba.
-        model_weights: Lista de pesos para cada modelo. Debe tener la misma longitud que MODEL_ENSAMBLE.
-    """
-    print(f"\n{Fore.YELLOW}Cargando modelos...{Style.RESET_ALL}")
-
-    num_models = len(MODEL_ENSAMBLE)
-    if num_models != len(TRAINED_MODEL_ENSAMBLE) or num_models != len(model_weights):
-        raise ValueError("El número de modelos, modelos entrenados y pesos debe coincidir.")
-
-    all_predictions = []
-    test_reviews = pd.read_csv(predict_data, sep=';')
-    reviews = test_reviews['text_tokens']
-    true_labels = test_reviews['tags'].tolist()
-
-    for i in range(num_models):
-        print(f"Procesando modelo {i+1} de {num_models}")
-        pipeline = ABSAPipeline(MODEL_ENSAMBLE[i])
-        name_model = list_model[i]
-        pipeline.aspect_model.load_model(pipeline.aspect_model.model, TRAINED_MODEL_ENSAMBLE[i])
-        model_predictions = []
-        all_prob = []
-        for rev in tqdm(reviews):
-            tokens, aspects, prob_asp = pipeline.predict_aspect(rev, name_model)
-            all_prob.append(prob_asp)
-            model_predictions.append(predicted_bitmask(eval(rev), aspects))
-        all_predictions.append(all_prob)
+    all_predictions = procesar_probabilidades(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, list_model, reviews, true_labels)
 
     predicted_labels_final = []
     for i in range(len(reviews)): # Iterar sobre cada revisión
@@ -170,6 +89,185 @@ def ensamble_weighted_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE,
     metrics(true_labels, predicted_labels_final)
 
 
+def ensamble_boosting(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, train_data, predict_data, list_model):
+
+    print(f"\n{Fore.YELLOW}Cargando modelos...{Style.RESET_ALL}")
+
+    reviews_train, true_labels_train = cargar_datos_version2(train_data)
+    reviews_test, true_labels_test = cargar_datos_version2(predict_data)
+
+    # caracteristicas_boosting = np.concatenate([bert_array, albert_array, electra_array], axis=1)
+    # Crea el ensamble AdaBoost usando las predicciones de los modelos base como entrada
+    ada_boost = AdaBoostClassifier(
+        n_estimators=50, # Número de estimadores (ajusta según sea necesario)
+        learning_rate=1.0, # Tasa de aprendizaje (ajusta según sea necesario)
+        algorithm='SAMME', # Algoritmo para clasificación multiclase
+        random_state=42
+    )
+
+
+    #Obtener salida de cada modelo para datos de entrenamiento
+    # Lista para almacenar las predicciones de cada modelo para train
+    model_predictions_train = []
+
+    for i, (model, trained_model) in enumerate(zip(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE)):
+        name_model = list_model[i]
+        print(f"Procesando modelo {i+1}...")
+        pipeline = ABSAPipeline(model)
+        pipeline.aspect_model.load_model(pipeline.aspect_model.model, trained_model)
+
+        predicted_labels = []
+        for rev in tqdm(reviews_train):
+            tokens, aspects, prob_asp = pipeline.predict_aspect(rev,name_model)
+            predicted_labels.append(predicted_bitmask(eval(rev), aspects))
+
+        model_predictions_train.append(predicted_labels)                                                 #model_predictions_train
+    model_predictions_train = vectorizar_salidas(model_predictions_train)  
+    print(model_predictions_train.shape)
+
+    # Entrena AdaBoost con las predicciones de los modelos base
+    ada_boost.fit(model_predictions_train, true_labels_train)
+
+    #Obtener salida de cada modelo para datos de test
+    # Lista para almacenar las predicciones de cada modelo para test
+    model_predictions_test = []
+
+    for i, (model, trained_model) in enumerate(zip(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE)):
+        name_model = list_model[i]
+        print(f"Procesando modelo {i+1}...")
+        pipeline = ABSAPipeline(model)
+        pipeline.aspect_model.load_model(pipeline.aspect_model.model, trained_model)
+
+        predicted_labels = []
+        for rev in tqdm(reviews_test):
+            tokens, aspects, prob_asp = pipeline.predict_aspect(rev,name_model)
+            predicted_labels.append(predicted_bitmask(eval(rev), aspects))
+
+        model_predictions_test.append(predicted_labels)                                                #model_predictions_test
+    model_predictions_test = vectorizar_salidas(model_predictions_test)  
+    print(model_predictions_test.shape)
+
+
+    # Luego, usa AdaBoost para combinar las predicciones
+    predicciones_boosting = ada_boost.predict(model_predictions_test)
+
+    print(f"\n{Fore.CYAN}Métricas:{Style.RESET_ALL}")
+    # metrics(true_labels_test, predicciones_boosting) # Asumiendo que metrics está definido en otro lugar
+    print(classification_report(true_labels_test, predicciones_boosting, 
+                                target_names=[str(i) for i in range(2)], 
+                                digits=4))
+
+
+def ensamble_staking(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, train_data, predict_data, list_model):
+
+    print(f"\n{Fore.YELLOW}Cargando modelos...{Style.RESET_ALL}")
+
+    reviews_train, true_labels_train = cargar_datos_version2(train_data)
+    reviews_test, true_labels_test = cargar_datos_version2(predict_data)
+    
+    stacker = RandomForestClassifier(random_state=42)
+
+    #Obtener salida de cada modelo para datos de entrenamiento
+    # Lista para almacenar las predicciones de cada modelo para train
+    model_predictions_train = []
+
+    for i, (model, trained_model) in enumerate(zip(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE)):
+        name_model = list_model[i]
+        print(f"Procesando modelo {i+1}...")
+        pipeline = ABSAPipeline(model)
+        pipeline.aspect_model.load_model(pipeline.aspect_model.model, trained_model)
+
+        predicted_labels = []
+        for rev in tqdm(reviews_train):
+            tokens, aspects, prob_asp = pipeline.predict_aspect(rev,name_model)
+            predicted_labels.append(predicted_bitmask(eval(rev), aspects))
+
+        model_predictions_train.append(predicted_labels)                                                 #model_predictions_train
+    model_predictions_train = vectorizar_salidas(model_predictions_train)  
+
+    # Entrena stacker con las predicciones de los modelos base
+    stacker.fit(model_predictions_train, true_labels_train)
+
+
+    #Obtener salida de cada modelo para datos de test
+    # Lista para almacenar las predicciones de cada modelo para test
+    model_predictions_test = []
+
+    for i, (model, trained_model) in enumerate(zip(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE)):
+        name_model = list_model[i]
+        print(f"Procesando modelo {i+1}...")
+        pipeline = ABSAPipeline(model)
+        pipeline.aspect_model.load_model(pipeline.aspect_model.model, trained_model)
+
+        predicted_labels = []
+        for rev in tqdm(reviews_test):
+            tokens, aspects, prob_asp = pipeline.predict_aspect(rev,name_model)
+            predicted_labels.append(predicted_bitmask(eval(rev), aspects))
+
+        model_predictions_test.append(predicted_labels)                                                #model_predictions_test
+    model_predictions_test = vectorizar_salidas(model_predictions_test)  
+
+
+
+    # Luego, usa AdaBoost para combinar las predicciones
+    predicciones_boosting = stacker.predict(model_predictions_test)
+
+    print(f"\n{Fore.CYAN}Métricas:{Style.RESET_ALL}")
+    # metrics(true_labels_test, predicciones_boosting) # Asumiendo que metrics está definido en otro lugar
+    print(classification_report(true_labels_test, predicciones_boosting, 
+                                target_names=[str(i) for i in range(2)], 
+                                digits=4))
+    
+
+#////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+def cargar_datos(predict_data):
+    print(f"\n{Fore.YELLOW}Cargando modelos...{Style.RESET_ALL}")
+
+    # Carga los datos
+    test_reviews = pd.read_csv(predict_data, sep=';')
+    reviews = test_reviews['text_tokens'].tolist()
+    true_labels = test_reviews['tags'].tolist()
+
+    return reviews, true_labels
+
+def cargar_datos_version2(train_data):
+    train_reviews = pd.read_csv(train_data, sep=';')
+    reviews_train = train_reviews['text_tokens'].tolist()
+    true_labels_train = convertir_a_lista_enteros(train_reviews['tags'].tolist())  
+
+    return reviews_train, true_labels_train
+
+def procesar_probabilidades(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, list_model, reviews):
+    num_models = len(MODEL_ENSAMBLE)
+    if num_models != len(TRAINED_MODEL_ENSAMBLE):
+        raise ValueError("El número de modelos y modelos entrenados debe coincidir.")
+
+    all_predictions = []
+
+    for i in range(num_models):
+        print(f"Procesando modelo {i+1} de {num_models}")
+        pipeline = ABSAPipeline(MODEL_ENSAMBLE[i])
+        name_model = list_model[i]
+        pipeline.aspect_model.load_model(pipeline.aspect_model.model, TRAINED_MODEL_ENSAMBLE[i])
+        model_predictions = []
+        all_prob = []
+        for rev in tqdm(reviews):
+            tokens, aspects, prob_aspct = pipeline.predict_aspect(rev,name_model)
+            all_prob.append(prob_aspct)
+            model_predictions.append(predicted_bitmask(eval(rev), aspects))
+        all_predictions.append(all_prob)
+        
+    return all_predictions
+
+def len_elemnt(elemnt):
+    # Eliminar los corchetes y separar los elementos
+    lista_str = elemnt[1:-1].split(',')
+    # Convertir los elementos a enteros
+    lista_int = [int(x.strip()) for x in lista_str]
+    
+    return len(lista_int)
+
 def predicted_bitmask(rev, aspects):
     binary_list = []
     for palabra in rev:
@@ -187,3 +285,26 @@ def cal_weighted(w1,w2,w3):
     w3 = w3 - 15 / sum
 
     return w1, w2, w3
+
+def vectorizar_salidas(model_outputs):
+    vectorized_outputs = []
+    for outputs in model_outputs:
+        vectorized_outputs.append([int(bit) for sublist in outputs for bit in sublist])
+    return np.array(vectorized_outputs).T
+
+def convertir_a_lista_enteros(lista_de_cadenas):
+
+    resultado = []
+    
+    for cadena in lista_de_cadenas:
+        # Convierte la cadena a una lista utilizando ast.literal_eval
+        lista = ast.literal_eval(cadena)
+        
+        # Agrega los elementos de la lista a la lista de resultados
+        resultado.extend(lista)
+
+    return np.array(resultado).T
+
+
+
+

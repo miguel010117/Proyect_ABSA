@@ -61,14 +61,12 @@ class AspectTermExtraction(AbsaModel):
 
     def train(self, train_loader,test_loader, epochs):
     
-        num_data = len(train_loader) # = 140
-        
+        num_data = len(train_loader) # = 140s
 
         for epoch in range(epochs):
             data_processed = 0
             losses = []
             batch_count = 0
-
             for data in train_loader:
                 batch_count += 1
                 ids_tensors, tags_tensors, masks_tensors = data
@@ -157,24 +155,29 @@ class AspectTermExtraction(AbsaModel):
         with torch.no_grad():
             outputs = model(input_tensor, None, None)
             softmax_outputs = torch.softmax(outputs, dim=2)
-
-            #PRUEBAS DE PROBABILIDAD
-            
-            probabilidades = softmax_outputs[0, :, 1].tolist()
-
             probabilidades_redondeadas = []
-
-            if name == "ALBERT_BASE":
-                probabilidades = setting_prob_ALBERT(palabras_limpias, tokenized_sentence, probabilidades)
-            elif name == "BETO" or name == "BERT":
-                probabilidades = setting_prob_BETO(palabras_limpias, tokenized_sentence, probabilidades)
-
-            for probabilidad in probabilidades:
-                probabilidades_redondeadas.append(round(probabilidad, 4))
-
             
+            if name != "":
 
-            # FIN DE PRUEBAS
+                #PRUEBAS DE PROBABILIDAD
+                
+                probabilidades = softmax_outputs[0, :, 1].tolist()
+
+                
+
+                if name == "ALBERT_BASE":
+                    probabilidades = setting_prob_ALBERT(palabras_limpias, tokenized_sentence, probabilidades)
+                elif name == "BETO" or name == "BERT":
+                    probabilidades = setting_prob_BETO(palabras_limpias, tokenized_sentence, probabilidades)
+                elif name == "BERTIN":
+                    probabilidades = setting_prob_BERTIN(palabras_limpias, tokenized_sentence, probabilidades)
+
+
+                for probabilidad in probabilidades:
+                    probabilidades_redondeadas.append(round(probabilidad, 4))
+
+
+                # FIN DE PRUEBAS
             _, predictions = torch.max(softmax_outputs, dim=2) 
         predicted_tokens = predictions[0].tolist() 
 
@@ -290,6 +293,35 @@ def setting_prob_BETO(sentence,tokens, prob):
         else:
             if tokens[cont][:1] == "#":
                 word += tokens[cont][2:].lower()
+                cont += 1
+            else:
+                word += tokens[cont].lower()
+                cont += 1
+
+    return clasification(prob, serie)
+
+def setting_prob_BERTIN(sentence,tokens, prob):
+    serie = []
+    word = ""
+    cont = 0
+    i = 0
+    while i < len(sentence):
+        
+        x = sentence[i].lower()
+        p = tokens[cont][1:].lower()
+
+        if sentence[i].lower() == tokens[cont][1:].lower() or sentence[i].lower() == tokens[cont][2:].lower() or sentence[i].lower() == tokens[cont].lower()  :
+            serie.append(cont)
+            cont += 1
+            i += 1
+        elif sentence[i].lower() == (word + tokens[cont].lower()):
+            serie.append(cont)
+            cont += 1
+            i += 1
+            word = ''
+        else:
+            if tokens[cont][:1] == "Ġ":
+                word += tokens[cont][1:].lower()
                 cont += 1
             else:
                 word += tokens[cont].lower()
