@@ -1,0 +1,2 @@
+text_tokens;tags;polarities
+['El', 'servicio', 'muy', 'justo', ',', 'el', 'ambiente', 'un','poco', 'decadente','y','la','paella','sin','sabor'];[0, 1, 1, 0, 1, 0,0,0,0,0,0,0,0,0,0];[-1, 1, -1, -1, -1, -1, -1, -1, -1]

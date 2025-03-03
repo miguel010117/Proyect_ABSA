@@ -20,32 +20,31 @@ if __name__ == '__main__':
     GPT_2 = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/GPT-2'
 
     #Modelos entrenados
-    BETO_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/beto-base-spanish/bert-base-spanish_epoch_3.pkl'
-    BERT_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/bert-base-multilingual/bert-base-multilingual_epoch_2.pkl'
-    BERTIN_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/bertin_base_spanish/bertin_base_spanish_epoch_2.pkl'
-    BERTIN_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/bertin_large_spanish/bertin_large_spanish_epoch_5.pkl'
-    ALBERT_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/albert-base-spanish/albert-base-spanish_epoch_5.pkl'
-    ALBERT_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/albert_large_spanish/albert_large_spanish_epoch_4.pkl'
-    ALBERT_XX_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/albert_large_xx_spanish/albert_xx_large_spanish_epoch_3.pkl'
-    ELECTRA_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/electra_base_spanish/electra_base_spanish_epoch_2.pkl'
-    GPT_2_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/electra_base_spanish_epoch_1.pkl'
+    BETO_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/SemEval/beto-base-spanish/bert-base-spanish_epoch_3.pkl'
+    BERT_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/SemEval/bert-base-multilingual/bert-base-multilingual_epoch_2.pkl'
+    BERTIN_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/SemEval/bertin_base_spanish/bertin_base_spanish_epoch_2.pkl'
+    BERTIN_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/SemEval/bertin_large_spanish/bertin_large_spanish_epoch_5.pkl'
+    ALBERT_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/SemEval/albert-base-spanish/albert-base-spanish_epoch_5.pkl'
+    ALBERT_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/SemEval/albert_large_spanish/albert_large_spanish_epoch_4.pkl'
+    ALBERT_XX_LARGE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/SemEval/albert_large_xx_spanish/albert_xx_large_spanish_epoch_3.pkl'
+    ELECTRA_SMALL_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/SemEval/electra_small_spanish/electra_small_spanish_epoch_4.pkl'
+    ELECTRA_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/SemEval/electra_base_spanish/electra_base_spanish_epoch_2.pkl'
+    GPT_2_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/SemEval/GPT_2/gpt_2_epoch_5.pkl'
 
     #Modelo para entrenar
-    modelo = BETO
+    modelo = ALBERT_XX_LARGE
     #Modelo entrenado 
-    trained_model = BETO_TRAIN
+    trained_model = ALBERT_XX_LARGE_TRAIN
     #Datos de entrenamiento
-    train_data= "Data/dataset_test_without_duplicates2.csv"
+    train_data= "Data/dataset_train_without_duplicates.csv"
     #Datos para predecir
     predict_data= "Data/dataset_test_without_duplicates2.csv"
-    
+
     #Lista de modelos para ensamble
-    MODEL_ENSAMBLE = [BETO,BERT, ALBERT_BASE]
+    MODEL_ENSAMBLE = [BETO, BERT,BERTIN_LARGE, ALBERT_LARGE,ALBERT_XX_LARGE]
 
     #Lista de modelos entrenados para ensamble
-    TRAINED_MODEL_ENSABMLE = [BETO_TRAIN,BERT_TRAIN ,ALBERT_BASE_TRAIN]
-
-    
+    TRAINED_MODEL_ENSABMLE = [BETO_TRAIN, BERT_TRAIN,BERTIN_LARGE_TRAIN, ALBERT_LARGE_TRAIN,ALBERT_XX_LARGE_TRAIN]
 #FUNCIONES
     def presentacion():
         print(Style.BRIGHT + Fore.BLUE + "╔══════════════════════════════════════════════╗")
@@ -77,9 +76,10 @@ if __name__ == '__main__':
         reviews = test_reviews['text_tokens']
         true_labels=test_reviews['tags'].tolist()
         predicted_labels = []
+        name = ""
 
         for rev in reviews:
-            tokens, aspects = pipeline.predict_aspect(rev)
+            tokens, aspects, prob = pipeline.predict_aspect(rev,name)
             
             print("\n" + Fore.GREEN + "Review: " + Style.RESET_ALL, rev)
             print(Fore.GREEN + "Lista de aspectos: " + Style.RESET_ALL, aspects)
@@ -107,19 +107,23 @@ if __name__ == '__main__':
         valor = input("Ingrese su opción: ").strip().lower()
 
         if valor == "1":
-            list_model = ["","",""]
+            list_model = ["","","","",""]
             ensamble_max(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data,list_model)
         elif valor == "2":
-            list_model = ["BETO","BETO","ALBERT_BASE"]
+            print("average")
+            list_model = ["BETO","BETO", "BERTIN" ,"ALBERT_BASE","ALBERT_BASE"]
             ensamble_average(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data,list_model)
         elif valor == "3":
+            print("ponderado")
             list_model = ["BETO","BETO","ALBERT_BASE"]
             ensamble_weighted_average(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data,list_model,
-                                      [0.10, 0.30, 0.30])
+                                      [0.25, 0.40, 0.35,])
         elif valor == "4":
+            print("boosting")
             list_model = ["","",""]
             ensamble_boosting(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,train_data, predict_data,list_model)
         elif valor == "5":
+            print("stacking")
             list_model = ["","",""]
             ensamble_staking(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,train_data, predict_data,list_model)
         else:

@@ -1,0 +1,1024 @@
+review;aspect;category;polarity;from;to;Segmento
+La comida estuvo muy sabrosa.;comida;FOOD#QUALITY;positive;3;9;La comida estuvo muy sabrosa.
+Quien sea amante de la carne tiene una carta bastante amplia para elegir., aunque ayer  no tenían  chuleton.;carta;FOOD#STYLE_OPTIONS;positive;39;44;amante carne tiene una carta bastante amplia para
+Quien sea amante de la carne tiene una carta bastante amplia para elegir., aunque ayer  no tenían  chuleton.;chuleton;FOOD#STYLE_OPTIONS;negative;99;107;aunque ayer no tenían chuleton.
+Lo único que nos sorprendió es que nos sirvieran los entrantes y los platos principales a la vez.; vacio;SERVICE#GENERAL;negative;0;0;
+El Servicio y la atencion,Impresionante.;Servicio;SERVICE#GENERAL;positive;3;11;El Servicio y la
+La Carne,Phenomenal;Carne;FOOD#QUALITY;positive;3;8;La
+Las Tapas y Bebidas y el Ambiente,Extraurinadio;Tapas;FOOD#QUALITY;positive;4;9;Las Tapas y Bebidas el
+Las Tapas y Bebidas y el Ambiente,Extraurinadio;Bebidas;DRINKS#QUALITY;positive;12;19;Las Tapas y Bebidas el
+Las Tapas y Bebidas y el Ambiente,Extraurinadio;Ambiente;AMBIENCE#GENERAL;positive;25;33;Las Tapas y Bebidas el
+Yo ya e celebrado muchos Cumpleaños en Restaurantes,pero jamas me han tratado tan bien y me han hecho tantos Detalles k me gusto y emociono un monton.; vacio;SERVICE#GENERAL;positive;0;0;
+Asi k se os lo quereis pasar Fenomenal,a que esperais.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Reservar Mesa,que en 9 Reinas merece la pena.;9 Reinas;RESTAURANT#GENERAL;positive;21;29;
+Gracias Equipo;Equipo;SERVICE#GENERAL;positive;8;14;Gracias Equipo
+Siempre que venimos a Barcelona vamos a comer o cenar.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Imperdible!; vacio;RESTAURANT#GENERAL;positive;0;0;
+Carnes excelentes y las pastas buenísimas (especialmente los sorrentinos!).;Carnes;FOOD#QUALITY;positive;0;6;Carnes excelentes y las pastas
+Carnes excelentes y las pastas buenísimas (especialmente los sorrentinos!).;pastas;FOOD#QUALITY;positive;24;30;Carnes excelentes y las pastas buenísimas los
+Carnes excelentes y las pastas buenísimas (especialmente los sorrentinos!).;sorrentinos;FOOD#QUALITY;positive;61;72;y las pastas buenísimas los
+El sitio es muy agradable y los camareros muy simpáticos y atentos.;sitio;AMBIENCE#GENERAL;positive;3;8;El sitio es muy agradable camareros
+El sitio es muy agradable y los camareros muy simpáticos y atentos.;camareros;SERVICE#GENERAL;positive;32;41;sitio es muy agradable y los camareros simpáticos
+Seguiremos haciendo una visita cada vez que vengamos a Barna!; vacio;RESTAURANT#GENERAL;positive;0;0;
+Fuimos a  nueveR por una opinión en ésta misma página que lo ponía muy bien, y estamos totalmente de acuerdo con esa opinión.; nueveR;RESTAURANT#GENERAL;positive;9;11;
+En  nueveR nos trataron genial, Julio era atento, cordial y divertido, nos trató de maravilla al igual q los demás.; nueveR;SERVICE#GENERAL;positive;3;5;
+En  nueveR nos trataron genial, Julio era atento, cordial y divertido, nos trató de maravilla al igual q los demás.;Julio;SERVICE#GENERAL;positive;27;32;nos trataron genial, Julio era atento, cordial divertido, de al
+El restaurante es elegante, decorado con gusto, por poner una pega creo q la iluminación (2º piso) es muy fuerte, podrían poner una luz más suave o caliente.... ésta sería la única pega q puedo ponerles y es una chorrada pq la comida es excelente y el trato es un 10, nos invitaron a tarta y cava sin razón alguna!;restaurante;AMBIENCE#GENERAL;positive;3;14;El restaurante es elegante, decorado poner pega fuerte, chorrada invitaron
+El restaurante es elegante, decorado con gusto, por poner una pega creo q la iluminación (2º piso) es muy fuerte, podrían poner una luz más suave o caliente.... ésta sería la única pega q puedo ponerles y es una chorrada pq la comida es excelente y el trato es un 10, nos invitaron a tarta y cava sin razón alguna!;comida;FOOD#QUALITY;positive;227;233;es la y chorrada pq comida excelente 10,
+El restaurante es elegante, decorado con gusto, por poner una pega creo q la iluminación (2º piso) es muy fuerte, podrían poner una luz más suave o caliente.... ésta sería la única pega q puedo ponerles y es una chorrada pq la comida es excelente y el trato es un 10, nos invitaron a tarta y cava sin razón alguna!;trato;SERVICE#GENERAL;positive;252;257;es una y excelente el trato un 10, nos
+El restaurante es elegante, decorado con gusto, por poner una pega creo q la iluminación (2º piso) es muy fuerte, podrían poner una luz más suave o caliente.... ésta sería la única pega q puedo ponerles y es una chorrada pq la comida es excelente y el trato es un 10, nos invitaron a tarta y cava sin razón alguna!;iluminación;AMBIENCE#GENERAL;negative;77;88;es creo q la iluminación piso) muy
+Volveremos seguro!!!; vacio;RESTAURANT#GENERAL;positive;0;0;
+100% recomendable!; vacio;RESTAURANT#GENERAL;positive;0;0;
+una excelente experiencia, una excelente disposición y buena atención.;disposición;AMBIENCE#GENERAL;positive;41;52;una excelente experiencia, disposición y buena atención.
+una excelente experiencia, una excelente disposición y buena atención.;experiencia;RESTAURANT#GENERAL;positive;14;25;una excelente experiencia, disposición
+una excelente experiencia, una excelente disposición y buena atención.;atención;SERVICE#GENERAL;positive;61;69;una excelente disposición y buena atención.
+La comida divina.;comida;FOOD#QUALITY;positive;3;9;La comida divina.
+Estuvimos cenando y nos encanto todo.; vacio;RESTAURANT#GENERAL;positive;0;0;
+El espacio muy relajante, colores que hacen sobrio los rincones.;espacio;AMBIENCE#GENERAL;positive;3;10;El espacio muy relajante, colores
+La atención del personal impecable.;atención del personal;SERVICE#GENERAL;positive;3;24;
+La comida inmejorable.;comida;FOOD#QUALITY;positive;3;9;La comida inmejorable.
+El detalle de la invitación del entrante por parte del restaurante, inesperado y agradecido.;detalle de la invitación del entrante;RESTAURANT#GENERAL;positive;3;40;
+Muchas gracias en Mayúsculas!!!!; vacio;RESTAURANT#GENERAL;positive;0;0;
+Un sitio recomendable en pleno centro de barcelona;sitio;LOCATION#GENERAL;positive;3;8;Un sitio recomendable en pleno centro
+Un sitio recomendable en pleno centro de barcelona;sitio;RESTAURANT#GENERAL;positive;3;8;Un sitio recomendable en pleno centro
+La puerta de entrada es automatica y si hace frio, uno nota la corriente.;puerta de entrada;AMBIENCE#GENERAL;negative;3;20;
+La mejor carne que he comido en Barcelona.;carne;FOOD#QUALITY;positive;9;14;La mejor carne que he comido
+Mejor carne de BCN.;carne;FOOD#QUALITY;positive;6;11;Mejor carne de BCN.
+Espectacular entraña, necesitaba comer carne de verdad tras las vacaciones!;entraña;FOOD#QUALITY;positive;13;20;Espectacular entraña, necesitaba comer carne
+Espectacular entraña, necesitaba comer carne de verdad tras las vacaciones!;carne;FOOD#QUALITY;positive;39;44;entraña, necesitaba comer carne de verdad tras vacaciones!
+Excelente servicio y comida - vamos a volver¡;servicio;SERVICE#GENERAL;positive;10;18;Excelente servicio y comida vamos volver¡
+Excelente servicio y comida - vamos a volver¡;comida;FOOD#QUALITY;positive;21;27;Excelente servicio y comida vamos a volver¡
+Excelente servicio y comida - vamos a volver¡; vacio;RESTAURANT#GENERAL;positive;0;0;
+Hacia un frio!!;frio;AMBIENCE#GENERAL;negative;9;13;Hacia un
+!no hacia falta hielo en la bebida...; vacio;AMBIENCE#GENERAL;negative;0;0;
+Hicimos unos entrantes variados de inicio, bastante buenos!;entrantes;FOOD#QUALITY;positive;13;22;Hicimos unos entrantes variados de inicio, buenos!
+basados en empanadilla, chorizo y demas.;empanadilla;FOOD#QUALITY;positive;11;22;basados en empanadilla, chorizo y demas.
+basados en empanadilla, chorizo y demas.;chorizo;FOOD#QUALITY;positive;24;31;basados en empanadilla, chorizo y demas.
+A diferencia de otros argentinos, si se lo pides vivo lo traen vivo, y la carne era excelente.;carne;FOOD#QUALITY;positive;74;79;vivo vivo, y la carne era excelente.
+El trato muy cordial y el sitio acogedor y moderno.;trato;SERVICE#GENERAL;positive;3;8;El trato muy cordial y sitio
+El trato muy cordial y el sitio acogedor y moderno.;sitio;LOCATION#GENERAL;positive;26;31;El trato cordial y el sitio acogedor moderno.
+Ideal para cenas de 4 a 8 personas.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Muy bien, la verdad.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Darin estaria orgulloso (si no lo està ya); vacio;RESTAURANT#GENERAL;positive;0;0;
+Un lugar hermoso su vista espectacular, su carta muy cara en precios, no recomendable para lo que se come, su maitre muy mal encarado, su camarero muy distraido, mucho ruido.;carta;FOOD#PRICES;negative;43;48;Un lugar hermoso su vista espectacular, carta muy cara en recomendable maitre camarero
+Un lugar hermoso su vista espectacular, su carta muy cara en precios, no recomendable para lo que se come, su maitre muy mal encarado, su camarero muy distraido, mucho ruido.;maitre;SERVICE#GENERAL;negative;110;116;su carta muy cara recomendable se come, maitre mal encarado,
+Un lugar hermoso su vista espectacular, su carta muy cara en precios, no recomendable para lo que se come, su maitre muy mal encarado, su camarero muy distraido, mucho ruido.;camarero;SERVICE#GENERAL;negative;138;146;Un lugar hermoso su vista carta muy mal encarado, camarero distraido, mucho ruido.
+Un lugar hermoso su vista espectacular, su carta muy cara en precios, no recomendable para lo que se come, su maitre muy mal encarado, su camarero muy distraido, mucho ruido.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Un lugar hermoso su vista espectacular, su carta muy cara en precios, no recomendable para lo que se come, su maitre muy mal encarado, su camarero muy distraido, mucho ruido.; vacio;AMBIENCE#GENERAL;negative;0;0;
+Un lugar hermoso su vista espectacular, su carta muy cara en precios, no recomendable para lo que se come, su maitre muy mal encarado, su camarero muy distraido, mucho ruido.;lugar;AMBIENCE#GENERAL;positive;3;8;Un lugar hermoso su vista carta camarero
+Un lugar hermoso su vista espectacular, su carta muy cara en precios, no recomendable para lo que se come, su maitre muy mal encarado, su camarero muy distraido, mucho ruido.;vista;AMBIENCE#GENERAL;positive;20;25;Un lugar hermoso su vista espectacular, carta camarero
+Servicio lentísimo, calidad mediocre y precio carísimo.;Servicio;SERVICE#GENERAL;negative;0;8;Servicio lentísimo, calidad mediocre precio
+Servicio lentísimo, calidad mediocre y precio carísimo.; vacio;FOOD#QUALITY;negative;0;0;
+Servicio lentísimo, calidad mediocre y precio carísimo.; vacio;RESTAURANT#PRICES;negative;0;0;
+Excelente comida.;comida;FOOD#QUALITY;positive;10;16;Excelente comida.
+Camareros muy bien.;Camareros;SERVICE#GENERAL;positive;0;9;Camareros muy bien.
+Jefes de sala poco amables.;Jefes de sala;SERVICE#GENERAL;negative;0;13;
+Recepcionistas muy bien.;Recepcionistas;SERVICE#GENERAL;positive;0;14;Recepcionistas muy bien.
+Precio un poco alto.; vacio;RESTAURANT#PRICES;negative;0;0;
+Situación excelente.;Situación;LOCATION#GENERAL;positive;0;9;Situación excelente.
+ubicacion perfecta tanto en verano como en invierno.;ubicacion;LOCATION#GENERAL;positive;0;9;ubicacion perfecta tanto en verano
+se come muy bien, hace años que vamos y siempre nos ha gustado su cocina, muy atentos.;cocina;FOOD#QUALITY;positive;66;72;muy y siempre nos ha gustado su cocina, atentos.
+se come muy bien, hace años que vamos y siempre nos ha gustado su cocina, muy atentos.; vacio;SERVICE#GENERAL;positive;0;0;
+se come muy bien, hace años que vamos y siempre nos ha gustado su cocina, muy atentos.; vacio;RESTAURANT#GENERAL;positive;0;0;
+el menu me parece muy completo pero yo le agregaria algo asi como conejo estofado o pavo/pollo al horno, y en cuando a los postre, me parece muy bien, es uno de los restaurantes con mayor cantidad de postre y muy variados, los felicitos sin mas que hacer referencia les saludo y espero pronto visitar vuestro restaurant hasta luego.;postre;FOOD#STYLE_OPTIONS;positive;123;129;me parece muy al cuando a los postre, de con mayor cantidad postre variados,
+el menu me parece muy completo pero yo le agregaria algo asi como conejo estofado o pavo/pollo al horno, y en cuando a los postre, me parece muy bien, es uno de los restaurantes con mayor cantidad de postre y muy variados, los felicitos sin mas que hacer referencia les saludo y espero pronto visitar vuestro restaurant hasta luego.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Es sin duda uno de los mejores restaurantes de Barcelona por su calidad tanto en el producto, como en el cuidado de todo detalle de su plantilla.;producto;FOOD#QUALITY;positive;84;92;por su calidad tanto en el producto, como cuidado
+Es sin duda uno de los mejores restaurantes de Barcelona por su calidad tanto en el producto, como en el cuidado de todo detalle de su plantilla.;plantilla;SERVICE#GENERAL;positive;135;144;de su todo detalle plantilla.
+"Todo cuidado y aprobado por el ojo minucioso, elegante, trabajador incansable, y profesional de su director de orquesta; don Ramón Ferreira.";don Ramón Ferreira;SERVICE#GENERAL;positive;121;139;
+poca amabilidad del maitre.;maitre;SERVICE#GENERAL;negative;20;26;poca amabilidad del maitre.
+los camareros poco atentos para el precio desorbitado...;camareros;SERVICE#GENERAL;negative;4;13;los camareros poco atentos para
+los camareros poco atentos para el precio desorbitado...; vacio;RESTAURANT#PRICES;negative;0;0;
+Un sito ideal para una comida de negocios.;sito;RESTAURANT#GENERAL;positive;3;7;Un sito ideal para una comida
+Fuimos a comer con la empresa la semana pasada y fue todo fantástico.;fue todo fantástico;RESTAURANT#GENERAL;positive;49;68;
+Lo recomiendo.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Excelente Calidad precio y bien ubicado.; vacio;FOOD#PRICES;positive;0;0;
+Excelente Calidad precio y bien ubicado.; vacio;FOOD#QUALITY;positive;0;0;
+Excelente Calidad precio y bien ubicado.; vacio;LOCATION#GENERAL;positive;0;0;
+el restaurante esta muy bien situado y una terraza magnifica pero la cocina tiene mucho qiue desear.;restaurante;LOCATION#GENERAL;positive;3;14;el restaurante esta muy bien situado tiene
+el restaurante esta muy bien situado y una terraza magnifica pero la cocina tiene mucho qiue desear.;cocina;FOOD#QUALITY;negative;69;75;magnifica pero la cocina tiene mucho qiue desear.
+nunca pidais rape con salsa o a la cazuela.;rape;FOOD#QUALITY;negative;13;17;nunca pidais rape con salsa o
+en arroces seran muy buenos pero en rape no lo creo.;arroces;FOOD#QUALITY;positive;3;10;en arroces seran muy buenos
+en arroces seran muy buenos pero en rape no lo creo.;rape;FOOD#QUALITY;negative;36;40;en buenos pero rape no lo creo.
+El restaurante está muy bien situado.;restaurante;LOCATION#GENERAL;positive;3;14;El restaurante está muy bien situado.
+La calidad de las gambas en especial es fantástica.;gambas;FOOD#QUALITY;positive;18;24;La calidad de las gambas en especial es
+El personal debería ser más atento con la clientela.;personal;SERVICE#GENERAL;negative;3;11;El personal debería ser más atento clientela.
+Comer o cenar en el Barceloneta es garantía de buena comida y buen servicio en una buena ubicación.;comida;FOOD#QUALITY;positive;53;59;Comer es garantía de buena comida y buen servicio ubicación.
+Comer o cenar en el Barceloneta es garantía de buena comida y buen servicio en una buena ubicación.;servicio;SERVICE#GENERAL;positive;67;75;en de buena comida y buen servicio una
+Comer o cenar en el Barceloneta es garantía de buena comida y buen servicio en una buena ubicación.;ubicación;LOCATION#GENERAL;positive;89;98;Comer en es garantía buena comida una ubicación.
+Servicio esmerado.;Servicio;SERVICE#GENERAL;positive;0;8;Servicio esmerado.
+Tempo entre platos correcto.;Tempo;SERVICE#GENERAL;positive;0;5;Tempo entre platos correcto.
+Rapidez en peticion platos y solucitud cuenta.;Rapidez;SERVICE#GENERAL;positive;0;7;Rapidez en peticion platos cuenta.
+El restaurante es estupendo por su ambientación y situación privilegiada , el servicio muy correcto y atento, la relació calidad precio , buena calidad , cantidad raciones algo paqueñas y precio caro , dado los tiempos que corren.;restaurante;AMBIENCE#GENERAL;positive;3;14;El restaurante es estupendo por relació
+El restaurante es estupendo por su ambientación y situación privilegiada , el servicio muy correcto y atento, la relació calidad precio , buena calidad , cantidad raciones algo paqueñas y precio caro , dado los tiempos que corren.;restaurante;LOCATION#GENERAL;positive;3;14;El restaurante es estupendo por relació
+El restaurante es estupendo por su ambientación y situación privilegiada , el servicio muy correcto y atento, la relació calidad precio , buena calidad , cantidad raciones algo paqueñas y precio caro , dado los tiempos que corren.;servicio;SERVICE#GENERAL;positive;78;86;y situación privilegiada , el servicio muy correcto la relació calidad dado
+El restaurante es estupendo por su ambientación y situación privilegiada , el servicio muy correcto y atento, la relació calidad precio , buena calidad , cantidad raciones algo paqueñas y precio caro , dado los tiempos que corren.; vacio;FOOD#QUALITY;positive;0;0;
+El restaurante es estupendo por su ambientación y situación privilegiada , el servicio muy correcto y atento, la relació calidad precio , buena calidad , cantidad raciones algo paqueñas y precio caro , dado los tiempos que corren.;raciones;FOOD#PRICES;negative;163;171;y , calidad buena cantidad raciones algo paqueñas
+Comida exquisita y trato exquisito.;Comida;FOOD#QUALITY;positive;0;6;Comida exquisita y trato
+Comida exquisita y trato exquisito.;trato;SERVICE#GENERAL;positive;19;24;Comida exquisita y trato exquisito.
+Un poco caro.; vacio;RESTAURANT#PRICES;negative;0;0;
+Tipico para turistas, griterio ensordecedor y poco profesionales.; vacio;AMBIENCE#GENERAL;negative;0;0;
+Tipico para turistas, griterio ensordecedor y poco profesionales.;griterio;AMBIENCE#GENERAL;negative;22;30;Tipico para turistas, griterio ensordecedor y poco profesionales.
+Tipico para turistas, griterio ensordecedor y poco profesionales.; vacio;SERVICE#GENERAL;negative;0;0;
+<->Ya hace tiempo que no encuentro nada negativo en este restaurante.;restaurante;RESTAURANT#GENERAL;positive;57;68;que no encuentro nada negativo en este restaurante.
+"<->Solo les solicito que sigan igual y que no bajen ese extraordinario nivel de ""excelencia""."; vacio;RESTAURANT#GENERAL;positive;0;0;
+<+>La extraordinaria calidad del producto, especialmente de los pescados y mariscos.;producto;FOOD#QUALITY;positive;33;41;extraordinaria calidad del producto, especialmente de los
+<+>La extraordinaria calidad del producto, especialmente de los pescados y mariscos.;pescados;FOOD#QUALITY;positive;64;72;del especialmente de los pescados y mariscos.
+<+>La extraordinaria calidad del producto, especialmente de los pescados y mariscos.;mariscos;FOOD#QUALITY;positive;75;83;los pescados y mariscos.
+<+>La óptima homogeneidad.; vacio;RESTAURANT#MISCELLANEOUS;positive;0;0;
+<+>He estado muchas veces, lo he recomendado a familiares, amigos y allegados y nunca ha defraudado a nadie.; vacio;RESTAURANT#GENERAL;positive;0;0;
+"<+>Siempre es igual de ""excelente""."; vacio;RESTAURANT#GENERAL;positive;0;0;
+Mucho turista y, por ende, demasiado ruido.; vacio;AMBIENCE#GENERAL;negative;0;0;
+En general mantiene la calidad de sus platos pero los precios de la carta de vinos son demasiado altos.;platos;FOOD#QUALITY;positive;38;44;la calidad de sus platos pero los precios
+En general mantiene la calidad de sus platos pero los precios de la carta de vinos son demasiado altos.;vinos;DRINKS#PRICES;negative;77;82;la de carta vinos son demasiado altos.
+Para mi gusto, la paella del moll del rellotge está en el punto justo.;paella del moll del rellotge;FOOD#QUALITY;positive;18;46;
+Un restaurante al que yo calificaría como valor seguro en cuanto a la cocina pero mejorable en servicio aunque sin ser desastroso ni mucho menos.;cocina;FOOD#QUALITY;positive;70;76;al que yo calificaría valor en cuanto a la cocina pero mejorable servicio desastroso
+Muy agradable, servicio impecable y muy próximo, nos lo pasamos en grande.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Muy agradable, servicio impecable y muy próximo, nos lo pasamos en grande.;servicio;SERVICE#GENERAL;positive;15;23;Muy agradable, servicio impecable y muy próximo,
+Muy agradable, servicio impecable y muy próximo, nos lo pasamos en grande.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Hacia mucho tiempo que quería ir a este restaurante por las buenas referencias que había recibido y no me defraudó.; vacio;RESTAURANT#GENERAL;positive;0;0;
+La atención esmerada y la calidad de la comida excelente.;atención;SERVICE#GENERAL;positive;3;11;La atención esmerada y la calidad
+La atención esmerada y la calidad de la comida excelente.;comida;FOOD#QUALITY;positive;40;46;y la calidad de comida excelente.
+La verdad comimos muy bien, disfrutamos.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Todo fue tal y como esperabamos y nos habian comentado, buen servicio, buen ambiente y muy buena comida, en un ambiente agradable, sin duda alguna un restaurant donde ir cuando se desea que  todos queden contentos.;servicio;SERVICE#GENERAL;positive;61;69;y nos habian comentado, buen servicio, ambiente buena sin restaurant
+Todo fue tal y como esperabamos y nos habian comentado, buen servicio, buen ambiente y muy buena comida, en un ambiente agradable, sin duda alguna un restaurant donde ir cuando se desea que  todos queden contentos.;ambiente;AMBIENCE#GENERAL;positive;76;84;y nos habian comentado, buen servicio, ambiente muy buena comida, en un agradable, sin restaurant
+Todo fue tal y como esperabamos y nos habian comentado, buen servicio, buen ambiente y muy buena comida, en un ambiente agradable, sin duda alguna un restaurant donde ir cuando se desea que  todos queden contentos.;comida;FOOD#QUALITY;positive;97;103;y buen ambiente muy buena comida, en un
+Una buena eleccion.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Excelente restaurante con especial atención y muy buena comida.;atención;SERVICE#GENERAL;positive;35;43;Excelente restaurante con especial atención y muy buena comida.
+Excelente restaurante con especial atención y muy buena comida.;comida;FOOD#QUALITY;positive;56;62;con especial atención y muy buena comida.
+Dado que el tiempo lo permitió nos reservaron una mesa en la terraza muy bien dispuesta y ubicada.;terraza;AMBIENCE#GENERAL;positive;61;68;permitió nos reservaron mesa en la terraza muy bien dispuesta
+Es altamente recomendable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Apto para todo tipo de edades pero, en nuestra opinión, aconsejable para mayores de 30 años en adelante ya sean parejas o grupos.; vacio;RESTAURANT#MISCELLANEOUS;positive;0;0;
+Restaurante ideal para celebrar un acontecimiento especial.;Restaurante;RESTAURANT#GENERAL;positive;0;11;Restaurante ideal para celebrar
+La comida y el servicio son de calidad, aunque el precio es elevado.;comida;FOOD#QUALITY;positive;3;9;La comida y el servicio son de calidad, elevado.
+La comida y el servicio son de calidad, aunque el precio es elevado.;servicio;SERVICE#GENERAL;positive;15;23;La comida y el servicio son de calidad,
+La comida y el servicio son de calidad, aunque el precio es elevado.; vacio;RESTAURANT#PRICES;negative;0;0;
+<+>Comida y servicio inmejorables;Comida;FOOD#QUALITY;positive;3;9;y servicio inmejorables
+<+>Comida y servicio inmejorables;servicio;SERVICE#GENERAL;positive;12;20;y servicio inmejorables
+Excelente comida, pero escaso personal cuando el restaurante esta llenisimo.;comida;FOOD#QUALITY;positive;10;16;Excelente comida, pero escaso personal
+Excelente comida, pero escaso personal cuando el restaurante esta llenisimo.;personal;SERVICE#GENERAL;negative;30;38;Excelente comida, pero escaso personal cuando el restaurante
+Tardaron mas de media hora en traer la cuenta, pedidas varias veces.; vacio;SERVICE#GENERAL;negative;0;0;
+Repito, la comida excelente.;comida;FOOD#QUALITY;positive;11;17;Repito, la comida excelente.
+Los entrantes bién, pero el arroz caldoso lo he devuelto porque no tenia sabor a nada.;entrantes;FOOD#QUALITY;positive;4;13;Los entrantes bién, pero el arroz lo he devuelto sabor
+Los entrantes bién, pero el arroz caldoso lo he devuelto porque no tenia sabor a nada.;arroz caldoso;FOOD#QUALITY;negative;28;41;
+El servicio muy, muy mal.;servicio;SERVICE#GENERAL;negative;3;11;El servicio muy, muy mal.
+Servian el vino regando toda la mesa.; vacio;SERVICE#GENERAL;negative;0;0;
+No habiamos terminado todavía los entrantes y ya venian a retirar los platos para poner el segundo.; vacio;SERVICE#GENERAL;negative;0;0;
+Parecía como si quiseran que nos fueramos enseguida, para así llenar la mesa otra vez.Para postre, en la terraza de arriba, habia un evento politico haciendo campaña (con altavoces), cosa que a mi, no me interesaba lo mas minimo.; vacio;SERVICE#GENERAL;negative;0;0;
+Parecía como si quiseran que nos fueramos enseguida, para así llenar la mesa otra vez.Para postre, en la terraza de arriba, habia un evento politico haciendo campaña (con altavoces), cosa que a mi, no me interesaba lo mas minimo.;terraza;AMBIENCE#GENERAL;negative;105;112;la postre, en terraza de arriba, habia evento haciendo cosa
+NO VUELVO MAS.; vacio;RESTAURANT#GENERAL;negative;0;0;
+El arroz caldoso no tenia lo suficiente para ser un buen arroz.;arroz caldoso;FOOD#QUALITY;negative;3;16;
+Muy flojo.; vacio;RESTAURANT#GENERAL;negative;0;0;
+El sitio me ha parecido muy bien situado, el servicio y atención muy buenos, como sugerencia un poco más de generosidad en los platos.;sitio;LOCATION#GENERAL;positive;3;8;El sitio me ha parecido situado, sugerencia
+El sitio me ha parecido muy bien situado, el servicio y atención muy buenos, como sugerencia un poco más de generosidad en los platos.;servicio;SERVICE#GENERAL;positive;45;53;muy bien situado, el servicio y atención buenos,
+El sitio me ha parecido muy bien situado, el servicio y atención muy buenos, como sugerencia un poco más de generosidad en los platos.;platos;FOOD#STYLE_OPTIONS;negative;127;133;como sugerencia un generosidad en los platos.
+Me ha encantado lo mismo que a los tres compañeros que me acompañaron.; vacio;RESTAURANT#GENERAL;positive;0;0;
+La comida, la presentación y el servicio muy buenos.;comida;FOOD#QUALITY;positive;3;9;La comida, la presentación y servicio
+La comida, la presentación y el servicio muy buenos.;presentación;SERVICE#GENERAL;positive;14;26;La comida, la presentación y el servicio
+La comida, la presentación y el servicio muy buenos.;servicio;SERVICE#GENERAL;positive;32;40;La comida, presentación y el servicio muy buenos.
+Comida y vistas excepcionale.;Comida;FOOD#QUALITY;positive;0;6;Comida y vistas excepcionale.
+Comida y vistas excepcionale.;vistas;AMBIENCE#GENERAL;positive;9;15;Comida y vistas excepcionale.
+La relación calidad precio no es nada barato pero recomendable.; vacio;FOOD#QUALITY;positive;0;0;
+La relación calidad precio no es nada barato pero recomendable.; vacio;FOOD#PRICES;negative;0;0;
+La relación calidad precio no es nada barato pero recomendable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+la verdad es que ha estado genial.El lugar muy acogedor de un gusto impecable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+la verdad es que ha estado genial.El lugar muy acogedor de un gusto impecable.;lugar;AMBIENCE#GENERAL;positive;37;42;estado lugar muy acogedor de gusto
+El servicio muy atento y muy rápido.;servicio;SERVICE#GENERAL;positive;3;11;El servicio muy atento y
+A penas tenías que esperar entre plato y plato.; vacio;SERVICE#GENERAL;positive;0;0;
+La comida insuperable, fresca, tierna, la presentación muy original y creativa.;comida;FOOD#QUALITY;positive;3;9;La comida insuperable, fresca, tierna, presentación
+La comida insuperable, fresca, tierna, la presentación muy original y creativa.;presentación;SERVICE#GENERAL;positive;42;54;La comida insuperable, fresca, tierna, la presentación muy original y
+Me ha encantado ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Todo muy bien! ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Ha sido todo perfecto!, muy buena comida y trato! ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Ha sido todo perfecto!, muy buena comida y trato! ;comida;FOOD#QUALITY;positive;34;40;Ha sido todo muy buena comida y trato!
+Ha sido todo perfecto!, muy buena comida y trato! ;trato;SERVICE#GENERAL;positive;43;48;buena comida y trato!
+Es un sitio original y atractivo, pero en resumen, y ciñéndome a la comida, se queda escaso en cantidad y, en alguno de los platos, en calidad o, mejor dicho, en elaboración.;sitio;AMBIENCE#GENERAL;positive;6;11;Es un sitio original y atractivo, resumen, ciñéndome se queda escaso cantidad y,
+Es un sitio original y atractivo, pero en resumen, y ciñéndome a la comida, se queda escaso en cantidad y, en alguno de los platos, en calidad o, mejor dicho, en elaboración.;comida;FOOD#STYLE_OPTIONS;negative;68;74;y ciñéndome a la comida, se queda escaso y,
+Éramos 9 personas y tomamos el menú de degustación de 30€, algo retocado.;menú de degustación;FOOD#QUALITY;negative;31;50;
+El gazpacho de cerezas excelente, y uno para cada uno.;gazpacho de cerezas;FOOD#QUALITY;positive;3;22;
+Luego vinieron los “mejillones en Escabeche Fritos en Aceite de Oliva y Chips”, sonaba muy bien, pero nos “sorprendieron” con mejillones de lata en escabeche con patatas matutano, a compartir tres platitos.;mejillones en Escabeche Fritos en Aceite de Oliva y Chips”;FOOD#QUALITY;negative;20;78;
+Entiendo que tiene que haber más elaboración.;elaboración;SERVICE#GENERAL;negative;33;44;que haber más elaboración.
+Éramos 9, y sacaron 12 croquetas… ¿Cómo nos comemos 1 croqueta y 1/3 cada uno?;croquetas;FOOD#STYLE_OPTIONS;negative;23;32;Éramos y sacaron 12 croquetas… nos comemos 1 croqueta 1/3 uno?
+No tiene sentido.; vacio;FOOD#STYLE_OPTIONS;negative;0;0;
+Estaban muy buenas, no obstante.; vacio;FOOD#QUALITY;positive;0;0;
+Se lo hicimos saber al camarero y, amablemente (gracias), nos sacó a nuestra petición una ración más de croquetas y otra de huevos Charly, pero aún así….;camarero;SERVICE#GENERAL;positive;23;31;Se lo hicimos saber al camarero y, amablemente y
+Por último, el remate final, un coulant de chocolate del tamaño de un flan y un tarrito de queso del tamaño de un yogur… ¡para los 9!;coulant de chocolate;FOOD#STYLE_OPTIONS;negative;32;52;
+Por último, el remate final, un coulant de chocolate del tamaño de un flan y un tarrito de queso del tamaño de un yogur… ¡para los 9!;queso;FOOD#STYLE_OPTIONS;negative;91;96;un de del tamaño y tarrito queso
+Ridículo, lo siento, pero no es normal que te toque a una cucharadita por persona.; vacio;FOOD#STYLE_OPTIONS;negative;0;0;
+Se lo volvimos a decir al camarero y aparcó la amabilidad, a pesar de su ofrecimiento anterior, pasando a la grosería de que “eso era así, y que ya habíamos pedido de más”, y punto.;camarero;SERVICE#GENERAL;negative;26;34;a decir al camarero y aparcó la ya
+Por último, es espectáculo de Drag Queens, pues bueno, estaba programado para las 23:30 y salieron a la 1, con lo que sinceramente ya no teníamos mucho humor como para verlo con agrado.;espectáculo de Drag Queens;AMBIENCE#GENERAL;negative;15;41;
+Puedo entender 30 minutos de retraso, eran fiestas del Pilar y así hacen más caja con las copas, pero ¿1 hora y media?; vacio;SERVICE#GENERAL;negative;0;0;
+No es aceptable.; vacio;RESTAURANT#GENERAL;negative;0;0;
+En resumen: lo mejor, pues excelente vino tinto incluido (Viñas del Vero y Pago Ayles), cafés y chupito también dentro de menú, y algunos platos originales (gazpacho de cerezas) y buenos (huevos Charly, chipirones, pasta, carrillera).;vino tinto;DRINKS#QUALITY;positive;37;47;
+En resumen: lo mejor, pues excelente vino tinto incluido (Viñas del Vero y Pago Ayles), cafés y chupito también dentro de menú, y algunos platos originales (gazpacho de cerezas) y buenos (huevos Charly, chipirones, pasta, carrillera).;cafés;DRINKS#PRICES;positive;88;93;tinto incluido y Pago cafés chupito también
+En resumen: lo mejor, pues excelente vino tinto incluido (Viñas del Vero y Pago Ayles), cafés y chupito también dentro de menú, y algunos platos originales (gazpacho de cerezas) y buenos (huevos Charly, chipirones, pasta, carrillera).;chupito;DRINKS#PRICES;positive;96;103;tinto incluido del y cafés chupito también dentro de
+En resumen: lo mejor, pues excelente vino tinto incluido (Viñas del Vero y Pago Ayles), cafés y chupito también dentro de menú, y algunos platos originales (gazpacho de cerezas) y buenos (huevos Charly, chipirones, pasta, carrillera).;gazpacho de cerezas;FOOD#QUALITY;positive;157;176;
+En resumen: lo mejor, pues excelente vino tinto incluido (Viñas del Vero y Pago Ayles), cafés y chupito también dentro de menú, y algunos platos originales (gazpacho de cerezas) y buenos (huevos Charly, chipirones, pasta, carrillera).;huevos Charly;FOOD#QUALITY;positive;188;201;
+En resumen: lo mejor, pues excelente vino tinto incluido (Viñas del Vero y Pago Ayles), cafés y chupito también dentro de menú, y algunos platos originales (gazpacho de cerezas) y buenos (huevos Charly, chipirones, pasta, carrillera).;chipirones;FOOD#QUALITY;positive;203;213;buenos Charly, chipirones, pasta,
+En resumen: lo mejor, pues excelente vino tinto incluido (Viñas del Vero y Pago Ayles), cafés y chupito también dentro de menú, y algunos platos originales (gazpacho de cerezas) y buenos (huevos Charly, chipirones, pasta, carrillera).;pasta;FOOD#QUALITY;positive;215;220;Charly, chipirones, pasta,
+En resumen: lo mejor, pues excelente vino tinto incluido (Viñas del Vero y Pago Ayles), cafés y chupito también dentro de menú, y algunos platos originales (gazpacho de cerezas) y buenos (huevos Charly, chipirones, pasta, carrillera).;carrillera;FOOD#QUALITY;positive;222;232;Charly, chipirones, pasta,
+Lo peor: escasez general, algún plato flojito (esos mejillones…) y una contestación del camarero que no nos gustó mucho.; vacio;FOOD#STYLE_OPTIONS;negative;0;0;
+Lo peor: escasez general, algún plato flojito (esos mejillones…) y una contestación del camarero que no nos gustó mucho.;mejillones;FOOD#QUALITY;negative;52;62;algún plato flojito y una contestación
+Lo peor: escasez general, algún plato flojito (esos mejillones…) y una contestación del camarero que no nos gustó mucho.;camarero;SERVICE#GENERAL;negative;88;96;y una contestación del camarero que no nos gustó
+La camarera, por cierto, sí estuvo muy amable en todo momento.;camarera;SERVICE#GENERAL;positive;3;11;La camarera, por cierto, sí estuvo muy amable momento.
+Me lo tendría que pensar mucho.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Apuntada LA DESPENSA para no ir, a no ser que el dueño lea la critica y quiera defenderse, ahora me extraña que se pueda defender si se rie de todos que van a su local nunca sabra quien es buen cliente o malo. ;LA DESPENSA;RESTAURANT#GENERAL;negative;9;20;
+Apuntada LA DESPENSA para no ir, a no ser que el dueño lea la critica y quiera defenderse, ahora me extraña que se pueda defender si se rie de todos que van a su local nunca sabra quien es buen cliente o malo. ;LA DESPENSA;SERVICE#GENERAL;negative;9;20;
+Pues ya siento no haber leído tu comentario antes Pedro, porque me hubiera ahorrado este accidente, vimos el “listado” que comentas y cuando le preguntamos algunos precios nos dimos cuenta que también eran un robo, como tu bien dices, no pienso volver. ;listado;FOOD#PRICES;negative;110;117;ya accidente, vimos el que comentas y
+Pues ya siento no haber leído tu comentario antes Pedro, porque me hubiera ahorrado este accidente, vimos el “listado” que comentas y cuando le preguntamos algunos precios nos dimos cuenta que también eran un robo, como tu bien dices, no pienso volver. ; vacio;RESTAURANT#GENERAL;negative;0;0;
+Nada más entrar me sorprendio, causandome una buena impresión.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Local completamente nuevo, paredes blancas, todo muy limpio y moderno.;Local;AMBIENCE#GENERAL;positive;0;5;Local completamente nuevo, paredes todo
+El servicio fue más que correcto durante toda la comida.;servicio;SERVICE#GENERAL;positive;3;11;El servicio fue más que correcto comida.
+Quizá demasiado distante.; vacio;SERVICE#GENERAL;negative;0;0;
+Respecto a los productos, no acabaron de agradarme del todo.;productos;FOOD#QUALITY;negative;15;24;Respecto a los productos, no acabaron de agradarme del
+El ambiente era bastante frio, faltaba algo en aquel salón.;ambiente;AMBIENCE#GENERAL;negative;3;11;El ambiente era bastante frio, faltaba
+A pesar de esto, salimos contentos.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Hemos vuelto, hoy martes 18 de junio de 2013, despues de un año aproximadamente, para una celebración, y la conclusión de este sitio, es que: “siempre aciertas”.;sitio;RESTAURANT#GENERAL;positive;127;132;de y la conclusión este sitio, es que:
+"Hemos comido estupendamente con unos platos exquisitos con una elaboracion esmerada, el servicio en su justa medida y el personal de cocina; los autores de las delicias que salen a la mesa: Una ovación cerrada, la vuelta al ruedo y las dos orejas.";platos;FOOD#QUALITY;positive;37;43;Hemos comido estupendamente con unos platos exquisitos una elaboracion autores
+"Hemos comido estupendamente con unos platos exquisitos con una elaboracion esmerada, el servicio en su justa medida y el personal de cocina; los autores de las delicias que salen a la mesa: Una ovación cerrada, la vuelta al ruedo y las dos orejas.";servicio;SERVICE#GENERAL;positive;88;96;con una elaboracion esmerada, el servicio en su justa personal
+"Hemos comido estupendamente con unos platos exquisitos con una elaboracion esmerada, el servicio en su justa medida y el personal de cocina; los autores de las delicias que salen a la mesa: Una ovación cerrada, la vuelta al ruedo y las dos orejas.";personal de cocina;SERVICE#GENERAL;positive;121;139;
+volveremos!!!!; vacio;RESTAURANT#GENERAL;positive;0;0;
+Todo muy bien tanto el trato del servicio , los platos muy ricos y servidos en poco tiempo y la relación calidad-precio muy bien también.;trato;SERVICE#GENERAL;positive;23;28;Todo muy bien tanto el trato del servicio los platos relación también.
+Todo muy bien tanto el trato del servicio , los platos muy ricos y servidos en poco tiempo y la relación calidad-precio muy bien también.;platos;FOOD#QUALITY;positive;48;54;Todo muy bien trato del servicio , los platos ricos y tiempo relación también.
+Todo muy bien tanto el trato del servicio , los platos muy ricos y servidos en poco tiempo y la relación calidad-precio muy bien también.; vacio;FOOD#QUALITY;positive;0;0;
+Todo muy bien tanto el trato del servicio , los platos muy ricos y servidos en poco tiempo y la relación calidad-precio muy bien también.; vacio;FOOD#PRICES;positive;0;0;
+Recomendable 100% ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Muy bien.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Recomendable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Todo ok.. ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Todo fué perfecto, ya que tenían nuestra reserva y la mesa que le habíamos pedido, junto al ventanal que da a Las Ramblas.;reserva;SERVICE#GENERAL;positive;41;48;ya que tenían nuestra reserva y la mesa
+Todo fué perfecto, ya que tenían nuestra reserva y la mesa que le habíamos pedido, junto al ventanal que da a Las Ramblas.;mesa;AMBIENCE#GENERAL;positive;54;58;ya que nuestra reserva y la mesa le habíamos pedido,
+El Servicio es rápido.;Servicio;SERVICE#GENERAL;positive;3;11;El Servicio es rápido.
+La comida es pasable, al menos lo que comimos nosotros: patatas bravas y dos pizzas.;comida;FOOD#QUALITY;positive;3;9;La comida es pasable, al comimos
+La comida es pasable, al menos lo que comimos nosotros: patatas bravas y dos pizzas.;patatas bravas;FOOD#QUALITY;positive;56;70;
+La comida es pasable, al menos lo que comimos nosotros: patatas bravas y dos pizzas.;pizzas;FOOD#QUALITY;positive;77;83;patatas bravas y dos pizzas.
+Los postres buenos.;postres;FOOD#QUALITY;positive;4;11;Los postres buenos.
+Nosotros ya ibamos con la idea de cenar pizza, y nos sorprendió ver que había poquita variedad... ;variedad;FOOD#STYLE_OPTIONS;negative;86;94;que había poquita
+En general todo bien, pero la calidad de las pizzas es más bien pasable.... ;pizzas;FOOD#QUALITY;negative;45;51;bien, la calidad de las pizzas es más bien
+El lavabo un poco desastre... ;lavabo;AMBIENCE#GENERAL;negative;3;9;El lavabo un poco
+Sí que es verdad que había mucha gente, pero precisamente por eso tendrían que ser más rigorosos en la limpieza de los baños.;baños;AMBIENCE#GENERAL;negative;119;124;en la limpieza de los baños.
+La comida estuvo muy bien relacion-precio.;comida;FOOD#PRICES;positive;3;9;La comida estuvo muy bien
+La comida estuvo muy bien relacion-precio.;comida;FOOD#QUALITY;positive;3;9;La comida estuvo muy bien
+Estuvimos en la parte de arriba y al ir con los niños fue genial porque había más espacio.;espacio;AMBIENCE#GENERAL;positive;82;89;porque había más espacio.
+La comida deliciosa y el servicio muy bueno.;comida;FOOD#QUALITY;positive;3;9;La comida deliciosa y el servicio
+La comida deliciosa y el servicio muy bueno.;servicio;SERVICE#GENERAL;positive;25;33;La comida deliciosa y el servicio muy bueno.
+Muy agradable y servicial!!!; vacio;SERVICE#GENERAL;positive;0;0;
+Muy recomendable; vacio;RESTAURANT#GENERAL;positive;0;0;
+Para repetir; vacio;RESTAURANT#GENERAL;positive;0;12;
+Muy correcto; vacio;RESTAURANT#GENERAL;positive;0;0;
+Excelente reforma y exquisita comida con un precio muy interesante.. ;reforma;AMBIENCE#GENERAL;positive;10;17;Excelente reforma y exquisita comida precio
+Excelente reforma y exquisita comida con un precio muy interesante.. ;comida;FOOD#PRICES;positive;30;36;Excelente reforma y exquisita comida con un precio
+Excelente reforma y exquisita comida con un precio muy interesante.. ;comida;FOOD#QUALITY;positive;30;36;Excelente reforma y exquisita comida con un precio
+Grandes celebraciones de amigos con la dueña muy cariñosa en el trato.. ;dueña;SERVICE#GENERAL;positive;39;44;Grandes celebraciones amigos con la dueña muy cariñosa en
+Un comentario apropiado para el restaurante El Candelas:  Es una pena que personas que estamos habituadas a salir a comer por un montón de restaurantes de todas las categorías, nos cueste tanto encontrar un lugar como este, donde la comida es extraordinaria, ya sea el menú diario que es de una calidad y variedad excelente, como su carta, no muy amplia pero si muy cuidada, junto con un menú de brasa de 16 Euros que es una autentica joya, compuesto por una estupenda ensalada ilustrada, un plato de morcilla, chorizo y longaniza brasa, un plato de queso, y elegir entre un entrecot de excelente ternera ó 4 piezas de ternasco de Aragón a la brasa, postre y vino de la zona, ¡sencillamente estupendo!.;comida;FOOD#QUALITY;positive;233;239;las este, donde la comida es extraordinaria, ya
+Un comentario apropiado para el restaurante El Candelas:  Es una pena que personas que estamos habituadas a salir a comer por un montón de restaurantes de todas las categorías, nos cueste tanto encontrar un lugar como este, donde la comida es extraordinaria, ya sea el menú diario que es de una calidad y variedad excelente, como su carta, no muy amplia pero si muy cuidada, junto con un menú de brasa de 16 Euros que es una autentica joya, compuesto por una estupenda ensalada ilustrada, un plato de morcilla, chorizo y longaniza brasa, un plato de queso, y elegir entre un entrecot de excelente ternera ó 4 piezas de ternasco de Aragón a la brasa, postre y vino de la zona, ¡sencillamente estupendo!.;menú diario;FOOD#QUALITY;positive;269;280;
+Un comentario apropiado para el restaurante El Candelas:  Es una pena que personas que estamos habituadas a salir a comer por un montón de restaurantes de todas las categorías, nos cueste tanto encontrar un lugar como este, donde la comida es extraordinaria, ya sea el menú diario que es de una calidad y variedad excelente, como su carta, no muy amplia pero si muy cuidada, junto con un menú de brasa de 16 Euros que es una autentica joya, compuesto por una estupenda ensalada ilustrada, un plato de morcilla, chorizo y longaniza brasa, un plato de queso, y elegir entre un entrecot de excelente ternera ó 4 piezas de ternasco de Aragón a la brasa, postre y vino de la zona, ¡sencillamente estupendo!.;menú diario;FOOD#STYLE_OPTIONS;positive;269;280;
+Un comentario apropiado para el restaurante El Candelas:  Es una pena que personas que estamos habituadas a salir a comer por un montón de restaurantes de todas las categorías, nos cueste tanto encontrar un lugar como este, donde la comida es extraordinaria, ya sea el menú diario que es de una calidad y variedad excelente, como su carta, no muy amplia pero si muy cuidada, junto con un menú de brasa de 16 Euros que es una autentica joya, compuesto por una estupenda ensalada ilustrada, un plato de morcilla, chorizo y longaniza brasa, un plato de queso, y elegir entre un entrecot de excelente ternera ó 4 piezas de ternasco de Aragón a la brasa, postre y vino de la zona, ¡sencillamente estupendo!.;carta;FOOD#QUALITY;positive;333;338;nos como excelente, su carta, no muy amplia cuidada, excelente
+Un comentario apropiado para el restaurante El Candelas:  Es una pena que personas que estamos habituadas a salir a comer por un montón de restaurantes de todas las categorías, nos cueste tanto encontrar un lugar como este, donde la comida es extraordinaria, ya sea el menú diario que es de una calidad y variedad excelente, como su carta, no muy amplia pero si muy cuidada, junto con un menú de brasa de 16 Euros que es una autentica joya, compuesto por una estupenda ensalada ilustrada, un plato de morcilla, chorizo y longaniza brasa, un plato de queso, y elegir entre un entrecot de excelente ternera ó 4 piezas de ternasco de Aragón a la brasa, postre y vino de la zona, ¡sencillamente estupendo!.;menú de brasa;FOOD#QUALITY;positive;388;401;
+Un comentario apropiado para el restaurante El Candelas:  Es una pena que personas que estamos habituadas a salir a comer por un montón de restaurantes de todas las categorías, nos cueste tanto encontrar un lugar como este, donde la comida es extraordinaria, ya sea el menú diario que es de una calidad y variedad excelente, como su carta, no muy amplia pero si muy cuidada, junto con un menú de brasa de 16 Euros que es una autentica joya, compuesto por una estupenda ensalada ilustrada, un plato de morcilla, chorizo y longaniza brasa, un plato de queso, y elegir entre un entrecot de excelente ternera ó 4 piezas de ternasco de Aragón a la brasa, postre y vino de la zona, ¡sencillamente estupendo!.;ensalada ilustrada;FOOD#QUALITY;positive;469;487;
+Un comentario apropiado para el restaurante El Candelas:  Es una pena que personas que estamos habituadas a salir a comer por un montón de restaurantes de todas las categorías, nos cueste tanto encontrar un lugar como este, donde la comida es extraordinaria, ya sea el menú diario que es de una calidad y variedad excelente, como su carta, no muy amplia pero si muy cuidada, junto con un menú de brasa de 16 Euros que es una autentica joya, compuesto por una estupenda ensalada ilustrada, un plato de morcilla, chorizo y longaniza brasa, un plato de queso, y elegir entre un entrecot de excelente ternera ó 4 piezas de ternasco de Aragón a la brasa, postre y vino de la zona, ¡sencillamente estupendo!.;entrecot;FOOD#QUALITY;positive;575;583;una un de ya y excelente, brasa brasa, elegir entre entrecot excelente ternera postre
+Un comentario apropiado para el restaurante El Candelas:  Es una pena que personas que estamos habituadas a salir a comer por un montón de restaurantes de todas las categorías, nos cueste tanto encontrar un lugar como este, donde la comida es extraordinaria, ya sea el menú diario que es de una calidad y variedad excelente, como su carta, no muy amplia pero si muy cuidada, junto con un menú de brasa de 16 Euros que es una autentica joya, compuesto por una estupenda ensalada ilustrada, un plato de morcilla, chorizo y longaniza brasa, un plato de queso, y elegir entre un entrecot de excelente ternera ó 4 piezas de ternasco de Aragón a la brasa, postre y vino de la zona, ¡sencillamente estupendo!.;ternasco de Aragón;FOOD#QUALITY;positive;619;637;
+Se me olvidaba, también podemos degustar el mejor chuletón de buey de Navarra que puedas encontrar en Zaragoza, no puedo dejar de comentar también su extensa carta de vinos que en un restaurante familiar como este no esperas encontrar de tanta calidad.No dejéis de visitarlo y seguro que después me lo agradeceréis, os lo dice una persona con mas de 40 años de experiencia en hosteleria, principalmente en la cocina, seguro que Ana su propietaria os recibirá con los brazos abiertos y su amabilidad junto a su gran interés en que el cliente salga con una gran sonrisa y ganas de volver. ;chuletón de buey;FOOD#QUALITY;positive;50;66;
+Se me olvidaba, también podemos degustar el mejor chuletón de buey de Navarra que puedas encontrar en Zaragoza, no puedo dejar de comentar también su extensa carta de vinos que en un restaurante familiar como este no esperas encontrar de tanta calidad.No dejéis de visitarlo y seguro que después me lo agradeceréis, os lo dice una persona con mas de 40 años de experiencia en hosteleria, principalmente en la cocina, seguro que Ana su propietaria os recibirá con los brazos abiertos y su amabilidad junto a su gran interés en que el cliente salga con una gran sonrisa y ganas de volver. ;vinos;DRINKS#QUALITY;positive;167;172;de que en su extensa carta vinos un esperas una
+Se me olvidaba, también podemos degustar el mejor chuletón de buey de Navarra que puedas encontrar en Zaragoza, no puedo dejar de comentar también su extensa carta de vinos que en un restaurante familiar como este no esperas encontrar de tanta calidad.No dejéis de visitarlo y seguro que después me lo agradeceréis, os lo dice una persona con mas de 40 años de experiencia en hosteleria, principalmente en la cocina, seguro que Ana su propietaria os recibirá con los brazos abiertos y su amabilidad junto a su gran interés en que el cliente salga con una gran sonrisa y ganas de volver. ;Ana su propietaria;SERVICE#GENERAL;positive;428;446;
+Enhorabuena teneis un estupendo restaurante.Hemos cenado de maravilla.;restaurante;RESTAURANT#GENERAL;positive;32;43;teneis un estupendo cenado de
+Esperamos volver a veros.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Maginifica relacion calidad precio.; vacio;FOOD#PRICES;positive;0;0;
+Maginifica relacion calidad precio.; vacio;FOOD#QUALITY;positive;0;0;
+Cocina casera de mucha calidad.;Cocina;FOOD#QUALITY;positive;0;6;Cocina casera de mucha calidad.
+Trato super amable.;Trato;SERVICE#GENERAL;positive;0;5;Trato super amable.
+Estuvimos cenando el sábado cuatro personas con un trato bastante correcto.;trato;SERVICE#GENERAL;positive;51;56;Estuvimos cenando sábado personas con un trato bastante correcto.
+Comida casera, y todo como en familia.;Comida;FOOD#QUALITY;positive;0;6;Comida casera, y todo en
+De postre probamos un helado de setas que estaba bueno. ;postre;FOOD#QUALITY;positive;3;9;De postre probamos un helado
+Escriba aquí su comentario…cenamos muy bien. ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Ultimamente no dejo pasar una comida especial,sin ir a este restaurante.;restaurante;RESTAURANT#GENERAL;positive;60;71;ir a este restaurante.
+Desde la dirección,pasando por cocina y camareros,el trato es excelente ,pero todo esto no serviría de nada sin que también,como es así.;dirección;SERVICE#GENERAL;positive;9;18;Desde la por cocina trato es excelente serviría
+Desde la dirección,pasando por cocina y camareros,el trato es excelente ,pero todo esto no serviría de nada sin que también,como es así.;camareros;SERVICE#GENERAL;positive;40;49;por cocina y trato es
+Desde la dirección,pasando por cocina y camareros,el trato es excelente ,pero todo esto no serviría de nada sin que también,como es así.;cocina;SERVICE#GENERAL;positive;31;37;por cocina y
+disfrutemos de una buenísima calidad en el producto y una inmejorable relación calidad precio.;producto;FOOD#QUALITY;positive;43;51;de una buenísima calidad en el producto y inmejorable
+disfrutemos de una buenísima calidad en el producto y una inmejorable relación calidad precio.; vacio;FOOD#PRICES;positive;0;0;
+disfrutemos de una buenísima calidad en el producto y una inmejorable relación calidad precio.; vacio;FOOD#QUALITY;positive;0;0;
+Enhorabuena y gracias por vuestro trabajo. ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Todo muy bien, hubiera sido perfecto si alguno de los chuletones estuviera mas en su punto, pues nos lo sirvieron demasiado pasado. ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Ambiente agradable, servicio correcto, comida con buena elaboración y presentación.;Ambiente;AMBIENCE#GENERAL;positive;0;8;Ambiente agradable, servicio correcto,
+Ambiente agradable, servicio correcto, comida con buena elaboración y presentación.;servicio;SERVICE#GENERAL;positive;20;28;Ambiente agradable, servicio correcto, comida con
+Ambiente agradable, servicio correcto, comida con buena elaboración y presentación.;comida;FOOD#QUALITY;positive;39;45;agradable, servicio correcto, comida con buena elaboración
+Algo flojo en postres.;postres;FOOD#STYLE_OPTIONS;negative;14;21;Algo flojo en postres.
+Todo muy bien.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Es la 1ª vez que he ido y me parese muy agradable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Servicio y restauracion son buenos.;Servicio;SERVICE#GENERAL;positive;0;8;Servicio y restauracion son buenos.
+Servicio y restauracion son buenos.; vacio;FOOD#QUALITY;positive;0;0;
+Lo recomendare a los amigos.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Estuvimos muy bién servidos y la comida estuvo genial.; vacio;SERVICE#GENERAL;positive;0;0;
+Estuvimos muy bién servidos y la comida estuvo genial.;comida;FOOD#QUALITY;positive;33;39;servidos y la comida estuvo genial.
+La relación calidad/precio es correcta.; vacio;FOOD#PRICES;positive;0;0;
+La relación calidad/precio es correcta.; vacio;FOOD#QUALITY;positive;0;0;
+ambiente triston.;ambiente;AMBIENCE#GENERAL;negative;0;8;ambiente triston.
+Te sirven demasiado rapido y los camareros juegan y hablan mientras.;camareros;SERVICE#GENERAL;negative;33;42;rapido y los camareros juegan hablan
+Los segundos buenos.;segundos;FOOD#QUALITY;positive;4;12;Los segundos buenos.
+Los primeros de picar muy flojos, buñuelos llenos de espinas y seitons amargos.;primeros de picar;FOOD#QUALITY;negative;4;21;
+Los primeros de picar muy flojos, buñuelos llenos de espinas y seitons amargos.;buñuelos;FOOD#QUALITY;negative;34;42;Los primeros de picar muy flojos, buñuelos llenos espinas
+Los primeros de picar muy flojos, buñuelos llenos de espinas y seitons amargos.;seitons;FOOD#QUALITY;negative;63;70;de espinas y seitons amargos.
+No volveré.; vacio;RESTAURANT#GENERAL;negative;0;0;
+El restaurante esta bien, la comida es buena, se nota que tienen buenos cocineros.;restaurante;RESTAURANT#GENERAL;positive;3;14;El restaurante esta bien, la buena, se nota tienen
+El restaurante esta bien, la comida es buena, se nota que tienen buenos cocineros.;comida;FOOD#QUALITY;positive;29;35;esta bien, la comida es buena, se
+La educacion del director fernando nieto, deja mucho que desear, no es logico que mientras uno disfruta de su comida le metan prisa por comer, y le meta bronca a los camareros en la sala, donde todos los clientes escuchan sus gritos.;director fernando nieto;SERVICE#GENERAL;negative;17;40;
+Los metres, dos espantapajaros, no sirven para nada.;metres;SERVICE#GENERAL;negative;4;10;Los metres, dos espantapajaros, no sirven nada.
+Se ha mecanizado en exceso y los platos se resienten de ello.;platos;FOOD#QUALITY;negative;33;39;exceso y los platos se resienten de ello.
+Un restaurante como la copa de un pino.;restaurante;RESTAURANT#GENERAL;positive;3;14;Un restaurante como la copa
+Gran decoración, gran comida y a un precio nada exagerado.;decoración;AMBIENCE#GENERAL;positive;5;15;Gran decoración, gran comida y precio
+Gran decoración, gran comida y a un precio nada exagerado.;comida;FOOD#QUALITY;positive;22;28;Gran decoración, gran comida y a un precio
+el lugar es fantastico.;lugar;AMBIENCE#GENERAL;positive;3;8;el lugar es fantastico.
+la atencion inigualable, la comida deliciosa, pero lo más desagradable es ver al señor fernando nieto tratar tan mal a su personal.;atencion;SERVICE#GENERAL;positive;3;11;la atencion inigualable, comida es
+la atencion inigualable, la comida deliciosa, pero lo más desagradable es ver al señor fernando nieto tratar tan mal a su personal.;comida;FOOD#QUALITY;positive;28;34;la atencion inigualable, comida deliciosa, pero lo es
+la atencion inigualable, la comida deliciosa, pero lo más desagradable es ver al señor fernando nieto tratar tan mal a su personal.;fernando nieto;SERVICE#GENERAL;negative;87;101;
+Calidad precio Exelente.; vacio;FOOD#PRICES;positive;0;0;
+Calidad precio Exelente.; vacio;FOOD#QUALITY;positive;0;0;
+Te gustará y si lo que quieres es quedar bien, lo conseguiras.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Para mi es uno de los mejores restaurantes de barcelona de cocina mediterrámea y catalana.;restaurantes;RESTAURANT#GENERAL;positive;30;42;mi es uno de los mejores restaurantes barcelona cocina
+El servicio es inmejorable.;servicio;SERVICE#GENERAL;positive;3;11;El servicio es inmejorable.
+SIn duda el mejor.; vacio;RESTAURANT#GENERAL;positive;0;0;
+la verdad es que comimos realmente muy bien y no fue caro.; vacio;FOOD#QUALITY;positive;0;0;
+la verdad es que comimos realmente muy bien y no fue caro.; vacio;RESTAURANT#PRICES;positive;0;0;
+los platos completos y el servicio genial.;platos;FOOD#STYLE_OPTIONS;positive;4;10;los platos completos y el servicio
+los platos completos y el servicio genial.;servicio;SERVICE#GENERAL;positive;26;34;los platos completos y el servicio genial.
+lo recomiendo sin duda.; vacio;RESTAURANT#GENERAL;positive;0;0;
+comida con calidad correcta y en su justa proporcion y precio ay, ay, carta de vinos completa y bien, servicio profesional eficiente.;comida;FOOD#QUALITY;positive;0;6;comida con calidad correcta
+comida con calidad correcta y en su justa proporcion y precio ay, ay, carta de vinos completa y bien, servicio profesional eficiente.;comida;FOOD#PRICES;positive;0;6;comida con calidad correcta
+comida con calidad correcta y en su justa proporcion y precio ay, ay, carta de vinos completa y bien, servicio profesional eficiente.;carta de vinos;DRINKS#STYLE_OPTIONS;positive;70;84;
+comida con calidad correcta y en su justa proporcion y precio ay, ay, carta de vinos completa y bien, servicio profesional eficiente.;servicio;SERVICE#GENERAL;positive;102;110;y en su justa proporcion ay, carta completa bien, servicio profesional eficiente.
+peros: decoracion y ambiente casi retro, cobrar por pan que no pedi y servicio 2,20 € por persona, pan de coca con tomate 3,20€ excesivo, los cafes a 2€, todo mas impuestos, servicio urinario hombres con grafitis, no repetire.; vacio;AMBIENCE#GENERAL;negative;0;0;
+peros: decoracion y ambiente casi retro, cobrar por pan que no pedi y servicio 2,20 € por persona, pan de coca con tomate 3,20€ excesivo, los cafes a 2€, todo mas impuestos, servicio urinario hombres con grafitis, no repetire.;ambiente;AMBIENCE#GENERAL;negative;20;28;peros: decoracion y ambiente casi retro, cobrar
+peros: decoracion y ambiente casi retro, cobrar por pan que no pedi y servicio 2,20 € por persona, pan de coca con tomate 3,20€ excesivo, los cafes a 2€, todo mas impuestos, servicio urinario hombres con grafitis, no repetire.;pan;FOOD#PRICES;negative;52;55;peros: retro, cobrar por pan que no pedi € persona, coca tomate cafes repetire.
+peros: decoracion y ambiente casi retro, cobrar por pan que no pedi y servicio 2,20 € por persona, pan de coca con tomate 3,20€ excesivo, los cafes a 2€, todo mas impuestos, servicio urinario hombres con grafitis, no repetire.;pan de coca con tomate;FOOD#PRICES;negative;99;121;
+peros: decoracion y ambiente casi retro, cobrar por pan que no pedi y servicio 2,20 € por persona, pan de coca con tomate 3,20€ excesivo, los cafes a 2€, todo mas impuestos, servicio urinario hombres con grafitis, no repetire.;cafes;DRINKS#PRICES;negative;142;147;peros: pan € persona, tomate excesivo, los cafes a todo mas impuestos, repetire.
+peros: decoracion y ambiente casi retro, cobrar por pan que no pedi y servicio 2,20 € por persona, pan de coca con tomate 3,20€ excesivo, los cafes a 2€, todo mas impuestos, servicio urinario hombres con grafitis, no repetire.;urinario;AMBIENCE#GENERAL;negative;183;191;servicio con mas impuestos, urinario hombres grafitis,
+Sinceramente, me pareció caro por lo que comimos.; vacio;FOOD#PRICES;negative;0;0;
+El servicio sin duda debe mejorar.;servicio;SERVICE#GENERAL;negative;3;11;El servicio sin duda debe mejorar.
+Entre otras cosas tengo una obsesión con la prisa que tienen algunos en retirar los platos de mesa mientras está comiendo.;prisa;SERVICE#GENERAL;negative;44;49;una obsesión con la prisa que tienen algunos
+LOlive no debería caer en estos errores.;LOlive;RESTAURANT#GENERAL;negative;0;7;LOlive no debería caer en errores.
+Esplendido restaurante con magnifico personal.;restaurante;RESTAURANT#GENERAL;positive;11;22;Esplendido restaurante con magnifico personal.
+Esplendido restaurante con magnifico personal.;personal;SERVICE#GENERAL;positive;37;45;restaurante con magnifico personal.
+ambiente ideal y comida perfecta.;ambiente;AMBIENCE#GENERAL;positive;0;8;ambiente ideal y comida
+ambiente ideal y comida perfecta.;comida;FOOD#QUALITY;positive;17;23;ambiente ideal y comida perfecta.
+muy recomendable; vacio;RESTAURANT#GENERAL;positive;0;0;
+Poco espacio entre las mesas para un restaurante de precios altos.;mesas;AMBIENCE#GENERAL;negative;23;28;Poco espacio entre las mesas para un restaurante
+Poco espacio entre las mesas para un restaurante de precios altos.;restaurante;RESTAURANT#PRICES;negative;37;48;Poco espacio mesas para un restaurante de precios altos.
+Mala iluminacion.;iluminacion;AMBIENCE#GENERAL;negative;5;16;Mala iluminacion.
+Las escaleras y detalles del mobiliario, con polvo y desgastados, necesitan renovación.;mobiliario;AMBIENCE#GENERAL;negative;29;39;Las escaleras y detalles del mobiliario, con polvo
+Servicio bueno.;Servicio;SERVICE#GENERAL;positive;0;8;Servicio bueno.
+el detalle del entrante, que lo cobran...;entrante;FOOD#PRICES;negative;15;23;el detalle del entrante, que lo
+Me gusta mucho su comida, yahe ido varias veces, pero me parece excesivo el número de mesas que hay para el espacio disponible.;comida;FOOD#QUALITY;positive;18;24;Me gusta mucho su comida, yahe ido varias parece
+Me gusta mucho su comida, yahe ido varias veces, pero me parece excesivo el número de mesas que hay para el espacio disponible.;mesas;AMBIENCE#GENERAL;negative;86;91;el número de mesas que hay para
+El vecino come en tu mesa...Privacidad, cero.;Privacidad;AMBIENCE#GENERAL;negative;28;38;El vecino come en tu cero.
+veo que las opiniones son mayoritariamente favorables, en cambio a mi no me gusto.; vacio;RESTAURANT#GENERAL;negative;0;0;
+fui con un grupo de la empresa, estabamos estrechisimos y tardaron mogollon en servirnos y cobraron como si el servicio fuera de primera.;servicio;SERVICE#GENERAL;negative;111;119;de como si el servicio fuera primera.
+fui con un grupo de la empresa, estabamos estrechisimos y tardaron mogollon en servirnos y cobraron como si el servicio fuera de primera.; vacio;RESTAURANT#PRICES;negative;0;0;
+El ambiente, el trato, la calidad de la comida y la cantidad se puede calificar como muy bien.;ambiente;AMBIENCE#GENERAL;positive;3;11;El ambiente, el trato, la calidad cantidad se puede calificar bien.
+El ambiente, el trato, la calidad de la comida y la cantidad se puede calificar como muy bien.;trato;SERVICE#GENERAL;positive;16;21;El ambiente, el trato, la calidad de cantidad
+El ambiente, el trato, la calidad de la comida y la cantidad se puede calificar como muy bien.;comida;FOOD#QUALITY;positive;40;46;la calidad de comida y cantidad
+La verdad es que puede resultar algo car pero sales con la sensación de haber comido bien y bastante.; vacio;RESTAURANT#PRICES;negative;0;0;
+Conjuga perfectamente calidad,servicio y ambiente.; vacio;FOOD#QUALITY;positive;0;0;
+Conjuga perfectamente calidad,servicio y ambiente.;servicio;SERVICE#GENERAL;positive;30;38;Conjuga perfectamente y ambiente.
+Conjuga perfectamente calidad,servicio y ambiente.;ambiente;AMBIENCE#GENERAL;positive;41;49;perfectamente y ambiente.
+Recomendable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Hola estuvimos el Sábado y realmente es caro para lo que cenamos,además el menu que reservamos en su día el de degustación B (26 euros por persona) no lo tenian, nos dijeron que habia otro de 29 euros, pero que faltaban varios platos, lo que nos hizo elegir el de 35 euros con copa incluida,si bien los platos estaban bien elaborados el precio a nuestro entender es alto y las raciones para dos personas escasas.; vacio;RESTAURANT#PRICES;negative;0;0;
+Hola estuvimos el Sábado y realmente es caro para lo que cenamos,además el menu que reservamos en su día el de degustación B (26 euros por persona) no lo tenian, nos dijeron que habia otro de 29 euros, pero que faltaban varios platos, lo que nos hizo elegir el de 35 euros con copa incluida,si bien los platos estaban bien elaborados el precio a nuestro entender es alto y las raciones para dos personas escasas.;platos;FOOD#QUALITY;positive;303;309;lo que nos pero faltaban varios platos, hizo bien los platos estaban elaborados precio entender alto
+Hola estuvimos el Sábado y realmente es caro para lo que cenamos,además el menu que reservamos en su día el de degustación B (26 euros por persona) no lo tenian, nos dijeron que habia otro de 29 euros, pero que faltaban varios platos, lo que nos hizo elegir el de 35 euros con copa incluida,si bien los platos estaban bien elaborados el precio a nuestro entender es alto y las raciones para dos personas escasas.; vacio;RESTAURANT#PRICES;negative;0;0;
+Hola estuvimos el Sábado y realmente es caro para lo que cenamos,además el menu que reservamos en su día el de degustación B (26 euros por persona) no lo tenian, nos dijeron que habia otro de 29 euros, pero que faltaban varios platos, lo que nos hizo elegir el de 35 euros con copa incluida,si bien los platos estaban bien elaborados el precio a nuestro entender es alto y las raciones para dos personas escasas.;raciones;FOOD#STYLE_OPTIONS;negative;377;385;y es para alto las raciones dos personas
+Por lo que respecta al ambiente esta muy bien y la actuación de un drag queen muy entretanida, no descartamos volver pero sólo a tomar una copa y disfrutar de la música. ;ambiente;AMBIENCE#GENERAL;positive;23;31;Por lo que respecta al ambiente esta muy bien
+Por lo que respecta al ambiente esta muy bien y la actuación de un drag queen muy entretanida, no descartamos volver pero sólo a tomar una copa y disfrutar de la música. ;actuación;AMBIENCE#GENERAL;positive;51;60;respecta bien y la actuación de un drag queen entretanida, volver una
+Por lo que respecta al ambiente esta muy bien y la actuación de un drag queen muy entretanida, no descartamos volver pero sólo a tomar una copa y disfrutar de la música. ; vacio;AMBIENCE#GENERAL;positive;0;0;
+Un restaurante carísimo para lo que ofrece.;restaurante;RESTAURANT#PRICES;negative;3;14;Un restaurante carísimo para lo ofrece.
+Tomamos una ensalada, unas croquetas y unos huevos de Charly, todo a compartir, sin postre, y la broma nos salió a 25 Euros por persona…en cualquier restaurante se come mejor por menos…¿Y  el espectáculo?;restaurante;FOOD#PRICES;negative;149;160;cualquier restaurante se come mejor espectáculo?
+Vaya, un fiasco…creo que no volveremos. ; vacio;RESTAURANT#GENERAL;negative;0;0;
+Servicio excelente y comida muy bien.;Servicio;SERVICE#GENERAL;positive;0;8;Servicio excelente y comida
+Servicio excelente y comida muy bien.;comida;FOOD#QUALITY;positive;21;27;Servicio excelente y comida muy bien.
+Lugar muy agradable;Lugar;RESTAURANT#GENERAL;positive;0;5;Lugar muy agradable
+Todo fantástico, buenas raciones, calidad de la comida, bien servido y todo en un lugar muy mono, pequeñito y acogedor.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Todo fantástico, buenas raciones, calidad de la comida, bien servido y todo en un lugar muy mono, pequeñito y acogedor.;raciones;FOOD#STYLE_OPTIONS;positive;24;32;Todo fantástico, buenas raciones, calidad de la lugar
+Todo fantástico, buenas raciones, calidad de la comida, bien servido y todo en un lugar muy mono, pequeñito y acogedor.;comida;FOOD#QUALITY;positive;48;54;calidad de la comida, bien servido y
+Todo fantástico, buenas raciones, calidad de la comida, bien servido y todo en un lugar muy mono, pequeñito y acogedor.; vacio;SERVICE#GENERAL;positive;0;0;
+Todo fantástico, buenas raciones, calidad de la comida, bien servido y todo en un lugar muy mono, pequeñito y acogedor.;lugar;AMBIENCE#GENERAL;positive;82;87;Todo fantástico, raciones, calidad todo en un lugar muy mono, pequeñito
+Estábamos casi solos y estuvimos muy a gusto.; vacio;AMBIENCE#GENERAL;positive;0;0;
+Comimos muy bien.; vacio;FOOD#QUALITY;positive;0;0;
+El servicio muy correcto y atento.;servicio;SERVICE#GENERAL;positive;3;11;El servicio muy correcto y
+El lugar es pequeño pero muy acogedor.;lugar;AMBIENCE#GENERAL;positive;3;8;El lugar es pequeño pero acogedor.
+Disfrutamos de una buena comida a buen precio.;comida;FOOD#QUALITY;positive;25;31;Disfrutamos de una buena comida a buen precio.
+Disfrutamos de una buena comida a buen precio.;comida;FOOD#PRICES;positive;25;31;Disfrutamos de una buena comida a buen precio.
+La comida está muy buena, pero el servicio es bastante lento.;comida;FOOD#QUALITY;positive;3;9;La comida está muy buena, lento.
+La comida está muy buena, pero el servicio es bastante lento.;servicio;SERVICE#GENERAL;negative;34;42;buena, pero el servicio es bastante lento.
+Solo con el primer plato, tardaron media hora en servirlo y otra media hora en servir los segundos...; vacio;SERVICE#GENERAL;negative;0;0;
+Nos gustó bastante, la comida está buena aunque calidad-precio sale algo cara.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Nos gustó bastante, la comida está buena aunque calidad-precio sale algo cara.;comida;FOOD#QUALITY;positive;23;29;gustó bastante, la comida está buena aunque sale
+Nos gustó bastante, la comida está buena aunque calidad-precio sale algo cara.;comida;FOOD#PRICES;negative;23;29;gustó bastante, la comida está buena aunque sale
+El restaurante en sí está muy bien auqnue a veces se nota el olor a cloaca de la calle.;restaurante;RESTAURANT#GENERAL;positive;3;14;El restaurante en sí está muy bien auqnue nota
+El restaurante en sí está muy bien auqnue a veces se nota el olor a cloaca de la calle.; vacio;AMBIENCE#GENERAL;negative;0;0;
+La comida y el servicio fueron correctos.;comida;FOOD#QUALITY;positive;3;9;La comida y el servicio fueron correctos.
+La comida y el servicio fueron correctos.;servicio;SERVICE#GENERAL;positive;15;23;La comida y el servicio fueron correctos.
+Lo negativo fue que reservamos un viernes a las 22:30 ( permitía reservar hasta las 23) y como éramos la única reserva de esa noche me llamaron esa misma tarde para ver si podíamos ir a las 21:00.; vacio;RESTAURANT#MISCELLANEOUS;negative;0;0;
+Por lo demás como indico en el inicio el trato fue bueno.; vacio;SERVICE#GENERAL;positive;0;0;
+Muy mal olor en el restaurantes.;restaurantes;AMBIENCE#GENERAL;negative;19;31;mal olor en el restaurantes.
+Carta de vinos escasa;Carta de vinos;DRINKS#STYLE_OPTIONS;negative;0;14;
+Buena comida y buen servicio.;comida;FOOD#QUALITY;positive;6;12;Buena comida y buen servicio.
+Buena comida y buen servicio.;servicio;SERVICE#GENERAL;positive;20;28;Buena comida y buen servicio.
+Organicé la comida de departamento y estoy mas que satisfecha y agradecida.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Tanto la atencion de los camareros y sobretodo del cocinero fueron excepcionales.;camareros;SERVICE#GENERAL;positive;25;34;Tanto la atencion de los camareros y sobretodo del
+Tanto la atencion de los camareros y sobretodo del cocinero fueron excepcionales.;cocinero;SERVICE#GENERAL;positive;51;59;y sobretodo del cocinero fueron excepcionales.
+Los platos son gustosos y bien elavorados y la calidad se nota y se saborea en todos ellos.;platos;FOOD#QUALITY;positive;4;10;Los platos son gustosos y elavorados nota saborea
+Ademas el local es muy acogedor y se nos pasaron las horas volando... casi empalmamos con la cena de lo bien que nos sentiamos alli.;local;AMBIENCE#GENERAL;positive;10;15;Ademas el local es muy acogedor pasaron
+Se lo recomiendo a todos los que esten buscando un lugar donde celebrar una comida entre amigos o de trabajo y tambien a parejas ya que se trata de un lugar tranquilo y agradable con unos platos sencillos y con mucha calidad.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Se lo recomiendo a todos los que esten buscando un lugar donde celebrar una comida entre amigos o de trabajo y tambien a parejas ya que se trata de un lugar tranquilo y agradable con unos platos sencillos y con mucha calidad.;lugar;AMBIENCE#GENERAL;positive;151;156;esten buscando un lugar donde celebrar una de ya se trata tranquilo platos
+Se lo recomiendo a todos los que esten buscando un lugar donde celebrar una comida entre amigos o de trabajo y tambien a parejas ya que se trata de un lugar tranquilo y agradable con unos platos sencillos y con mucha calidad.;platos;FOOD#QUALITY;positive;188;194;lugar y ya se trata agradable con unos platos sencillos calidad.
+"Nos ha encantado; muy bueno el servicio, agradables, serviciales,... si pueden comer en la mesa del ventanal con vistas a la plaza, es ideal."; vacio;RESTAURANT#GENERAL;positive;0;0;
+"Nos ha encantado; muy bueno el servicio, agradables, serviciales,... si pueden comer en la mesa del ventanal con vistas a la plaza, es ideal.";servicio;SERVICE#GENERAL;positive;31;39;muy bueno el servicio, agradables, si
+El sitio muy tranquilo, lo recomiendo.;sitio;AMBIENCE#GENERAL;positive;3;8;El sitio muy tranquilo, lo recomiendo.
+Cuando vuelva a Barcelona repetiré.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Muy acogedor, como si estuvieras en casa.; vacio;AMBIENCE#GENERAL;positive;0;0;
+Servicio muy atento y agradable.;Servicio;SERVICE#GENERAL;positive;0;8;Servicio muy atento y
+Algo caro, pero la carta tiene bastante variedad y la calidad es buena.; vacio;RESTAURANT#PRICES;negative;0;0;
+Algo caro, pero la carta tiene bastante variedad y la calidad es buena.;carta;FOOD#STYLE_OPTIONS;positive;19;24;caro, pero la carta tiene bastante variedad
+Algo caro, pero la carta tiene bastante variedad y la calidad es buena.; vacio;FOOD#QUALITY;positive;0;0;
+Repetiremos!!!; vacio;RESTAURANT#GENERAL;positive;0;0;
+Hemos estado cenando el miércoles por la noche un grupo con 4 amigas y a todas nos ha encantado.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Muy acogedor, exquisito y un trato excelente.; vacio;AMBIENCE#GENERAL;positive;0;0;
+Muy acogedor, exquisito y un trato excelente.; vacio;FOOD#QUALITY;positive;0;0;
+Muy acogedor, exquisito y un trato excelente.;trato;SERVICE#GENERAL;positive;29;34;Muy acogedor, exquisito y un trato excelente.
+Fantástica elección.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Lindo sitio y buena comida.;sitio;AMBIENCE#GENERAL;positive;6;11;Lindo sitio y buena comida.
+Lindo sitio y buena comida.;comida;FOOD#QUALITY;positive;20;26;sitio y buena comida.
+Tuvimos una experiencia magnífica, la atención inmejorable, las recomendaciones del encargado del restaurante acertadisimas, un vino riquísimo.;atención;SERVICE#GENERAL;positive;38;46;una experiencia magnífica, la atención inmejorable, las recomendaciones
+Tuvimos una experiencia magnífica, la atención inmejorable, las recomendaciones del encargado del restaurante acertadisimas, un vino riquísimo.;encargado;SERVICE#GENERAL;positive;84;93;las recomendaciones del encargado restaurante acertadisimas, vino
+Tuvimos una experiencia magnífica, la atención inmejorable, las recomendaciones del encargado del restaurante acertadisimas, un vino riquísimo.;vino;DRINKS#QUALITY;positive;128;132;una del encargado restaurante acertadisimas, un vino riquísimo.
+Tuvimos una experiencia magnífica, la atención inmejorable, las recomendaciones del encargado del restaurante acertadisimas, un vino riquísimo.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Recomiendo que quien desee una buena comida se ponga en manos del maitre.;comida;FOOD#QUALITY;positive;37;43;que quien desee una buena comida se ponga en
+Muy bien.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Muy buen servicio y hemos cenado sinceramente bien.;servicio;SERVICE#GENERAL;positive;9;17;Muy buen servicio y hemos cenado
+Muy buen servicio y hemos cenado sinceramente bien.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Gracias.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Servicio excelente y un buen ambiente gracias a unos camareros super simpaticos y profesionales.;Servicio;SERVICE#GENERAL;positive;0;8;Servicio excelente y un ambiente a camareros
+Servicio excelente y un buen ambiente gracias a unos camareros super simpaticos y profesionales.;ambiente;AMBIENCE#GENERAL;positive;29;37;Servicio excelente y un buen ambiente gracias a unos camareros
+Servicio excelente y un buen ambiente gracias a unos camareros super simpaticos y profesionales.;camareros;SERVICE#GENERAL;positive;53;62;Servicio excelente y ambiente gracias a unos camareros super simpaticos
+Fantástico.; vacio;RESTAURANT#GENERAL;positive;0;0;
+El Restaurante muy acogedor, el servicio muy amable y la comida excelente.;Restaurante;AMBIENCE#GENERAL;positive;3;14;El Restaurante muy acogedor, el servicio la
+El Restaurante muy acogedor, el servicio muy amable y la comida excelente.;servicio;SERVICE#GENERAL;positive;32;40;El Restaurante muy acogedor, el servicio amable y comida
+El Restaurante muy acogedor, el servicio muy amable y la comida excelente.;comida;FOOD#QUALITY;positive;57;63;el servicio amable y la comida excelente.
+Muchas gracias.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Ambiente agradable y buena relación calidad/precio.;Ambiente;AMBIENCE#GENERAL;positive;0;8;Ambiente agradable y buena
+Ambiente agradable y buena relación calidad/precio.; vacio;FOOD#QUALITY;positive;0;0;
+Ambiente agradable y buena relación calidad/precio.; vacio;FOOD#PRICES;positive;0;0;
+Después de cenar seguimos con los buenos combinados.;combinados;DRINKS#QUALITY;positive;41;51;de cenar seguimos con los buenos combinados.
+Excelente trato, decoración interesante, buen genero (calidad de la comida).;trato;SERVICE#GENERAL;positive;10;15;Excelente trato, decoración interesante, buen genero
+Excelente trato, decoración interesante, buen genero (calidad de la comida).;decoración;AMBIENCE#GENERAL;positive;17;27;Excelente trato, decoración interesante, buen genero
+Excelente trato, decoración interesante, buen genero (calidad de la comida).;comida;FOOD#QUALITY;positive;68;74;de la
+Cantidad insuficiente, no se admiten  perros como en la mayor parte de los restaurante de otros países.; vacio;FOOD#STYLE_OPTIONS;negative;0;0;
+En pocos meses han pasado de platos con comida abundante y excelente a platos con raciones justitas al mismo precio.;platos;FOOD#STYLE_OPTIONS;negative;71;77;meses han pasado de platos con comida abundante y excelente a raciones al
+Los vinos han subido los precios alrededor de un 30%.;vinos;DRINKS#PRICES;negative;4;9;Los vinos han subido los precios alrededor
+Que pena, ha pasado de ser un sitio maravilloso a uno mas del monton.;sitio;RESTAURANT#GENERAL;negative;30;35;Que pena, ha pasado de ser un sitio maravilloso a uno del
+Lo dicho, alguien ha pensado que restando comida y bebida y subiendo los precios de los vinos nadie se daría cuenta, pero la clientela no es tonta.;comida;FOOD#STYLE_OPTIONS;negative;42;48;dicho, pensado que restando comida y bebida subiendo
+Lo dicho, alguien ha pensado que restando comida y bebida y subiendo los precios de los vinos nadie se daría cuenta, pero la clientela no es tonta.;bebida;DRINKS#STYLE_OPTIONS;negative;51;57;restando comida y bebida subiendo los
+Lo dicho, alguien ha pensado que restando comida y bebida y subiendo los precios de los vinos nadie se daría cuenta, pero la clientela no es tonta.;vinos;DRINKS#PRICES;negative;88;93;los precios de vinos nadie se daría
+Restaurante muy agradable al lado del mercado del born.;Restaurante;AMBIENCE#GENERAL;positive;0;11;Restaurante muy agradable al mercado
+Buenas raciones de primero para compartir y soberbio centro de merluza a la plancha.;raciones;FOOD#STYLE_OPTIONS;positive;7;15;Buenas raciones de primero para compartir
+Buenas raciones de primero para compartir y soberbio centro de merluza a la plancha.;merluza a la plancha;FOOD#QUALITY;positive;63;83;
+La cuenta 40 euros con una botella rioja reserva, muy recomendable.; vacio;RESTAURANT#PRICES;positive;0;0;
+Un buen restaurante relación calidad-precio muy buena, local con decoración cuidada, luz baja pero suficiente y un hilo musical muy bien seleccionado.;restaurante;RESTAURANT#GENERAL;positive;8;19;Un buen restaurante relación calidad-precio local
+Un buen restaurante relación calidad-precio muy buena, local con decoración cuidada, luz baja pero suficiente y un hilo musical muy bien seleccionado.; vacio;FOOD#PRICES;positive;0;0;
+Un buen restaurante relación calidad-precio muy buena, local con decoración cuidada, luz baja pero suficiente y un hilo musical muy bien seleccionado.; vacio;FOOD#QUALITY;positive;0;0;
+Un buen restaurante relación calidad-precio muy buena, local con decoración cuidada, luz baja pero suficiente y un hilo musical muy bien seleccionado.;local;AMBIENCE#GENERAL;positive;55;60;Un restaurante relación calidad-precio muy buena, local con decoración cuidada, hilo
+Un buen restaurante relación calidad-precio muy buena, local con decoración cuidada, luz baja pero suficiente y un hilo musical muy bien seleccionado.;hilo musical;AMBIENCE#GENERAL;positive;115;127;
+El solomillo de ternera impresionante, carne de muy buena calidad y justo al punto que la pedimos.;solomillo de ternera;FOOD#QUALITY;positive;3;23;
+El solomillo de ternera impresionante, carne de muy buena calidad y justo al punto que la pedimos.;carne;FOOD#QUALITY;positive;39;44;El solomillo de ternera impresionante, carne muy buena calidad
+Y el trato excelente.;trato;SERVICE#GENERAL;positive;5;10;Y el trato excelente.
+Repetiremos.; vacio;RESTAURANT#GENERAL;positive;0;0;
+El restaurante tenia una decoracion muy intima y acogedora.;restaurante;AMBIENCE#GENERAL;positive;3;14;El restaurante tenia una decoracion intima
+La atencion por parte del personal ha sido bastante buena y la comida estuvo fenomenal.;atencion;SERVICE#GENERAL;positive;3;11;La atencion por parte del personal ha sido bastante buena fenomenal.
+La atencion por parte del personal ha sido bastante buena y la comida estuvo fenomenal.;comida;FOOD#QUALITY;positive;63;69;buena y la comida estuvo fenomenal.
+Repetiremos seguro.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Sitio recomendado.;Sitio;RESTAURANT#GENERAL;positive;0;5;Sitio recomendado.
+Comida bien elaborada.;Comida;FOOD#QUALITY;positive;0;6;Comida bien elaborada.
+Me tome un rape con foie y salsa de vino buenisimo y mis amigos que tomaron carne quedaron encantados.;rape con foie y salsa de vino;FOOD#QUALITY;positive;11;40;
+Me tome un rape con foie y salsa de vino buenisimo y mis amigos que tomaron carne quedaron encantados.;carne;FOOD#QUALITY;positive;76;81;amigos que tomaron carne quedaron encantados.
+Velada agradable, os la recomiendo.; vacio;RESTAURANT#GENERAL;positive;0;0;
+El lugar es precioso, la decoracion impresionante.;lugar;AMBIENCE#GENERAL;positive;3;8;El lugar es precioso, la decoracion
+El lugar es precioso, la decoracion impresionante.;decoracion;AMBIENCE#GENERAL;positive;25;35;lugar es precioso, la decoracion impresionante.
+La comida la encontramos poco original, y tiene demasiada patata en cada plato.;comida;FOOD#QUALITY;negative;3;9;La comida la encontramos poco original, tiene
+Servicio bueno pero muy rapido, y las mesas estaban muy juntas y cada vez que pasaba el camarero nos golpeaban la silla.;mesas;AMBIENCE#GENERAL;negative;38;43;muy rapido, y las mesas estaban juntas golpeaban
+No volveria a ir a cenar, pero lo recomiendo para copas.; vacio;FOOD#QUALITY;negative;0;0;
+No volveria a ir a cenar, pero lo recomiendo para copas.; vacio;DRINKS#QUALITY;positive;0;0;
+nosotros fuimos a comer el menu del dia y aunque el primer plato(riggatoni a la bolognesa) nos parecio un poco escueto (muy bueno, pero poca cantidad), el segundo plato lo suplio con buen plato de carne y junto con el postre, salimos bien saciados del restaurante.;riggatoni a la bolognesa;FOOD#STYLE_OPTIONS;negative;65;89;
+nosotros fuimos a comer el menu del dia y aunque el primer plato(riggatoni a la bolognesa) nos parecio un poco escueto (muy bueno, pero poca cantidad), el segundo plato lo suplio con buen plato de carne y junto con el postre, salimos bien saciados del restaurante.;riggatoni a la bolognesa;FOOD#QUALITY;positive;65;89;
+Tanto el ambiente del lugar como la atencion de los camareros fue impoluta, asi que salimos con una magnifica sensacion.;ambiente;AMBIENCE#GENERAL;positive;9;17;Tanto el ambiente del lugar como atencion fue impoluta, asi
+Tanto el ambiente del lugar como la atencion de los camareros fue impoluta, asi que salimos con una magnifica sensacion.;camareros;SERVICE#GENERAL;positive;52;61;del como la atencion de los camareros fue impoluta, asi
+Lo recomiendo totalmente; vacio;RESTAURANT#GENERAL;positive;0;0;
+La experiencia ha sido pésima.; vacio;RESTAURANT#GENERAL;negative;0;0;
+No recomendaría ir a este restaurante ni a un enemigo.;restaurante;RESTAURANT#GENERAL;negative;26;37;ir a este restaurante ni un enemigo.
+El menú pactado y pagado en parte con antelación no se ha correspondido con lo que han servido (“ha sido un error,” dicen al reclamar).;menú;FOOD#STYLE_OPTIONS;negative;3;7;El menú pactado y pagado no se ha correspondido han servido dicen
+La comida que han servido ha sido escasa en cantidad, servida sin estilo ni cariño y hemos tenido que aguantar que sirvieran trozos de carne completamente congelada, sin acabar de cocinar.;comida;FOOD#STYLE_OPTIONS;negative;3;9;La comida que han servido ha sido escasa cantidad,
+La comida que han servido ha sido escasa en cantidad, servida sin estilo ni cariño y hemos tenido que aguantar que sirvieran trozos de carne completamente congelada, sin acabar de cocinar.; vacio;SERVICE#GENERAL;negative;0;0;
+La comida que han servido ha sido escasa en cantidad, servida sin estilo ni cariño y hemos tenido que aguantar que sirvieran trozos de carne completamente congelada, sin acabar de cocinar.;carne;FOOD#QUALITY;negative;135;140;sin sirvieran trozos de carne completamente congelada,
+Los postres, como si fuera un concurso de miniaturas.;postres;FOOD#STYLE_OPTIONS;negative;4;11;Los postres, como si fuera concurso
+Dicen que eran buenos, yo no los probé porque había menos postres que personas…;postres;FOOD#QUALITY;positive;58;65;que porque había menos postres personas…
+Dicen que eran buenos, yo no los probé porque había menos postres que personas…;postres;FOOD#STYLE_OPTIONS;negative;58;65;que porque había menos postres personas…
+La bebida ha dejado que desear en todos los sentidos, ha sido poca y no ha incluido ni cervezas, con lo que hemos tenido que pagar un extra (no pequeño, porque barato no es) para poder acabar el menú con líquido con el que hacer bajar un “rissoto” que hubiera hecho las delicias del presentador de Bricomanía, en el capítulo en el que explica como rebozar paredes viejas.;bebida;DRINKS#STYLE_OPTIONS;negative;3;9;La bebida ha dejado que desear poca
+La bebida ha dejado que desear en todos los sentidos, ha sido poca y no ha incluido ni cervezas, con lo que hemos tenido que pagar un extra (no pequeño, porque barato no es) para poder acabar el menú con líquido con el que hacer bajar un “rissoto” que hubiera hecho las delicias del presentador de Bricomanía, en el capítulo en el que explica como rebozar paredes viejas.; vacio;RESTAURANT#PRICES;negative;0;0;
+Y lo mejor (con toda la ironía que soy capaz sin faltar ni insultar) el servicio.;servicio;SERVICE#GENERAL;negative;72;80;Y lo mejor ironía ni insultar) el servicio.
+Han intentado cobrarnos más menús de los consumidos, no han propuesto ninguna compensación para corregir la larga lista de errores que han reconocido y ahora ni siquiera conseguimos que nos hagan llegar la factura con el total de la “fiesta”.; vacio;SERVICE#GENERAL;negative;0;0;
+Si no queréis amargaros sin necesidad, probad cualquier otro restaurante de la zona.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Por malo que sea, será mejor que este.; vacio;RESTAURANT#GENERAL;negative;0;0;
+el otro dia cene en colette y la verdad es que ya hacia falta un retaurante asi en zaragoza .;retaurante;RESTAURANT#GENERAL;positive;65;75;en que hacia falta un retaurante asi zaragoza
+la cominda impresionante, el servicio igual y una atencion con tanto aperitivo que no es ni normal de bueno,es un restaurante para recomendar a todos los amigos ;cominda;FOOD#QUALITY;positive;3;10;la cominda impresionante, el servicio una atencion es un restaurante recomendar
+la cominda impresionante, el servicio igual y una atencion con tanto aperitivo que no es ni normal de bueno,es un restaurante para recomendar a todos los amigos ;servicio;SERVICE#GENERAL;positive;29;37;la cominda impresionante, el servicio igual y una atencion
+la cominda impresionante, el servicio igual y una atencion con tanto aperitivo que no es ni normal de bueno,es un restaurante para recomendar a todos los amigos ;restaurante;RESTAURANT#GENERAL;positive;114;125;cominda una es un restaurante para recomendar a
+Me encanta ese sitio, que en general no decepciona, pero el sábado sí lo hizo: me dieron mesa para 3 para a continuación, 4 horas más tarde, cancelármela y rebotarme al RISKOMAR, donde comimos fatal (ya he dejado opinión).;sitio;RESTAURANT#GENERAL;negative;15;20;Me encanta ese sitio, que en general decepciona,
+Poco serio que confirmen disponibilidad para luego cancelarla y derivarte a otro del Grupo.; vacio;RESTAURANT#MISCELLANEOUS;negative;0;0;
+Decepción, como en su día fue que la camarera no conociera el vodka MOSKOSCAYA. ; vacio;RESTAURANT#GENERAL;negative;0;0;
+en mi opinion es un restaurante impresionante, tanto en decoracion , comodidad y como no en servicio y comida .;restaurante;RESTAURANT#GENERAL;positive;20;31;en opinion es un restaurante impresionante, tanto decoracion .
+en mi opinion es un restaurante impresionante, tanto en decoracion , comodidad y como no en servicio y comida .;decoracion;AMBIENCE#GENERAL;positive;56;66;en opinion es un restaurante impresionante, tanto decoracion , comodidad y como no .
+en mi opinion es un restaurante impresionante, tanto en decoracion , comodidad y como no en servicio y comida .;comodidad;AMBIENCE#GENERAL;positive;69;78;en tanto decoracion , comodidad y como no
+en mi opinion es un restaurante impresionante, tanto en decoracion , comodidad y como no en servicio y comida .;servicio;SERVICE#GENERAL;positive;92;100;en y como no servicio comida
+en mi opinion es un restaurante impresionante, tanto en decoracion , comodidad y como no en servicio y comida .;comida;FOOD#QUALITY;positive;103;109;en y servicio comida
+esta ultima es la mejor de todas tanto en puesta en escena como en calidad y cantidad, aqui no vale el topico de irte a comer un bocadillo por que te quedas con hambre .; vacio;FOOD#QUALITY;positive;0;0;
+esta ultima es la mejor de todas tanto en puesta en escena como en calidad y cantidad, aqui no vale el topico de irte a comer un bocadillo por que te quedas con hambre .; vacio;FOOD#STYLE_OPTIONS;positive;0;0;
+esta ultima es la mejor de todas tanto en puesta en escena como en calidad y cantidad, aqui no vale el topico de irte a comer un bocadillo por que te quedas con hambre .; vacio;FOOD#STYLE_OPTIONS;positive;0;0;
+para recomendar, mi puntuacion  es de diez . ; vacio;RESTAURANT#GENERAL;positive;0;0;
+La primera impresión al es entrar es muy positiva.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Buena decoración y puesta en escena.;decoración;AMBIENCE#GENERAL;positive;6;16;Buena decoración y puesta en
+Buena decoración y puesta en escena.;puesta en escena;AMBIENCE#GENERAL;positive;19;35;
+El servicio no esta a la altura.;servicio;SERVICE#GENERAL;negative;3;11;El servicio no esta a altura.
+Lo unico realmente alto es el precio.; vacio;RESTAURANT#PRICES;negative;0;0;
+Mi nota seria de 7.; vacio;RESTAURANT#GENERAL;positive;0;0;
+DecepcionanteCon motivo de un viaje a Zaragoza cenamos, aconsejados por el hotel, en el restaurante Colette.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Mi opinión es la de un restaurante que se quiere pretencioso y que dista mucho de ser el restaurante innovador y de calidad que publicitan.;restaurante;RESTAURANT#GENERAL;negative;23;34;opinión es la de un restaurante que se quiere mucho ser el innovador
+Mi opinión es la de un restaurante que se quiere pretencioso y que dista mucho de ser el restaurante innovador y de calidad que publicitan.;restaurante;FOOD#QUALITY;negative;89;100;opinión es la de un restaurante que se quiere mucho ser el innovador
+La relación calidad precio está muy poco ajustada.; vacio;FOOD#QUALITY;negative;0;0;
+La relación calidad precio está muy poco ajustada.; vacio;FOOD#PRICES;negative;0;0;
+Sorprende que también te cobren los dulces que sirven acompañando el café y que no habíamos solicitadoRealmente tienen mucho que aprender.;dulces;FOOD#PRICES;negative;36;42;que también te cobren los dulces sirven acompañando
+Es un restaurante para no recordar y no aconsejar ;restaurante;RESTAURANT#GENERAL;negative;6;17;Es un restaurante para no recordar
+La ambientación de este restaurante sería lo único a destacar.;ambientación;AMBIENCE#GENERAL;positive;3;15;La ambientación de este restaurante sería
+Lo realmente lamentable es el sevicio que ofrecen:;sevicio;SERVICE#GENERAL;negative;30;37;lamentable es el sevicio que ofrecen:
+- tardaron más de media hora en sacarnos una botella de vino, después de habérsela pedido a tres camareras.;camareras;SERVICE#GENERAL;negative;97;106;pedido a tres camareras.
+- en cuanto se gasta el pan, no sacan mas, por mucho que pidas e insistas.-las camareras nos ofrecieron un trato lamentable, incluso llegaron a gritarnos y a exigirnos silencio (íbamos quince personas, así que es normal cierto murmullo)..;camareras;SERVICE#GENERAL;negative;79;88;en el por pidas e insistas.-las camareras nos ofrecieron un es
+Sinceramente, ha sido el peor servicio que me habían ofrecido jamás, y eso, en un restaurante como este, es imperdonable.;servicio;SERVICE#GENERAL;negative;30;38;Sinceramente, ha sido el peor servicio que me habían ofrecido imperdonable.
+NO LO RECOMIENDO. ; vacio;RESTAURANT#GENERAL;negative;0;0;
+Hemos estado tres veces en el balneario, y nos parace estupendo, habitaciones comodas, buena comida y sobre todo las aguas muy beneficiosas para personas con problemas de piel o respiratorios, volveremos.;comida;FOOD#QUALITY;positive;93;99;y estupendo, habitaciones comodas, buena comida sobre todo aguas
+gracias por la amabilidad de todos los trabajadores ;trabajadores;SERVICE#GENERAL;positive;39;51;gracias la amabilidad de todos los trabajadores
+<->El servicio bastante lento, sobre todo para grupos que funcionan con un horario bastante extricto.;servicio;SERVICE#GENERAL;negative;6;14;servicio bastante lento, sobre
+<->El personal no obstante muy amable.;personal;SERVICE#GENERAL;positive;6;14;personal no obstante muy
+<+>La calidad de la comida muy buena, los arroces excelentes en general.;comida;FOOD#QUALITY;positive;20;26;calidad de la comida muy buena, los
+<+>La calidad de la comida muy buena, los arroces excelentes en general.;arroces;FOOD#QUALITY;positive;42;49;calidad muy buena, los arroces excelentes en general.
+La carta de vinos es impresionante y con unos precios muy buenos.;carta de vinos;DRINKS#STYLE_OPTIONS;positive;3;17;
+La carta de vinos es impresionante y con unos precios muy buenos.;carta de vinos;DRINKS#PRICES;positive;3;17;
+La comidaexquisita y abundante.;comida;FOOD#QUALITY;positive;3;9;
+La comidaexquisita y abundante.;comida;FOOD#STYLE_OPTIONS;positive;3;9;
+La verdad una buena opcion en el centro de Barcelona para disfrutar de una buena cena.; vacio;LOCATION#GENERAL;positive;0;0;
+La verdad una buena opcion en el centro de Barcelona para disfrutar de una buena cena.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Fuimos un grupo de amigos y disfutamos muchisimo, volvereoms; vacio;RESTAURANT#GENERAL;positive;0;0;
+"no os conocia y el sábado dia 5,09 estuve cenando con el grupo de Singles Bcn y fue un verdadero desastre,no se cumplió con  lo expuesto en el menú y el servicio ""horrendo"" yo casi diria rozando la mala educación, fue una lástima, todo el grupo de la mesa quedó sin ganas de volver.";servicio;RESTAURANT#GENERAL;negative;153;161;y el en menú servicio yo casi
+"no os conocia y el sábado dia 5,09 estuve cenando con el grupo de Singles Bcn y fue un verdadero desastre,no se cumplió con  lo expuesto en el menú y el servicio ""horrendo"" yo casi diria rozando la mala educación, fue una lástima, todo el grupo de la mesa quedó sin ganas de volver.";menú;FOOD#STYLE_OPTIONS;negative;143;147;y el con lo expuesto en menú servicio yo
+"no os conocia y el sábado dia 5,09 estuve cenando con el grupo de Singles Bcn y fue un verdadero desastre,no se cumplió con  lo expuesto en el menú y el servicio ""horrendo"" yo casi diria rozando la mala educación, fue una lástima, todo el grupo de la mesa quedó sin ganas de volver."; vacio;RESTAURANT#GENERAL;negative;0;0;
+El domingo estuvimos comiendo con la familia y el menu para los niños se agradece pues es completo y a un buen precio, La carta y sobre todo los arroces muy bien asi como los postres.;menu para los niños;FOOD#STYLE_OPTIONS;positive;50;69;
+El domingo estuvimos comiendo con la familia y el menu para los niños se agradece pues es completo y a un buen precio, La carta y sobre todo los arroces muy bien asi como los postres.;menu para los niños;FOOD#PRICES;positive;50;69;
+El domingo estuvimos comiendo con la familia y el menu para los niños se agradece pues es completo y a un buen precio, La carta y sobre todo los arroces muy bien asi como los postres.;carta;FOOD#STYLE_OPTIONS;positive;122;127;y a un buen precio, La carta sobre todo arroces
+El domingo estuvimos comiendo con la familia y el menu para los niños se agradece pues es completo y a un buen precio, La carta y sobre todo los arroces muy bien asi como los postres.;arroces;FOOD#QUALITY;positive;145;152;y los a un buen precio, carta sobre todo arroces muy bien asi postres.
+El domingo estuvimos comiendo con la familia y el menu para los niños se agradece pues es completo y a un buen precio, La carta y sobre todo los arroces muy bien asi como los postres.;postres;FOOD#QUALITY;positive;175;182;y los sobre arroces bien asi como postres.
+La atención de los camareros fue en todo momento impecable.;camareros;SERVICE#GENERAL;positive;19;28;La atención de los camareros fue en todo
+Excelente ubicación en el centro de Barcelona, Una paella de bogavante que recordaremos asi como buenos vinos muy bien.;ubicación;LOCATION#GENERAL;positive;10;19;Excelente ubicación en el centro paella
+Excelente ubicación en el centro de Barcelona, Una paella de bogavante que recordaremos asi como buenos vinos muy bien.;paella de bogavante;FOOD#QUALITY;positive;51;70;
+Excelente ubicación en el centro de Barcelona, Una paella de bogavante que recordaremos asi como buenos vinos muy bien.;vinos;DRINKS#QUALITY;positive;104;109;que recordaremos asi como buenos vinos muy bien.
+Tranquilo agradable y los niños no molestan con un acertado menu infantil una buena elección para toda la familia.; vacio;AMBIENCE#GENERAL;positive;0;0;
+Tranquilo agradable y los niños no molestan con un acertado menu infantil una buena elección para toda la familia.;menu infantil;FOOD#STYLE_OPTIONS;positive;60;73;
+Tranquilo agradable y los niños no molestan con un acertado menu infantil una buena elección para toda la familia.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Estuvimos con un grupo cenando el pasado sabado y todo estuvo perfecto, comida, servicio, ambiente volveremos.;comida;FOOD#QUALITY;positive;72;78;y todo estuvo perfecto, comida, servicio, ambiente volveremos.
+Estuvimos con un grupo cenando el pasado sabado y todo estuvo perfecto, comida, servicio, ambiente volveremos.;servicio;SERVICE#GENERAL;positive;80;88;y todo estuvo perfecto, comida, servicio, ambiente volveremos.
+Estuvimos con un grupo cenando el pasado sabado y todo estuvo perfecto, comida, servicio, ambiente volveremos.;ambiente;AMBIENCE#GENERAL;positive;90;98;Estuvimos perfecto, comida, servicio, ambiente volveremos.
+Estuvimos con un grupo cenando el pasado sabado y todo estuvo perfecto, comida, servicio, ambiente volveremos.; vacio;RESTAURANT#GENERAL;positive;0;0;
+La relación calidad precio de las mejores.; vacio;FOOD#QUALITY;positive;0;0;
+La relación calidad precio de las mejores.; vacio;FOOD#PRICES;positive;0;0;
+la carne es infumable;carne;FOOD#QUALITY;negative;3;8;la carne es infumable
+Camareros despistados: tuvimos que compartir un arroz porque siendo 4 apuntaron 3, trajeron cuenta de otra mesa, discusiones entre camareros... ;Camareros;SERVICE#GENERAL;negative;0;9;Camareros despistados: tuvimos que trajeron cuenta de mesa,
+Fuimos a cenar el viernes pasado y nos recibieron con una copa de cava rosado, la carta es de lo más variado y nos gusto mucho una lubina a la sal que nos recomendaron, los camareros muy simpáticos.;carta;FOOD#STYLE_OPTIONS;positive;82;87;de cava rosado, la carta es lo más variado gusto los
+Fuimos a cenar el viernes pasado y nos recibieron con una copa de cava rosado, la carta es de lo más variado y nos gusto mucho una lubina a la sal que nos recomendaron, los camareros muy simpáticos.;lubina a la sal;FOOD#QUALITY;positive;131;146;
+Fuimos a cenar el viernes pasado y nos recibieron con una copa de cava rosado, la carta es de lo más variado y nos gusto mucho una lubina a la sal que nos recomendaron, los camareros muy simpáticos.;camareros;SERVICE#GENERAL;positive;173;182;nos que recomendaron, los camareros muy simpáticos.
+El chocolate de los postres exquisito.;chocolate de los postres;FOOD#QUALITY;positive;3;27;
+Reservé para el 1.01.07 y cuando llegué no la tenían apuntada.; vacio;SERVICE#GENERAL;negative;0;0;
+Tampoco nos avisaron que era menu cerrado ese dia.; vacio;SERVICE#GENERAL;negative;0;0;
+He ido varias veces a este restaurante por varios motivos: buena relación calidad precio, servicio rápido y atento, muy buena situación (cerca de Pl.Urquinaona) y la comida es exquisita.; vacio;FOOD#QUALITY;positive;0;0;
+He ido varias veces a este restaurante por varios motivos: buena relación calidad precio, servicio rápido y atento, muy buena situación (cerca de Pl.Urquinaona) y la comida es exquisita.; vacio;FOOD#PRICES;positive;0;0;
+He ido varias veces a este restaurante por varios motivos: buena relación calidad precio, servicio rápido y atento, muy buena situación (cerca de Pl.Urquinaona) y la comida es exquisita.;servicio;SERVICE#GENERAL;positive;90;98;relación calidad precio, servicio rápido y atento,
+He ido varias veces a este restaurante por varios motivos: buena relación calidad precio, servicio rápido y atento, muy buena situación (cerca de Pl.Urquinaona) y la comida es exquisita.;situación;LOCATION#GENERAL;positive;126;135;buena relación calidad precio, atento, muy situación de
+He ido varias veces a este restaurante por varios motivos: buena relación calidad precio, servicio rápido y atento, muy buena situación (cerca de Pl.Urquinaona) y la comida es exquisita.;comida;FOOD#QUALITY;positive;166;172;y la comida es exquisita.
+Totalmente recomendable para cualquier evento: familia, amigos y pareja; vacio;RESTAURANT#GENERAL;positive;0;0;
+La cena estuvo bien, pero quisiera hacer una propuesta de mejora: Los camareros que nos atendieron iban demasiado estresados y tardaron bastante en atendernos, así quizá si pusieran otro camarero o el sistema logístico cocina-sala estuviera mejor diseñado, los clientes estaríamos atendidos con más prontitud.;camareros;SERVICE#GENERAL;negative;70;79;de mejora: Los camareros que nos atendieron iban estresados tardaron así si pusieran otro camarero sistema cocina-sala
+La cena estuvo bien, pero quisiera hacer una propuesta de mejora: Los camareros que nos atendieron iban demasiado estresados y tardaron bastante en atendernos, así quizá si pusieran otro camarero o el sistema logístico cocina-sala estuviera mejor diseñado, los clientes estaríamos atendidos con más prontitud.;sistema logístico cocina-sala;SERVICE#GENERAL;negative;201;230;
+La cena estuvo bien, pero quisiera hacer una propuesta de mejora: Los camareros que nos atendieron iban demasiado estresados y tardaron bastante en atendernos, así quizá si pusieran otro camarero o el sistema logístico cocina-sala estuviera mejor diseñado, los clientes estaríamos atendidos con más prontitud.;cena;FOOD#QUALITY;positive;3;7;La cena estuvo bien, pero quisiera iban atendidos
+<->Calor en el local;local;AMBIENCE#GENERAL;negative;15;20;en el local
+<+>Relación calidad-precio; vacio;FOOD#QUALITY;positive;0;0;
+<+>Relación calidad-precio; vacio;FOOD#PRICES;positive;0;0;
+Ótimo ambiente y muy buena comida;ambiente;AMBIENCE#GENERAL;positive;6;14;Ótimo ambiente y muy buena comida
+Ótimo ambiente y muy buena comida;comida;FOOD#QUALITY;positive;27;33;Ótimo ambiente y muy buena comida
+Me gusto mucho el menú.;menú;FOOD#STYLE_OPTIONS;positive;18;22;Me gusto mucho el menú.
+Para no quedarse con hambre.; vacio;FOOD#STYLE_OPTIONS;positive;0;0;
+Con el descuento del 50% sale muy buen precio.; vacio;RESTAURANT#PRICES;positive;0;0;
+Muy correcto; vacio;RESTAURANT#GENERAL;positive;0;0;
+Considerable espera de pie (larga cola).;espera;SERVICE#GENERAL;negative;13;19;Considerable espera de pie
+Al final encuentran una por casualidad en un rincón incomodo.;rincón;AMBIENCE#GENERAL;negative;45;51;Al encuentran una por casualidad en un rincón incomodo.
+Encima de mi cabeza tenía la pantalla del televisor con el sonido a mi oido izquierdo.;sonido;AMBIENCE#GENERAL;negative;59;65;mi la pantalla televisor con el sonido a oido
+Mi primer plato (huevos estrellados) era simplemente patatas fritas y encima un par de huevos fritos (sin ningun miramiento).;huevos estrellados;FOOD#QUALITY;negative;17;35;
+Un plato hondo lleno de líquido con dos trozitos de pescado (mi señora reclamó ya que aquello no era merluza y lo que fuese estaba super congelado).;merluza;FOOD#QUALITY;negative;101;108;plato señora reclamó ya que aquello no era merluza y lo
+Ninguna relación calidad-precio.; vacio;FOOD#QUALITY;negative;0;0;
+Ninguna relación calidad-precio.; vacio;FOOD#PRICES;negative;0;0;
+La piña tenía un intenso sabor de ajo.;piña;FOOD#QUALITY;negative;3;7;La piña tenía un intenso sabor
+Después de todo esto, ¿es o no una tomadura de pelo?.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Yo no vuelvo allí nunca más.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Creo que deberían considerar el mantener este restaurante en su web.;restaurante;RESTAURANT#GENERAL;negative;46;57;el mantener este restaurante en su web.
+"- Yo reservé la cena de gala de Año Nuevo en línea, pero el restaurante no encontrar mi reserva y el precio era de 10 E. mayor (pequeña cosa: me comí el mismo);"; vacio;SERVICE#GENERAL;negative;0;0;
+ - Podría estar mejor organizada en el cambio de la cuchillería, el mismo utilizado por dos platos (entrante y principal).;cuchillería;SERVICE#GENERAL;negative;52;63;en el cambio de la cuchillería, mismo utilizado
+Para el manejo y la rapidez del servicio: encomiable.;servicio;SERVICE#GENERAL;positive;32;40;y la rapidez del servicio: encomiable.
+Una hora y media para traernos los primeros (pasó la primera hora sólo con el jamón y pan con tomate).; vacio;SERVICE#GENERAL;negative;0;0;
+Pedimos un reservado por escrito y por teléfono y no nos lo dieron pese a haber dicho que ok.; vacio;SERVICE#GENERAL;negative;0;0;
+Dijimos el número de comensales por escrito y dos veces por teléfono y tampoco pusieron las sillas necesarias.; vacio;SERVICE#GENERAL;negative;0;0;
+Una auténtica decepción.; vacio;RESTAURANT#GENERAL;negative;0;0;
+El arroz, en muy generosa ración y con abundancia de complementos, como gambas, mejillones, almejas y langostinos.;arroz;FOOD#STYLE_OPTIONS;positive;3;8;El arroz, en muy generosa ración
+A mejorar: el emplazamiento donde se emplatan las porciones de arroces o pescados.;emplazamiento;FOOD#STYLE_OPTIONS;negative;14;27;A mejorar: el emplazamiento donde se emplatan
+Todo muy correcto, trato muy cercano y preciso.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Todo muy correcto, trato muy cercano y preciso.;trato;SERVICE#GENERAL;positive;19;24;Todo muy correcto, trato cercano y
+Un restaurante muy recomendable.;restaurante;RESTAURANT#GENERAL;positive;3;14;Un restaurante muy recomendable.
+Felicidades.; vacio;RESTAURANT#GENERAL;positive;0;0;
+molt be la millor paella de barcelona.;paella;FOOD#QUALITY;positive;18;24;molt be la millor paella de barcelona.
+llastima un mica el local.;local;AMBIENCE#GENERAL;negative;20;25;llastima un mica el local.
+El local es acogedor, aunque la relación calidad-precio no es equitativa, bastante caro para lo que sirvieron que no es lo mismo exactamente que proponen en la oferta, ya que el arroz iba a ser de bogavante y lo hicieron de cigalas...el postre muy escaso, sólo dos trufas y sin opción a cambio.;local;AMBIENCE#GENERAL;positive;3;8;El local es acogedor, aunque equitativa, postre
+El local es acogedor, aunque la relación calidad-precio no es equitativa, bastante caro para lo que sirvieron que no es lo mismo exactamente que proponen en la oferta, ya que el arroz iba a ser de bogavante y lo hicieron de cigalas...el postre muy escaso, sólo dos trufas y sin opción a cambio.; vacio;FOOD#PRICES;negative;0;0;
+El local es acogedor, aunque la relación calidad-precio no es equitativa, bastante caro para lo que sirvieron que no es lo mismo exactamente que proponen en la oferta, ya que el arroz iba a ser de bogavante y lo hicieron de cigalas...el postre muy escaso, sólo dos trufas y sin opción a cambio.; vacio;FOOD#QUALITY;negative;0;0;
+El local es acogedor, aunque la relación calidad-precio no es equitativa, bastante caro para lo que sirvieron que no es lo mismo exactamente que proponen en la oferta, ya que el arroz iba a ser de bogavante y lo hicieron de cigalas...el postre muy escaso, sólo dos trufas y sin opción a cambio.;postre;FOOD#STYLE_OPTIONS;negative;237;243;local es acogedor, equitativa, el de postre muy escaso, sólo trufas opción
+La bebida tampoco estaba incluída y la carta de vinos es de precios elevados.;carta de vinos;DRINKS#PRICES;negative;39;53;
+La bebida tampoco estaba incluída y la carta de vinos es de precios elevados.;bebida;DRINKS#STYLE_OPTIONS;negative;3;9;La bebida tampoco estaba incluída precios
+Bien en lineas generales.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Buena realcion calidad-precio.; vacio;FOOD#QUALITY;positive;0;0;
+Buena realcion calidad-precio.; vacio;FOOD#PRICES;positive;0;0;
+Solo nos defraudo que de la extensa carta de vinos, solo tuvieran de la cuarta opcion que solicitamos.;carta de vinos;DRINKS#STYLE_OPTIONS;negative;36;50;
+Tardaron mucho, mucho ruido, comida sin gracia.; vacio;SERVICE#GENERAL;negative;0;0;
+Tardaron mucho, mucho ruido, comida sin gracia.; vacio;AMBIENCE#GENERAL;negative;0;0;
+Tardaron mucho, mucho ruido, comida sin gracia.;comida;FOOD#QUALITY;negative;29;35;mucho, mucho ruido, comida sin gracia.
+Excelente comida, calidad /precio correcto.;comida;FOOD#QUALITY;positive;10;16;Excelente comida, calidad correcto.
+Excelente comida, calidad /precio correcto.; vacio;FOOD#PRICES;positive;0;0;
+Excelente comida, calidad /precio correcto.; vacio;FOOD#QUALITY;positive;0;0;
+Servicio bueno.;Servicio;SERVICE#GENERAL;positive;0;8;Servicio bueno.
+Agradable, buena comida y buen ambiente.;comida;FOOD#QUALITY;positive;17;23;Agradable, buena comida y buen ambiente.
+Agradable, buena comida y buen ambiente.;ambiente;AMBIENCE#GENERAL;positive;31;39;Agradable, buena comida y buen ambiente.
+Agradable, buena comida y buen ambiente.; vacio;RESTAURANT#GENERAL;positive;0;0;
+En cuanto a las carnes, no pregunta el grado de cocina y elaboración según el gusto del comernsal.;carnes;FOOD#STYLE_OPTIONS;negative;16;22;En cuanto a las carnes, no pregunta el grado gusto
+Por lo demás el lugar, situación, elaboración y la relación calidad precio fue excelente incluso ideal también para niños.;lugar;RESTAURANT#GENERAL;positive;16;21;lo demás el lugar, situación, elaboración y calidad fue excelente ideal
+Por lo demás el lugar, situación, elaboración y la relación calidad precio fue excelente incluso ideal también para niños.;situación;LOCATION#GENERAL;positive;23;32;demás el lugar, situación, elaboración y la calidad
+Por lo demás el lugar, situación, elaboración y la relación calidad precio fue excelente incluso ideal también para niños.; vacio;FOOD#QUALITY;positive;0;0;
+Por lo demás el lugar, situación, elaboración y la relación calidad precio fue excelente incluso ideal también para niños.; vacio;FOOD#QUALITY;positive;0;0;
+Por lo demás el lugar, situación, elaboración y la relación calidad precio fue excelente incluso ideal también para niños.; vacio;FOOD#PRICES;positive;0;0;
+sorpresa agradable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Buena comida y aceptable Calidad/Precio.;comida;FOOD#QUALITY;positive;6;12;Buena comida y aceptable
+La atención recibida y el servicio muy correcto, la carta completa, el lugar ideal, con lo que la comida fue muy bien.;servicio;SERVICE#GENERAL;positive;26;34;La atención recibida y el servicio muy correcto, la carta lugar bien.
+La atención recibida y el servicio muy correcto, la carta completa, el lugar ideal, con lo que la comida fue muy bien.;carta;FOOD#STYLE_OPTIONS;positive;52;57;La atención recibida el servicio muy correcto, la carta completa, lugar bien.
+La atención recibida y el servicio muy correcto, la carta completa, el lugar ideal, con lo que la comida fue muy bien.;lugar;AMBIENCE#GENERAL;positive;71;76;La atención recibida el servicio carta completa, lugar ideal, con lo bien.
+La atención recibida y el servicio muy correcto, la carta completa, el lugar ideal, con lo que la comida fue muy bien.;comida;RESTAURANT#GENERAL;positive;98;104;muy la lo que comida fue bien.
+Recomendable¡¡¡; vacio;RESTAURANT#GENERAL;positive;0;0;
+Los platos están muy bien cocinados;platos;FOOD#QUALITY;positive;4;10;Los platos están muy bien cocinados
+El local es una pasada.;local;AMBIENCE#GENERAL;positive;3;8;El local es una pasada.
+Impresionante.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Y la cocina a la misma altura.;cocina;FOOD#QUALITY;positive;5;11;Y la cocina a misma altura.
+Han conseguido dar calidad a precios súper asequibles.; vacio;FOOD#QUALITY;positive;0;0;
+Han conseguido dar calidad a precios súper asequibles.; vacio;FOOD#PRICES;positive;0;0;
+Se nota hasta en los vinos, buenos y baratos.;vinos;DRINKS#QUALITY;positive;21;26;hasta en los vinos, buenos y baratos.
+Se nota hasta en los vinos, buenos y baratos.;vinos;DRINKS#PRICES;positive;21;26;hasta en los vinos, buenos y baratos.
+Fantástico.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Recomendadisimo! ; vacio;RESTAURANT#GENERAL;positive;0;0;
+El local muy mono, pero el menú ese día, al menos lo que yo probé, muy justito, casi suspenso.;local;AMBIENCE#GENERAL;positive;3;8;El local muy mono, pero menú
+El local muy mono, pero el menú ese día, al menos lo que yo probé, muy justito, casi suspenso.;menú;FOOD#STYLE_OPTIONS;negative;27;31;El local mono, pero el menú ese día, al suspenso.
+En la cocina debían estar de resaca porque me pedí unos noodles con verduritas y todavía las estoy buscando, era pasta china con avecrem, sin mas.;noodles con verduritas;FOOD#QUALITY;negative;56;78;
+Eso sí, el personal majísimo. ;personal;SERVICE#GENERAL;positive;11;19;Eso sí, el personal majísimo.
+para mi perfecto!; vacio;RESTAURANT#GENERAL;positive;0;0;
+Buena comida, buen servicio y sitio precioso.;comida;FOOD#QUALITY;positive;6;12;Buena comida, buen servicio y sitio
+Buena comida, buen servicio y sitio precioso.;servicio;SERVICE#GENERAL;positive;19;27;Buena comida, buen servicio y sitio precioso.
+Buena comida, buen servicio y sitio precioso.;sitio;AMBIENCE#GENERAL;positive;30;35;Buena comida, buen servicio y sitio precioso.
+Lo recomiendo totalmente ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Local precioso.;Local;AMBIENCE#GENERAL;positive;0;5;Local precioso.
+Aunque lo que realmente me ha impresionado es la calidad de los platos.;platos;FOOD#QUALITY;positive;64;70;Aunque impresionado es la calidad de los platos.
+He ido un par de veces y tanto el menu del dia como la carta !un 10!.;menu del dia;FOOD#STYLE_OPTIONS;positive;34;46;
+He ido un par de veces y tanto el menu del dia como la carta !un 10!.;carta;FOOD#STYLE_OPTIONS;positive;55;60;un y tanto el menu dia como la carta
+Muy buena mano en la cocina.;cocina;FOOD#QUALITY;positive;21;27;Muy buena mano en la cocina.
+Recomendadisimo! ; vacio;RESTAURANT#GENERAL;positive;0;0;
+estubimos el dia 22 de octubre,un restaurante moderno pero con encanto.;restaurante;AMBIENCE#GENERAL;positive;34;45;el dia 22 de restaurante moderno pero con
+Cenamos muy bien,con un precio justo,un personal encantador.Al dia siguiente fuimos a tomar una tapa con un vino,todo resulto muy agradableLa unica pega que pondria,es que no encontramos el telefono en ninguna pagina de internet,lo cual fuimos al restaurante sin saber si tendriamos sitio. ; vacio;FOOD#QUALITY;positive;0;0;
+Cenamos muy bien,con un precio justo,un personal encantador.Al dia siguiente fuimos a tomar una tapa con un vino,todo resulto muy agradableLa unica pega que pondria,es que no encontramos el telefono en ninguna pagina de internet,lo cual fuimos al restaurante sin saber si tendriamos sitio. ; vacio;RESTAURANT#PRICES;positive;0;0;
+Cenamos muy bien,con un precio justo,un personal encantador.Al dia siguiente fuimos a tomar una tapa con un vino,todo resulto muy agradableLa unica pega que pondria,es que no encontramos el telefono en ninguna pagina de internet,lo cual fuimos al restaurante sin saber si tendriamos sitio. ;personal;SERVICE#GENERAL;positive;40;48;un precio personal dia una
+Cenamos muy bien,con un precio justo,un personal encantador.Al dia siguiente fuimos a tomar una tapa con un vino,todo resulto muy agradableLa unica pega que pondria,es que no encontramos el telefono en ninguna pagina de internet,lo cual fuimos al restaurante sin saber si tendriamos sitio. ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Cenamos muy bien,con un precio justo,un personal encantador.Al dia siguiente fuimos a tomar una tapa con un vino,todo resulto muy agradableLa unica pega que pondria,es que no encontramos el telefono en ninguna pagina de internet,lo cual fuimos al restaurante sin saber si tendriamos sitio. ;telefono;RESTAURANT#MISCELLANEOUS;negative;190;198;fuimos que no encontramos el telefono en ninguna pagina
+Hemos quedado encantados.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Mi marido pidio un reservado sólo para nosotros, y no nos faltó de nada.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Pedimos un menú degustación y todo buenísimo.;menú degustación;FOOD#STYLE_OPTIONS;positive;11;27;
+Cinco Platos con cantidades suficientes para llenarte.No tardaban nada en servirnos, atentos siempre para que no tuviésemos que esperar.;Platos;FOOD#STYLE_OPTIONS;positive;6;12;Cinco Platos con cantidades suficientes en no
+Cinco Platos con cantidades suficientes para llenarte.No tardaban nada en servirnos, atentos siempre para que no tuviésemos que esperar.; vacio;SERVICE#GENERAL;positive;0;0;
+Super recomendable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Sólo un pequeño detalle, faltaba música de ambiente para ser perfecto. ;música de ambiente;AMBIENCE#GENERAL;negative;33;51;
+No lo aconsejo para todo tipo de comensales…; vacio;RESTAURANT#MISCELLANEOUS;negative;0;0;
+Los platos muy escasos incluso para un menú degustación.;platos;FOOD#STYLE_OPTIONS;negative;4;10;Los platos muy escasos incluso degustación.
+Algo insípida, le faltaba un toque… en definitiva, no nos gustó, no volveremos, y no lo recomiendo. ; vacio;FOOD#QUALITY;negative;0;0;
+Algo insípida, le faltaba un toque… en definitiva, no nos gustó, no volveremos, y no lo recomiendo. ; vacio;RESTAURANT#GENERAL;negative;0;0;
+fuimos a hacer una celebracion familiar a HOSTERIA BOTIN DEL CORREGIDOR  en c/ Josefa Amar y Borbom, era la confirmacion de mi hija, eramos 15 personas y realmente salimos muy satisfechos, la relacion calidad precio fue muy favorable, el trato muy amable y cordial y el comedor arriba muy agradable.; vacio;FOOD#QUALITY;positive;0;0;
+fuimos a hacer una celebracion familiar a HOSTERIA BOTIN DEL CORREGIDOR  en c/ Josefa Amar y Borbom, era la confirmacion de mi hija, eramos 15 personas y realmente salimos muy satisfechos, la relacion calidad precio fue muy favorable, el trato muy amable y cordial y el comedor arriba muy agradable.; vacio;FOOD#PRICES;positive;0;0;
+fuimos a hacer una celebracion familiar a HOSTERIA BOTIN DEL CORREGIDOR  en c/ Josefa Amar y Borbom, era la confirmacion de mi hija, eramos 15 personas y realmente salimos muy satisfechos, la relacion calidad precio fue muy favorable, el trato muy amable y cordial y el comedor arriba muy agradable.;trato;SERVICE#GENERAL;positive;238;243;y muy relacion fue favorable, el trato amable comedor
+fuimos a hacer una celebracion familiar a HOSTERIA BOTIN DEL CORREGIDOR  en c/ Josefa Amar y Borbom, era la confirmacion de mi hija, eramos 15 personas y realmente salimos muy satisfechos, la relacion calidad precio fue muy favorable, el trato muy amable y cordial y el comedor arriba muy agradable.;comedor;AMBIENCE#GENERAL;positive;270;277;y muy relacion fue favorable, el trato cordial comedor arriba agradable.
+fuimos a hacer una celebracion familiar a HOSTERIA BOTIN DEL CORREGIDOR  en c/ Josefa Amar y Borbom, era la confirmacion de mi hija, eramos 15 personas y realmente salimos muy satisfechos, la relacion calidad precio fue muy favorable, el trato muy amable y cordial y el comedor arriba muy agradable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+realmente lo recomiendodesde aqui mis gracias a toda la plantilla   ISABEL Y MANOLO ;plantilla;SERVICE#GENERAL;positive;56;65;realmente recomiendodesde aqui gracias a toda la plantilla ISABEL Y MANOLO
+realmente lo recomiendodesde aqui mis gracias a toda la plantilla   ISABEL Y MANOLO ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Ha empeorado notablemente.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Me comí una lasaña y estaba muy mal cocinada…creo que las que venden congeladas en los super están mejor.;lasaña;FOOD#QUALITY;negative;12;18;Me comí una lasaña y estaba muy
+Para colmo nos amenizaron la estancia con musica a un volumen no muy normal de musica latinoamericana…una incongruencia en un restaurante que se llama Monasterio y da comida italiana.;musica;AMBIENCE#GENERAL;negative;42;48;la estancia con musica a un volumen normal de
+Lo dicho, para no volver. ; vacio;RESTAURANT#GENERAL;negative;0;0;
+Había estado en diversas cenas de grupo en 2004 y 2005 y nada comparable a lo que me encontré en Enero de 2009: una atención pésima, una comida justita y un precio caro para lo recibido.;atención;SERVICE#GENERAL;negative;116;124;Había estado cenas de 2004 Enero una atención pésima, comida precio
+Había estado en diversas cenas de grupo en 2004 y 2005 y nada comparable a lo que me encontré en Enero de 2009: una atención pésima, una comida justita y un precio caro para lo recibido.; vacio;RESTAURANT#PRICES;negative;0;0;
+Y que te echen a las 12 de la noche porque tenían que cenar el día de la víspera de Reyes tiene su gracia.; vacio;SERVICE#GENERAL;negative;0;0;
+Un restaurante exceccional, con una calidad de productos impresionantes, el pescado recien traido de San SEBASTIAN, y la carne, en pocos restaurantes la comes como en la sidreria.volveria, siempre que pudiese ;restaurante;RESTAURANT#GENERAL;positive;3;14;Un restaurante exceccional, con una calidad recien restaurantes comes pudiese
+Un restaurante exceccional, con una calidad de productos impresionantes, el pescado recien traido de San SEBASTIAN, y la carne, en pocos restaurantes la comes como en la sidreria.volveria, siempre que pudiese ;productos;FOOD#QUALITY;positive;47;56;con una calidad de productos impresionantes, el pescado
+Un restaurante exceccional, con una calidad de productos impresionantes, el pescado recien traido de San SEBASTIAN, y la carne, en pocos restaurantes la comes como en la sidreria.volveria, siempre que pudiese ;pescado;FOOD#QUALITY;positive;76;83;de productos impresionantes, el pescado recien traido carne,
+Un restaurante exceccional, con una calidad de productos impresionantes, el pescado recien traido de San SEBASTIAN, y la carne, en pocos restaurantes la comes como en la sidreria.volveria, siempre que pudiese ;carne;FOOD#QUALITY;positive;121;126;el pescado recien traido SEBASTIAN, y la carne, en pocos restaurantes
+Aquí no me engañan y todos sus productos son de primera.Los pescados son sensacional, frescos y cocinados sin salsas que a veces solo pretenden enmascarar un mal producto.;productos;FOOD#QUALITY;positive;31;40;y todos sus productos son de enmascarar un mal producto.
+Aquí no me engañan y todos sus productos son de primera.Los pescados son sensacional, frescos y cocinados sin salsas que a veces solo pretenden enmascarar un mal producto.;pescados;FOOD#QUALITY;positive;60;68;son de pescados sensacional, frescos cocinados
+Y de la carne, pueden presumir de ser la mejor carne de Zaragoza, y me atrevería a decir,de las mejores de España.;carne;FOOD#QUALITY;positive;8;13;Y de la carne, pueden presumir ser mejor carne Zaragoza, atrevería las
+Si la gente quiere llenar la tripa a precio barato, desde luego La Kupela no es para ellos.; vacio;RESTAURANT#PRICES;negative;0;0;
+Hola  Todas las veces que hemos ido ha sido igual de bien: calidad y trato correcto.; vacio;FOOD#QUALITY;positive;0;0;
+Hola  Todas las veces que hemos ido ha sido igual de bien: calidad y trato correcto.;trato;SERVICE#GENERAL;positive;69;74;bien: calidad y trato correcto.
+Buen restaurante y servicio, quizás el precio a veces es un poco elevado pero merece la pena probar sus carnes. ;restaurante;RESTAURANT#GENERAL;positive;5;16;Buen restaurante y servicio, quizás elevado
+Buen restaurante y servicio, quizás el precio a veces es un poco elevado pero merece la pena probar sus carnes. ;servicio;SERVICE#GENERAL;positive;19;27;Buen restaurante y servicio, quizás el precio elevado
+Buen restaurante y servicio, quizás el precio a veces es un poco elevado pero merece la pena probar sus carnes. ;carnes;FOOD#QUALITY;positive;104;110;pena probar sus carnes.
+Si no se ponen al día, perderán clientes.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Su atención muy buena, la comida excelente, un restaurante muy bello.;atención;SERVICE#GENERAL;positive;3;11;Su atención muy buena, la comida
+Su atención muy buena, la comida excelente, un restaurante muy bello.;comida;FOOD#QUALITY;positive;26;32;Su atención muy buena, la comida excelente, un restaurante
+Su atención muy buena, la comida excelente, un restaurante muy bello.;restaurante;AMBIENCE#GENERAL;positive;47;58;muy la comida excelente, un restaurante bello.
+La comida esta muy bien, pero el precio es un poco alto para la calidad que ofrecen.;comida;FOOD#QUALITY;positive;3;9;La comida esta muy bien, alto
+La comida esta muy bien, pero el precio es un poco alto para la calidad que ofrecen.; vacio;FOOD#PRICES;negative;0;0;
+Una cena estupenda, el servicio impecable, la comida fabulosa, una amplia carta de vinos y unos postres perfectos.;servicio;SERVICE#GENERAL;positive;23;31;Una cena estupenda, el servicio impecable, la comida
+Una cena estupenda, el servicio impecable, la comida fabulosa, una amplia carta de vinos y unos postres perfectos.;comida;FOOD#QUALITY;positive;46;52;Una cena estupenda, servicio impecable, la comida fabulosa, una amplia carta postres
+Una cena estupenda, el servicio impecable, la comida fabulosa, una amplia carta de vinos y unos postres perfectos.;carta de vinos;DRINKS#STYLE_OPTIONS;positive;74;88;
+Una cena estupenda, el servicio impecable, la comida fabulosa, una amplia carta de vinos y unos postres perfectos.;postres;FOOD#QUALITY;positive;96;103;la comida fabulosa, carta vinos y unos postres perfectos.
+Una cena estupenda, el servicio impecable, la comida fabulosa, una amplia carta de vinos y unos postres perfectos.;cena;FOOD#QUALITY;positive;4;8;Una cena estupenda, el servicio comida
+El local amplio, cómodo y bien acondicionado.;local;AMBIENCE#GENERAL;positive;3;8;El local amplio, cómodo y
+Como fuimos con amigos argentinos hicimos un pica pica de primero para que probaran platos típicos catalanes... quedaron encantados.;pica pica;FOOD#QUALITY;positive;45;54;
+El precio correcto y adecuado a la comida.;comida;FOOD#PRICES;positive;35;41;y adecuado a la comida.
+Servicio excelente, al igual que el solomillo...;Servicio;SERVICE#GENERAL;positive;0;8;Servicio excelente, al igual el
+Servicio excelente, al igual que el solomillo...;solomillo;FOOD#QUALITY;positive;36;45;Servicio excelente, al igual que el
+Buena relación calidad/precio.; vacio;FOOD#PRICES;positive;0;0;
+Recomendable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Muy recomendable; vacio;RESTAURANT#GENERAL;positive;0;0;
+De los mejores argentinos de barcelona.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Fantástico, la comida muy buena pero la verdad es que el servicio impresionante, así la comida sabe aún mejor!!;comida;FOOD#QUALITY;positive;15;21;Fantástico, la comida muy buena pero que servicio así sabe
+Fantástico, la comida muy buena pero la verdad es que el servicio impresionante, así la comida sabe aún mejor!!;servicio;SERVICE#GENERAL;positive;57;65;la comida es que el servicio impresionante, así sabe
+Buena atención, sugerencias correctas y buena calidad.; vacio;SERVICE#GENERAL;positive;0;0;
+Buena atención, sugerencias correctas y buena calidad.; vacio;FOOD#QUALITY;positive;0;0;
+Volveremos sin lugar a dudas, nos quedan por probar muchas cosas... Enhorabuena seguid así!; vacio;RESTAURANT#GENERAL;positive;0;0;
+Gran opcion de rest.;Gran opcion de rest;RESTAURANT#GENERAL;positive;0;19;
+argentino,con una carne extraordinaria y todo servido con una profesionalidad sobresaliente.;carne;FOOD#QUALITY;positive;18;23;una carne extraordinaria y todo servido con
+argentino,con una carne extraordinaria y todo servido con una profesionalidad sobresaliente.; vacio;SERVICE#GENERAL;positive;0;0;
+Muy recomendable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+El restaurante de lujo.el servi io absolutamente profesional y los platos de gran calidad y muy bien emplatados.;servi io;SERVICE#GENERAL;positive;26;34;
+El restaurante de lujo.el servi io absolutamente profesional y los platos de gran calidad y muy bien emplatados.;platos;FOOD#QUALITY;positive;67;73;de absolutamente profesional y los platos gran calidad
+El restaurante de lujo.el servi io absolutamente profesional y los platos de gran calidad y muy bien emplatados.;restaurante;RESTAURANT#GENERAL;positive;3;14;El restaurante de lujo.el io profesional
+Una cena en pareja EncantadoraRepetiremos seguro ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Totalmente satisfactorio.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Tanto por la cantidad, la calidad y el trato recibido.; vacio;FOOD#STYLE_OPTIONS;positive;0;0;
+Tanto por la cantidad, la calidad y el trato recibido.; vacio;FOOD#QUALITY;positive;0;0;
+Tanto por la cantidad, la calidad y el trato recibido.;trato;SERVICE#GENERAL;positive;39;44;Tanto por la cantidad, calidad y el trato recibido.
+Lo recomendaré. ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Yo estuve en marzo y en principio me pareció que las conversaciones de las mesas se oían y molestaban pero lo que no me pareció bien fue el incumplimiento de la calidad en la atención al cliente, me explico: Pedimos el menu degustación y al preguntarnos,un detalle, si queríamos hacer constar algún alimento que no nos gustara, le dijimos que en los platos que se elaboraran en el momento no les pusieran sal.En uno de los platos sacaron foie fresco a la plancha lleno de sal gorda y cuando hicimos la observación se disculparon pero no se ofrecieron a rehacerlo sin sal, no me parece correcto primero por evidenciar la poca atención que se presta a las solicitudes de los clientes que están distribuidos en 5 mesas y segundo por la cutrez de no rectificar el error.; vacio;AMBIENCE#GENERAL;negative;0;0;
+Yo estuve en marzo y en principio me pareció que las conversaciones de las mesas se oían y molestaban pero lo que no me pareció bien fue el incumplimiento de la calidad en la atención al cliente, me explico: Pedimos el menu degustación y al preguntarnos,un detalle, si queríamos hacer constar algún alimento que no nos gustara, le dijimos que en los platos que se elaboraran en el momento no les pusieran sal.En uno de los platos sacaron foie fresco a la plancha lleno de sal gorda y cuando hicimos la observación se disculparon pero no se ofrecieron a rehacerlo sin sal, no me parece correcto primero por evidenciar la poca atención que se presta a las solicitudes de los clientes que están distribuidos en 5 mesas y segundo por la cutrez de no rectificar el error.;atención;SERVICE#GENERAL;negative;175;183;en me las de la calidad atención al cliente, por evidenciar presta clientes
+Yo estuve en marzo y en principio me pareció que las conversaciones de las mesas se oían y molestaban pero lo que no me pareció bien fue el incumplimiento de la calidad en la atención al cliente, me explico: Pedimos el menu degustación y al preguntarnos,un detalle, si queríamos hacer constar algún alimento que no nos gustara, le dijimos que en los platos que se elaboraran en el momento no les pusieran sal.En uno de los platos sacaron foie fresco a la plancha lleno de sal gorda y cuando hicimos la observación se disculparon pero no se ofrecieron a rehacerlo sin sal, no me parece correcto primero por evidenciar la poca atención que se presta a las solicitudes de los clientes que están distribuidos en 5 mesas y segundo por la cutrez de no rectificar el error.;atención;SERVICE#GENERAL;negative;625;633;en me las de la calidad atención al cliente, por evidenciar presta clientes
+Yo estuve en marzo y en principio me pareció que las conversaciones de las mesas se oían y molestaban pero lo que no me pareció bien fue el incumplimiento de la calidad en la atención al cliente, me explico: Pedimos el menu degustación y al preguntarnos,un detalle, si queríamos hacer constar algún alimento que no nos gustara, le dijimos que en los platos que se elaboraran en el momento no les pusieran sal.En uno de los platos sacaron foie fresco a la plancha lleno de sal gorda y cuando hicimos la observación se disculparon pero no se ofrecieron a rehacerlo sin sal, no me parece correcto primero por evidenciar la poca atención que se presta a las solicitudes de los clientes que están distribuidos en 5 mesas y segundo por la cutrez de no rectificar el error.; vacio;SERVICE#GENERAL;negative;0;0;
+Nos ofrecieron tres primeros, un risotto exquisito y otros dos platos que estarían muy ricos sino fuera porque los forraron con huevas de pescado de color naranja que con su fuerte sabor y estar conservadas en sal énmascaraban el sabor originarl de los platos.No se si fue casualidad lo de añadir las huevas a los dos platos, pero si no lo hicieron por acabar la latita, repetir dos veces y encima con la adición de algo muy salado cuando habíamos mencionado la cuestión de la sal y que los platos se podrían haber servido sin las huevas.;risotto;FOOD#QUALITY;positive;33;40;tres primeros, un risotto exquisito y otros platos platos,
+Nos ofrecieron tres primeros, un risotto exquisito y otros dos platos que estarían muy ricos sino fuera porque los forraron con huevas de pescado de color naranja que con su fuerte sabor y estar conservadas en sal énmascaraban el sabor originarl de los platos.No se si fue casualidad lo de añadir las huevas a los dos platos, pero si no lo hicieron por acabar la latita, repetir dos veces y encima con la adición de algo muy salado cuando habíamos mencionado la cuestión de la sal y que los platos se podrían haber servido sin las huevas.;huevas de pescado de color naranja;FOOD#QUALITY;negative;128;162;
+Nos ofrecieron tres primeros, un risotto exquisito y otros dos platos que estarían muy ricos sino fuera porque los forraron con huevas de pescado de color naranja que con su fuerte sabor y estar conservadas en sal énmascaraban el sabor originarl de los platos.No se si fue casualidad lo de añadir las huevas a los dos platos, pero si no lo hicieron por acabar la latita, repetir dos veces y encima con la adición de algo muy salado cuando habíamos mencionado la cuestión de la sal y que los platos se podrían haber servido sin las huevas.; vacio;FOOD#STYLE_OPTIONS;negative;0;0;
+Nos ofrecieron tres primeros, un risotto exquisito y otros dos platos que estarían muy ricos sino fuera porque los forraron con huevas de pescado de color naranja que con su fuerte sabor y estar conservadas en sal énmascaraban el sabor originarl de los platos.No se si fue casualidad lo de añadir las huevas a los dos platos, pero si no lo hicieron por acabar la latita, repetir dos veces y encima con la adición de algo muy salado cuando habíamos mencionado la cuestión de la sal y que los platos se podrían haber servido sin las huevas.; vacio;FOOD#QUALITY;negative;0;0;
+Lo demás bien pero nos decepcionó en un día especial. ; vacio;RESTAURANT#GENERAL;negative;0;0;
+Sinceramente lo veo correcto con las explicaciones, pero para mi gusto es una barbaridad pagar 170 euros por pareja por lo presentado contando que no se tomaron cafes, y lo respeto ya que tiene una estrella michelin, pero no da derecho a cobrar por estrella, lugar o persona con la que has aprendido, la cocina es un arte, un gusto y una forma de presentar una obra, asi es dificil que mucha gente pueda conocerla.; vacio;RESTAURANT#PRICES;negative;0;0;
+Sinceramente lo veo correcto con las explicaciones, pero para mi gusto es una barbaridad pagar 170 euros por pareja por lo presentado contando que no se tomaron cafes, y lo respeto ya que tiene una estrella michelin, pero no da derecho a cobrar por estrella, lugar o persona con la que has aprendido, la cocina es un arte, un gusto y una forma de presentar una obra, asi es dificil que mucha gente pueda conocerla.; vacio;RESTAURANT#GENERAL;positive;0;0;
+En lo que no estoy de acuerdo es que no esté céntrico, para mí está en la mejor zona de la ciudad, entre la PLaza del Pilar y la plaza de España, en el tubo, auténtico meolo de Zaragoza lleno de siglos de historia. ;zona;LOCATION#GENERAL;positive;80;84;que no de esté céntrico, mí está en la mejor zona ciudad, PLaza del
+<+>El ambiente y el servicio.;ambiente;AMBIENCE#GENERAL;positive;6;14;ambiente y el servicio.
+<+>El ambiente y el servicio.;servicio;SERVICE#GENERAL;positive;20;28;ambiente y el servicio.
+Todo perfecto; vacio;RESTAURANT#GENERAL;positive;0;0;
+Genial!; vacio;RESTAURANT#GENERAL;positive;0;0;
+Buen servicio, buena comida y a precio medio.;servicio;SERVICE#GENERAL;positive;5;13;Buen servicio, buena comida y precio
+Buen servicio, buena comida y a precio medio.;comida;FOOD#QUALITY;positive;21;27;Buen servicio, buena comida y a precio
+Buen servicio, buena comida y a precio medio.; vacio;RESTAURANT#PRICES;positive;0;0;
+Carta variada: Los huevos con patatas y foie, los calcots y la carne en general.;Carta;FOOD#STYLE_OPTIONS;positive;0;5;Carta variada: Los huevos la en
+Carta variada: Los huevos con patatas y foie, los calcots y la carne en general.;huevos con patatas y foie;FOOD#QUALITY;positive;19;44;
+Carta variada: Los huevos con patatas y foie, los calcots y la carne en general.;calcots;FOOD#QUALITY;positive;50;57;con patatas y foie, los calcots la carne
+Carta variada: Los huevos con patatas y foie, los calcots y la carne en general.;carne;FOOD#QUALITY;positive;63;68;con patatas y foie, calcots la carne en general.
+Se podrían mejorar los postres;postres;FOOD#QUALITY;negative;23;30;Se podrían mejorar los postres
+Fueron todos muy amables y atentos.;Fueron todos muy amables y atentos;SERVICE#GENERAL;positive;0;34;
+La cantidad y calidad de la comida muy buena.;comida;FOOD#QUALITY;positive;28;34;La cantidad calidad de la comida muy buena.
+La cantidad y calidad de la comida muy buena.;comida;FOOD#STYLE_OPTIONS;positive;28;34;La cantidad calidad de la comida muy buena.
+Muy satisfecha con la comida y el servicio.;comida;FOOD#QUALITY;positive;22;28;Muy satisfecha con la comida y el servicio.
+Muy satisfecha con la comida y el servicio.;servicio;SERVICE#GENERAL;positive;34;42;con la comida y el servicio.
+Lo recomiendo; vacio;RESTAURANT#GENERAL;positive;0;0;
+De primer plato pedimos espárragos y nos los sirvieron fríos con la salsa fría.;espárragos;FOOD#QUALITY;negative;24;34;primer plato pedimos espárragos y nos los sirvieron
+De primer plato pedimos espárragos y nos los sirvieron fríos con la salsa fría.;salsa;FOOD#QUALITY;negative;68;73;y nos los sirvieron fríos con la salsa fría.
+No nos gustó demasiado.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Luego pedimos carne y estaba muy buena, pero el acompañamiento estaba frío también.;carne;FOOD#QUALITY;positive;14;19;Luego pedimos carne y estaba muy buena, frío
+Luego pedimos carne y estaba muy buena, pero el acompañamiento estaba frío también.;acompañamiento;FOOD#QUALITY;negative;48;62;estaba buena, pero el acompañamiento frío también.
+Yo acerté con el postre.;postre;FOOD#QUALITY;positive;17;23;Yo acerté con el postre.
+El servicio bueno y a su tiempo.;servicio;SERVICE#GENERAL;positive;3;11;El servicio bueno y a tiempo.
+totalmente recomendable para tomar una calcotada en el centro de Barcelona.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Tomamos el menú calcotada y estuvo muy correcto con posibilidad de repetir calcots y la bebida incluida sin límite.;bebida;DRINKS#STYLE_OPTIONS;positive;88;94;y con posibilidad repetir calcots la bebida incluida sin límite.
+Tomamos el menú calcotada y estuvo muy correcto con posibilidad de repetir calcots y la bebida incluida sin límite.;calcotada;FOOD#QUALITY;positive;16;25;Tomamos el menú calcotada y estuvo muy
+Tomamos el menú calcotada y estuvo muy correcto con posibilidad de repetir calcots y la bebida incluida sin límite.;calcots;FOOD#STYLE_OPTIONS;positive;75;82;y posibilidad de repetir calcots la bebida
+La carne bién también.;carne;FOOD#QUALITY;positive;3;8;La carne bién también.
+Eramos 15 y estuvo muy bién para ser en el centro de Barcelona.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Disfrutar con tu pareja de un ambiente muy moderno pero sin perder calidez y disfrutando de una carta muy variada que cubre un amplia gama de preferencias;ambiente;AMBIENCE#GENERAL;positive;30;38;con tu pareja de un ambiente muy moderno pero una
+Disfrutar con tu pareja de un ambiente muy moderno pero sin perder calidez y disfrutando de una carta muy variada que cubre un amplia gama de preferencias;carta;FOOD#STYLE_OPTIONS;positive;96;101;de muy y disfrutando una carta variada que cubre
+Hicimos una reserva para 11 y la verdad es que todo muy correcto.; vacio;RESTAURANT#GENERAL;positive;0;0;
+La atención del jefe excelente, puntuales en la reserva, y un servicio muy bueno.;atención;SERVICE#GENERAL;positive;3;11;La atención del jefe excelente,
+La atención del jefe excelente, puntuales en la reserva, y un servicio muy bueno.;servicio;SERVICE#GENERAL;positive;62;70;del jefe excelente, puntuales reserva, y un servicio muy bueno.
+Tal vez la única pega (para mi gusto) es que la parrillada de carne no era muy grande (aunque sí es cierto que te dejaban repetir calcots y que casi todo el mundo estaba lleno ya).;parrillada de carne;FOOD#STYLE_OPTIONS;negative;48;67;
+Tal vez la única pega (para mi gusto) es que la parrillada de carne no era muy grande (aunque sí es cierto que te dejaban repetir calcots y que casi todo el mundo estaba lleno ya).;calcots;FOOD#STYLE_OPTIONS;positive;130;137;que te dejaban repetir calcots y casi
+Los calcots riquísimos y la carne muy buena también.;calcots;FOOD#QUALITY;positive;4;11;Los calcots riquísimos y la carne
+Los calcots riquísimos y la carne muy buena también.;carne;FOOD#QUALITY;positive;28;33;calcots riquísimos y la carne muy buena también.
+Si organizáis algo en grupo y queréis quedar bien con los comensales os lo recomiendo sin duda.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Pedimos el menu calcotada y todo estaba muy bueno...el restaurante muy bonito...lo unico son las mesas un poco pequeñas y demasiado juntas por lo demas todo bien.;calcotada;FOOD#QUALITY;positive;16;25;Pedimos el menu calcotada y todo estaba
+Pedimos el menu calcotada y todo estaba muy bueno...el restaurante muy bonito...lo unico son las mesas un poco pequeñas y demasiado juntas por lo demas todo bien.;restaurante;RESTAURANT#GENERAL;positive;55;66;el muy restaurante unico son las mesas pequeñas lo demas
+Pedimos el menu calcotada y todo estaba muy bueno...el restaurante muy bonito...lo unico son las mesas un poco pequeñas y demasiado juntas por lo demas todo bien.;mesas;AMBIENCE#GENERAL;negative;97;102;restaurante unico son las mesas un poco pequeñas demas
+Pedimos el menu calcotada y todo estaba muy bueno...el restaurante muy bonito...lo unico son las mesas un poco pequeñas y demasiado juntas por lo demas todo bien.; vacio;RESTAURANT#GENERAL;positive;0;0;
+recomendable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+El restaurante, utilizado en anteriores ocasiones, está muy bien: buena relación calidad-precio, atención y servicio impecables, y limpieza perfecta de cocina-comedor-servicios.;restaurante;RESTAURANT#GENERAL;positive;3;14;El restaurante, utilizado en anteriores está muy bien: relación
+El restaurante, utilizado en anteriores ocasiones, está muy bien: buena relación calidad-precio, atención y servicio impecables, y limpieza perfecta de cocina-comedor-servicios.; vacio;RESTAURANT#PRICES;positive;0;0;
+El restaurante, utilizado en anteriores ocasiones, está muy bien: buena relación calidad-precio, atención y servicio impecables, y limpieza perfecta de cocina-comedor-servicios.;atención;SERVICE#GENERAL;positive;97;105;relación calidad-precio, atención y servicio impecables,
+El restaurante, utilizado en anteriores ocasiones, está muy bien: buena relación calidad-precio, atención y servicio impecables, y limpieza perfecta de cocina-comedor-servicios.;servicio;SERVICE#GENERAL;positive;108;116;calidad-precio, atención y servicio impecables, limpieza
+El restaurante, utilizado en anteriores ocasiones, está muy bien: buena relación calidad-precio, atención y servicio impecables, y limpieza perfecta de cocina-comedor-servicios.; vacio;AMBIENCE#GENERAL;positive;0;0;
+Muy recomendable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+El sitio muy agradable.;sitio;AMBIENCE#GENERAL;positive;3;8;El sitio muy agradable.
+El servicio muy bien (al hacer la reserva hicimos constancia de que era un aniversario, y nos colocaron en un romántico rincón y nos obsequiaron con 2 copas de cava).;servicio;SERVICE#GENERAL;positive;3;11;El servicio muy bien hacer hicimos constancia colocaron
+La comida sencilla, bien preparada y bien presentada.;comida;FOOD#QUALITY;positive;3;9;La comida sencilla, bien preparada
+La comida sencilla, bien preparada y bien presentada.;comida;FOOD#STYLE_OPTIONS;positive;3;9;La comida sencilla, bien preparada
+La relación calidad-precio es buena.; vacio;RESTAURANT#PRICES;positive;0;0;
+Es un lugar que apunto en  mi agenda.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Muy rica la comida y variedad en el menú.;comida;FOOD#QUALITY;positive;12;18;Muy rica la comida y variedad en menú.
+Muy rica la comida y variedad en el menú.;menú;FOOD#STYLE_OPTIONS;positive;36;40;Muy rica comida variedad en el menú.
+Recomendable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+El menu de calcotada nos parecio de lo mas completo y la relacion calidad precio muy alta ademas de que el servicio fue muy bueno y el lugar es muy lindo.;calcotada;FOOD#QUALITY;positive;11;20;El menu de calcotada nos parecio
+El menu de calcotada nos parecio de lo mas completo y la relacion calidad precio muy alta ademas de que el servicio fue muy bueno y el lugar es muy lindo.; vacio;RESTAURANT#PRICES;positive;0;0;
+El menu de calcotada nos parecio de lo mas completo y la relacion calidad precio muy alta ademas de que el servicio fue muy bueno y el lugar es muy lindo.;servicio;SERVICE#GENERAL;positive;107;115;de muy que el servicio fue bueno lindo.
+El menu de calcotada nos parecio de lo mas completo y la relacion calidad precio muy alta ademas de que el servicio fue muy bueno y el lugar es muy lindo.;lugar;RESTAURANT#GENERAL;positive;135;140;y muy el bueno lugar es lindo.
+Buen servicio y buena calidad-precio.;servicio;SERVICE#GENERAL;positive;5;13;Buen servicio y buena calidad-precio.
+Buen servicio y buena calidad-precio.; vacio;RESTAURANT#PRICES;positive;0;0;
+Trato excelente, buena relación calidad precio, abundante y te ofrecen repetir en menu concertado.;Trato;SERVICE#GENERAL;positive;0;5;Trato excelente, buena relación te ofrecen en
+Trato excelente, buena relación calidad precio, abundante y te ofrecen repetir en menu concertado.; vacio;RESTAURANT#PRICES;positive;0;0;
+Trato excelente, buena relación calidad precio, abundante y te ofrecen repetir en menu concertado.; vacio;FOOD#STYLE_OPTIONS;positive;0;0;
+Falta algun menu de pescado.;pescado;FOOD#STYLE_OPTIONS;negative;20;27;algun menu de pescado.
+El servicio muy atento y amable, con posibilidad de repetir platos del menú.;servicio;SERVICE#GENERAL;positive;3;11;El servicio muy atento y posibilidad
+El servicio muy atento y amable, con posibilidad de repetir platos del menú.;platos;FOOD#STYLE_OPTIONS;positive;60;66;posibilidad de repetir platos del menú.
+Una buena opción a precio low cost.; vacio;RESTAURANT#PRICES;positive;0;0;
+Sinceramente, no puedo decir nada mejor que el asegurar que volveré.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Relación calidad-precio inmejorable.; vacio;RESTAURANT#PRICES;positive;0;0;
+Los platos esta muy bien cocinados.;platos;FOOD#QUALITY;positive;4;10;Los platos esta muy bien cocinados.
+9.5; vacio;RESTAURANT#GENERAL;positive;0;0;
+Fuimos a comer 3 personas, muy completo este menú, en relació calidad precio muy buena.;menú;FOOD#QUALITY;positive;45;49;3 personas, muy completo este menú, en relació calidad
+Fuimos a comer 3 personas, muy completo este menú, en relació calidad precio muy buena.; vacio;RESTAURANT#PRICES;positive;0;0;
+Ayer fui con dos amigos a cenar al restaurante y la verdad nos trataron super bien, nos tenían la mesa preparada aunque llegamos tarde.; vacio;SERVICE#GENERAL;positive;0;0;
+Ayer fui con dos amigos a cenar al restaurante y la verdad nos trataron super bien, nos tenían la mesa preparada aunque llegamos tarde.; vacio;SERVICE#GENERAL;positive;0;0;
+Fueron rapidos, la carta es variada y los productos buenos, en mi opinion es totalmente recomendable.; vacio;SERVICE#GENERAL;positive;0;0;
+Fueron rapidos, la carta es variada y los productos buenos, en mi opinion es totalmente recomendable.;carta;FOOD#STYLE_OPTIONS;positive;19;24;Fueron rapidos, la carta es variada y productos
+Fueron rapidos, la carta es variada y los productos buenos, en mi opinion es totalmente recomendable.;productos;FOOD#QUALITY;positive;42;51;carta es variada y los productos buenos, en mi
+Fueron rapidos, la carta es variada y los productos buenos, en mi opinion es totalmente recomendable.; vacio;RESTAURANT#GENERAL;positive;0;0;
+La comida muy bien, pero si algo destaca por encima de todo, es el atentísimo trato de todo el personal, al que ves con ganas de  que todo este bien para el cliente.;comida;FOOD#QUALITY;positive;3;9;La comida muy bien, pero trato bien
+La comida muy bien, pero si algo destaca por encima de todo, es el atentísimo trato de todo el personal, al que ves con ganas de  que todo este bien para el cliente.;personal;SERVICE#GENERAL;positive;95;103;pero destaca de todo, es el atentísimo trato todo personal, al que ves
+Sin dudarlo repetiremos.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Rapido, cómodo y eficaz.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Todos salimos contentos el servicio fue bueno.;servicio;SERVICE#GENERAL;positive;27;35;salimos contentos el servicio fue bueno.
+La cena estuvo muy bien recomendado. ;cena;FOOD#QUALITY;positive;3;7;La cena estuvo muy bien recomendado.
+La comida buena y buena presentación, junto con una atención correcta.;comida;FOOD#QUALITY;positive;3;9;La comida buena y atención
+La comida buena y buena presentación, junto con una atención correcta.;atención;SERVICE#GENERAL;positive;52;60;La comida buena junto con una atención correcta.
+Recomendable. ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Estuve hace dos semanas, volvia despues de 2 años (entonces me maravilló) pero ahora en 2010 lo vi un poco dejado, no me sorprendio nada y la impresión que me dió es que tenían poca variedad para elegir.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Estaba todo buenisismo pero no creo que vaya una tercera vez. ; vacio;FOOD#QUALITY;positive;0;0;
+En lo referente a calidad-precio y dentro de su categoría, desde mi punto de vista, debe ser uno de los restaurantes de referencia de Zaragoza.;restaurantes;RESTAURANT#GENERAL;positive;104;116;referente de debe ser uno los restaurantes referencia
+Su experiencia, profesionalidad, servicio y trato exquisitos aportan un valor añadido difícilmente inigualable en estos momentos.;servicio;SERVICE#GENERAL;positive;33;41;Su experiencia, profesionalidad, servicio y trato exquisitos
+Su dirección consigue sobradamente lo que entiendo que pretende.;dirección;RESTAURANT#MISCELLANEOUS;positive;3;12;Su dirección consigue sobradamente lo entiendo
+El que va a comer, vaya cuando vaya, ya sabe lo que se va a encontrar: calidad de primera, bodega única, carta renovada pero sin sorpresas, trato educado, agradable y que te invita a volver antes de haberte ido.;calidad;FOOD#QUALITY;positive;71;78;va a comer, vaya vaya, sabe encontrar: calidad de primera, bodega carta trato invita
+El que va a comer, vaya cuando vaya, ya sabe lo que se va a encontrar: calidad de primera, bodega única, carta renovada pero sin sorpresas, trato educado, agradable y que te invita a volver antes de haberte ido.;bodega;DRINKS#QUALITY;positive;91;97;calidad de primera, bodega única, carta renovada trato invita
+El que va a comer, vaya cuando vaya, ya sabe lo que se va a encontrar: calidad de primera, bodega única, carta renovada pero sin sorpresas, trato educado, agradable y que te invita a volver antes de haberte ido.;trato;SERVICE#GENERAL;positive;140;145;ya calidad primera, bodega carta pero sin sorpresas, trato educado, agradable y invita
+En resumen, un encanto.; vacio;RESTAURANT#GENERAL;positive;0;0;
+(Aunque parezca un comentario exagerado, no lo es y aclaro, no soy familia, sino un simple cliente que agradece la calidad y el buen trato recibido). ;calidad;FOOD#QUALITY;positive;115;122;y que agradece la calidad el buen trato
+(Aunque parezca un comentario exagerado, no lo es y aclaro, no soy familia, sino un simple cliente que agradece la calidad y el buen trato recibido). ;trato;SERVICE#GENERAL;positive;133;138;y la calidad el buen trato
+Restaurante muy recomendado, servicio y trato buenisimo y un menu exquisito. ;Restaurante;RESTAURANT#GENERAL;positive;0;11;Restaurante muy recomendado, servicio trato menu
+Restaurante muy recomendado, servicio y trato buenisimo y un menu exquisito. ;servicio;SERVICE#GENERAL;positive;29;37;Restaurante muy recomendado, servicio y trato buenisimo menu
+Restaurante muy recomendado, servicio y trato buenisimo y un menu exquisito. ;menu;FOOD#QUALITY;positive;61;65;Restaurante muy recomendado, servicio y trato buenisimo un menu exquisito.
+Buen servicio y menú muy compensado, carta de vinos excelente. ;servicio;SERVICE#GENERAL;positive;5;13;Buen servicio y menú muy carta
+Buen servicio y menú muy compensado, carta de vinos excelente. ;menú;FOOD#STYLE_OPTIONS;positive;16;20;Buen servicio y menú muy compensado, carta
+Buen servicio y menú muy compensado, carta de vinos excelente. ;carta de vinos;DRINKS#STYLE_OPTIONS;positive;37;51;
+decoración agradable, amplitud adecuada, servicio correcto, comida sin complicaciones de buena calidad y abundante.;decoración;AMBIENCE#GENERAL;positive;0;10;decoración agradable, amplitud adecuada, servicio
+decoración agradable, amplitud adecuada, servicio correcto, comida sin complicaciones de buena calidad y abundante.;amplitud;AMBIENCE#GENERAL;positive;22;30;decoración agradable, amplitud adecuada, servicio correcto,
+decoración agradable, amplitud adecuada, servicio correcto, comida sin complicaciones de buena calidad y abundante.;servicio;SERVICE#GENERAL;positive;41;49;decoración agradable, amplitud adecuada, servicio correcto, comida sin
+decoración agradable, amplitud adecuada, servicio correcto, comida sin complicaciones de buena calidad y abundante.;comida;FOOD#QUALITY;positive;60;66;adecuada, servicio correcto, comida sin complicaciones de
+precios ajustados.;precios ajustados;RESTAURANT#PRICES;positive;0;17;
+Contenta por el servicio prestado que fue ágil y gentil.;servicio;SERVICE#GENERAL;positive;16;24;Contenta por el servicio prestado que fue ágil
+La comida aprobada con notable alto: 8;comida;FOOD#QUALITY;positive;3;9;La comida aprobada con notable 8
+Sitio adecuado.;Sitio;AMBIENCE#GENERAL;positive;0;5;Sitio adecuado.
+WC limpios y espaciosos;WC;AMBIENCE#GENERAL;positive;0;2;WC limpios y espaciosos
+Recomendable y aconsejable con relacion calidad/precio: sobresaliente.; vacio;RESTAURANT#PRICES;positive;0;0;
+La atención, la comida y el lugar !!!;atención;SERVICE#GENERAL;positive;3;11;La atención, la comida y lugar
+La atención, la comida y el lugar !!!;comida;FOOD#QUALITY;positive;16;22;La atención, la comida y el lugar
+La atención, la comida y el lugar !!!;lugar;AMBIENCE#GENERAL;positive;28;33;La atención, comida y el lugar
+Un 9,50 pongo eso porque siempre se puede mejorar pero en serio muy muy bueno!!!; vacio;RESTAURANT#GENERAL;positive;0;0;
+Todo muy bueno, repetiria y recomendaria.; vacio;FOOD#QUALITY;positive;0;0;
+Buena atención del personal.;personal;SERVICE#GENERAL;positive;19;27;Buena atención del personal.
+La comida muy bien, en cantidad y buena relación calidad-precio.;comida;FOOD#QUALITY;positive;3;9;La comida muy bien, en cantidad
+La comida esta muy buena pero hay mucho ruido, buen restaurante para cenas de grupos.;comida;FOOD#QUALITY;positive;3;9;La comida esta muy buena hay
+La comida esta muy buena pero hay mucho ruido, buen restaurante para cenas de grupos.;hay mucho ruido,;AMBIENCE#GENERAL;negative;30;46;
+La comida esta muy buena pero hay mucho ruido, buen restaurante para cenas de grupos.;restaurante;RESTAURANT#MISCELLANEOUS;positive;52;63;buena mucho ruido, buen restaurante para cenas de
+Mesas demasiado juntas.;Mesas;AMBIENCE#GENERAL;negative;0;5;Mesas demasiado juntas.
+Servicio pesimo.;Servicio;SERVICE#GENERAL;negative;0;8;Servicio pesimo.
+Buena comida y buena atencion.;comida;FOOD#QUALITY;positive;6;12;Buena comida y buena atencion.
+Buena comida y buena atencion.;atencion;SERVICE#GENERAL;positive;21;29;Buena comida y buena atencion.
+Muy bueno, calidad-precio.; vacio;RESTAURANT#PRICES;positive;0;0;
+Pedimos menu de calcots y valia la pena.;menu de calcots;FOOD#QUALITY;positive;8;23;
+Servicio esmerado y muy buen ambiente.;Servicio;SERVICE#GENERAL;positive;0;8;Servicio esmerado y muy ambiente.
+Servicio esmerado y muy buen ambiente.;ambiente;AMBIENCE#GENERAL;positive;29;37;Servicio y muy buen ambiente.
+Magnífica propuesta, lúdica y cultural, donde disfrutar en libertad de todos aquellos maridajes que convierten en arte las meras necesidades primarias del ser humano.;propuesta;RESTAURANT#GENERAL;positive;10;19;Magnífica propuesta, lúdica y cultural, disfrutar
+Un reducto donde disfrutar desde el respeto, de un buen llantar, bien regado y rematado con un exquisito cigarro habano.;reducto;RESTAURANT#MISCELLANEOUS;positive;3;10;Un reducto donde disfrutar desde llantar,
+Excelente cocina, marco y trato agradable, magnífica relación calidad/precio y un referente para todo aquel que entiende como aberrante la cruzada antitabaco emprendida por esta decrépita e inculta sociedad.;cocina;FOOD#QUALITY;positive;10;16;Excelente cocina, marco y trato relación referente aquel
+Excelente cocina, marco y trato agradable, magnífica relación calidad/precio y un referente para todo aquel que entiende como aberrante la cruzada antitabaco emprendida por esta decrépita e inculta sociedad.;trato;SERVICE#GENERAL;positive;26;31;Excelente cocina, marco y trato agradable, magnífica relación referente aquel
+El problema viene cuando se llenan, puesto que no tienen el personal suficiente para poder atenderlos.Este restaurante se encuentra al lado del campo de futbol de la Romareda.;personal;SERVICE#GENERAL;negative;60;68;puesto no tienen el personal suficiente para poder
+Y los dias que hay partido la cosa es todavia peor por la afluencia de clientes y la clara falta de personal.;personal;SERVICE#GENERAL;negative;100;108;la de y clara falta personal.
+Uno de estos dias mi experiencia fue del todo negativa puesto que al parecer uno de los dueños o encargado entro en la cocina y los gritos se podian oir en el comedor cuando el local se encontraba lleno.; vacio;RESTAURANT#MISCELLANEOUS;negative;0;0;
+En general poco recomendable si no sabes que dias juega el Zaragoza en casa o esta muy lleno.; vacio;RESTAURANT#MISCELLANEOUS;negative;0;0;
+El aspecto del local es una imitacion pobre de los tipicos restaurantes americanos de comida rapida.;local;AMBIENCE#GENERAL;negative;15;20;El aspecto del local es una imitacion
+Y como en su mayoria esta acristalado y era un dia de calor, casi se podian asar pollos en el comedor sin necesidad de horno.;comedor;AMBIENCE#GENERAL;negative;94;101;Y en mayoria de podian asar pollos el comedor sin necesidad
+Y de segundo un menu infantil para el peque, compuesto por una hambueguesa con patatas y los recomendados costillares, junto con dos refrescos y una cerveza.A esta altura de mi opinion creo que sobra decir que la comida no dejo de ser la tipica de una franquicia de este tipo pero en malo.;comida;FOOD#QUALITY;negative;213;219;de que decir la comida no dejo tipica
+Todo con salsa de bote y productos congelados.;salsa;FOOD#QUALITY;negative;9;14;Todo con salsa de bote y
+Todo con salsa de bote y productos congelados.;productos;FOOD#QUALITY;negative;25;34;de bote y productos congelados.
+Vamos que tampoco hace falta tener un gran Chef en la cocina.La factura fue excesiva para el tipo de comida la calidad y la cantidad.;comida;RESTAURANT#PRICES;negative;101;107;la para el tipo de comida calidad y
+Pagamos 64 euros.El servicio fue bueno, pero tambien decir que en el comedor eramos cuatro y el de la guitarra.Resumiendo.;servicio;SERVICE#GENERAL;positive;20;28;Pagamos servicio fue bueno, pero tambien
+Mi experiencia es negativa y no volvere mas.;experiencia;RESTAURANT#GENERAL;negative;3;14;Mi experiencia es negativa y volvere
+Tomo nota de este restaurante.;restaurante;RESTAURANT#GENERAL;positive;18;29;Tomo nota de este restaurante.
+02-12-2012 elegimos este restaurante por los comentarios, pero ha sido una Grandisima Decepción.;restaurante;RESTAURANT#GENERAL;negative;25;36;02-12-2012 elegimos este restaurante por los comentarios, Grandisima
+Somos cuatro comensales y Hemos pedido:-Plato de jamón (nos dicen que es de 5J) para nosotros entendemos que por las escaleras se perdió alguna.-Tortitas de Camarón parecidas a las de Huelva o Cádiz pero hay mucha diferencia tanta que es dificil de valorar.;Plato de jamón;FOOD#QUALITY;negative;40;54;
+Somos cuatro comensales y Hemos pedido:-Plato de jamón (nos dicen que es de 5J) para nosotros entendemos que por las escaleras se perdió alguna.-Tortitas de Camarón parecidas a las de Huelva o Cádiz pero hay mucha diferencia tanta que es dificil de valorar.;Tortitas de Camarón;FOOD#QUALITY;negative;145;164;
+-Hortigillas, fatal parecía que etabas comiendo arena de playa.;Hortigillas;FOOD#QUALITY;negative;1;12;
+-Arroz de Señorito, un verdadero desastre, pasado aplemazado y al cocinero se le cayó el bote de pimentón de la vera ahumado, IMPOSIBLE COMERLO.;Arroz de Señorito;FOOD#QUALITY;negative;1;18;
+-Besugo al orrio, Incomestible (blando o pasado) con un olor a vinagre imposible de soportar.TODO ESTO LO DECIMOS A BOCA LLENA Y SIN TAPUJOS, SOMOS DE HUELVA, ALMERÍA Y BADAJOZ, TODO LO QUE PEDIMOS LO CONOCEMOS A LA PERFECCIÓN Y LO SERVIDO SE PARECE A LA REALIDAD COMO UN HUEVO A UNA CASTAÑA.;Besugo al orrio;FOOD#QUALITY;negative;1;16;
+Y por último los vinos fuera de precio (Pesquera crianza 30€) pero en buen estado (sin posos) no estaba pica……;vinos;DRINKS#PRICES;negative;17;22;Y por último los vinos fuera de precio estado no estaba
+Estos comentarios es meramente para que se pongan las pilas, pero si alguien me piede opinión NO LO RECOMENDARÉ NI A MI PEOR ENEMIGO.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Ambiente muy agradable, buen servicio y buena comida. ;Ambiente;AMBIENCE#GENERAL;positive;0;8;Ambiente muy agradable, buen servicio buena
+Ambiente muy agradable, buen servicio y buena comida. ;servicio;SERVICE#GENERAL;positive;29;37;Ambiente muy agradable, buen servicio y buena comida.
+Ambiente muy agradable, buen servicio y buena comida. ;comida;FOOD#QUALITY;positive;46;52;buen servicio y buena comida.
+Muy buena la comida y la atencion ;comida;FOOD#QUALITY;positive;13;19;Muy buena la comida y atencion
+Muy buena la comida y la atencion ;atencion;SERVICE#GENERAL;positive;25;33;la comida y atencion
+De primero salpicon de pulpo y tosta de escalibada y aceitunas negras con codorniz escabechada y de segundo magret de pato con salsa de melocotón y cous-cous y albóndigas de ternasco, la verdad que salimos muy contentos ya que la comida estaba muy buena y una relación calidad-precio genial.;comida;FOOD#QUALITY;positive;230;236;la que muy ya comida estaba buena relación
+De primero salpicon de pulpo y tosta de escalibada y aceitunas negras con codorniz escabechada y de segundo magret de pato con salsa de melocotón y cous-cous y albóndigas de ternasco, la verdad que salimos muy contentos ya que la comida estaba muy buena y una relación calidad-precio genial.;relación calidad-precio;FOOD#PRICES;positive;260;283;
+No lo conocíamos pero volvemos seguro.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Sitio muy recomendable por su comida y por lo bonito que es el restaurante. ;restaurante;AMBIENCE#GENERAL;positive;63;74;Sitio recomendable por y que es el restaurante.
+Sitio muy recomendable por su comida y por lo bonito que es el restaurante. ;comida;FOOD#QUALITY;positive;30;36;muy recomendable por su comida y lo
+Un buen restaurante.;restaurante;RESTAURANT#GENERAL;positive;8;19;Un buen restaurante.
+La comida bien cocinada y presentada.;comida;FOOD#QUALITY;positive;3;9;La comida bien cocinada y
+Lo recomiendo. ; vacio;RESTAURANT#GENERAL;positive;0;0;
+Calidad de los alimentos y excelente servicio de mesas, se mostraron muy atentos en todo momento - un 10;alimentos;FOOD#QUALITY;positive;15;24;Calidad de los alimentos y excelente servicio
+Calidad de los alimentos y excelente servicio de mesas, se mostraron muy atentos en todo momento - un 10;servicio;SERVICE#GENERAL;positive;37;45;de los alimentos y excelente servicio mesas, se
+"El entorno es muy bueno, aunque la ""carpa"" es de feria.";entorno;LOCATION#GENERAL;positive;3;10;El entorno es muy bueno, feria.
+"El entorno es muy bueno, aunque la ""carpa"" es de feria.";carpa;AMBIENCE#GENERAL;negative;36;41;es bueno, aunque la de feria.
+El servicio muy justo, el ambiente un poco decadente, y tanto la paella, como la fideuá, sin sabor, prefabricadas y casi incomibles.;servicio;SERVICE#GENERAL;negative;3;11;El servicio muy justo, el ambiente paella,
+El servicio muy justo, el ambiente un poco decadente, y tanto la paella, como la fideuá, sin sabor, prefabricadas y casi incomibles.;ambiente;AMBIENCE#GENERAL;negative;26;34;El servicio muy justo, el ambiente un poco decadente, paella,
+El servicio muy justo, el ambiente un poco decadente, y tanto la paella, como la fideuá, sin sabor, prefabricadas y casi incomibles.;paella;FOOD#QUALITY;negative;65;71;El servicio justo, ambiente y tanto la paella, como fideuá,
+El servicio muy justo, el ambiente un poco decadente, y tanto la paella, como la fideuá, sin sabor, prefabricadas y casi incomibles.;fideuá;FOOD#QUALITY;negative;81;87;y tanto la paella, como fideuá, sin sabor, prefabricadas
+Mal, no volveremos; vacio;RESTAURANT#GENERAL;negative;0;18;
+El menú era muy variado y abundante,  y los productos tenian mucha calidad.;menú;FOOD#STYLE_OPTIONS;positive;3;7;El menú era muy variado abundante, tenian
+El menú era muy variado y abundante,  y los productos tenian mucha calidad.;productos;FOOD#QUALITY;positive;44;53;y abundante, los productos tenian mucha calidad.
+El servicio fue perfecto.;servicio;SERVICE#GENERAL;positive;3;11;El servicio fue perfecto.
+Habia muchos camareros, preocupándose de que a nadie le faltase de nada y que se sintiera a gusto.;camareros;SERVICE#GENERAL;positive;13;22;Habia muchos camareros, preocupándose de que
+Volveremos muy pronto a disfrutar de este Restaurente con Mayúsculas.;Restaurente;RESTAURANT#GENERAL;positive;42;53;a disfrutar de este Restaurente con Mayúsculas.
+Camareros simpáticos, comida apreciable,no excepcional, precio justo...ruido espantoso, mucha gente al rededor para conseguir plazas ...lo que molesta más del necesario;Camareros;SERVICE#GENERAL;positive;0;9;Camareros simpáticos, comida excepcional, precio gente al conseguir molesta
+Camareros simpáticos, comida apreciable,no excepcional, precio justo...ruido espantoso, mucha gente al rededor para conseguir plazas ...lo que molesta más del necesario;ruido;AMBIENCE#GENERAL;negative;71;76;Camareros simpáticos, comida excepcional, precio espantoso, mucha gente conseguir molesta
+un poco caro; vacio;RESTAURANT#PRICES;negative;0;12;
+Buena; vacio;FOOD#QUALITY;positive;0;0;
+Muy buena comida, muy bien servicio.;comida;FOOD#QUALITY;positive;10;16;Muy buena comida, muy bien servicio.
+Muy buena comida, muy bien servicio.;servicio;SERVICE#GENERAL;positive;27;35;Muy buena comida, muy bien servicio.
+Una organisacion excelente.;organisacion;SERVICE#GENERAL;positive;4;16;Una organisacion excelente.
+Se pasa un muy buen rato en este restaurante.;restaurante;RESTAURANT#MISCELLANEOUS;positive;33;44;Se pasa rato en este restaurante.
+Amo el pescado en Salamanca!;pescado;FOOD#QUALITY;positive;7;14;Amo el pescado en Salamanca!
+Siempre muy fresco (normal!); vacio;FOOD#QUALITY;positive;0;0;
+y todo el personal es muy atencionado y habla todos los idiomas!;personal;SERVICE#GENERAL;positive;10;18;y todo el personal es muy atencionado habla todos
+Por eso regrezo todos los anos!; vacio;RESTAURANT#GENERAL;positive;0;0;
+Solamente el vino rosado es un poquito mediano;vino;DRINKS#QUALITY;negative;13;17;Solamente el vino rosado es un poquito mediano
+Excelente; vacio;RESTAURANT#GENERAL;positive;0;0;
+Atención buena del camarero, aunque llevaba demasiadas mesas y costaba conseguir su atención para pedir algo.;camarero;SERVICE#GENERAL;positive;19;27;Atención buena del camarero, aunque llevaba demasiadas
+La mariscada imperial es impresionante, aunque nos la sirvieron algo fría.;mariscada imperial;FOOD#QUALITY;positive;3;21;
+Si elijes mariscada, no pidas nada como entrante (el camarero nos recomedó elegir un entrante que llegó junto con la mariscada, y costó terminar con él);mariscada;FOOD#STYLE_OPTIONS;positive;10;19;Si elijes mariscada, no pidas nada nos que llegó junto la
+En la mesa que nos prepararon caía aigua del techo, y estabamos pegados a la caleffacción.;mesa;AMBIENCE#GENERAL;negative;6;10;En la mesa que nos prepararon caía aigua techo, pegados
+De los 8 menus de Navidad, disponible solo 1...es verdad que comimos bien, pero con mucho sentido del humor..;menus;FOOD#QUALITY;positive;9;14;De los 8 menus de Navidad, disponible verdad comimos sentido del
+<+>Bien comunicado y comodo; vacio;LOCATION#GENERAL;positive;0;0;
+Caro por lo que dan de comer, mesas muy juntas y bastante ruido.; vacio;FOOD#PRICES;negative;0;0;
+Caro por lo que dan de comer, mesas muy juntas y bastante ruido.;mesas;AMBIENCE#GENERAL;negative;30;35;Caro dan de comer, mesas muy juntas y
+Caro por lo que dan de comer, mesas muy juntas y bastante ruido.; vacio;AMBIENCE#GENERAL;negative;0;0;
+Servicio bueno.;Servicio;SERVICE#GENERAL;positive;0;8;Servicio bueno.
+La paella flojita.;paella;FOOD#QUALITY;negative;3;9;La paella flojita.
+Muy turistico.; vacio;RESTAURANT#GENERAL;negative;0;0;
+Buena localización en el centro de la Barcelona delant de mar.;localización;LOCATION#GENERAL;positive;6;18;Buena localización en el centro delant mar.
+Estuve comiendo con una amigo y tomamos unos entrantes muy bien recomendados, así como una Paella Perelada.;entrantes;FOOD#QUALITY;positive;45;54;y tomamos unos entrantes muy bien recomendados, Paella
+Todo Perfecto y como siempre, el servicio óptimo.; vacio;RESTAURANT#GENERAL;positive;0;0;
+Todo Perfecto y como siempre, el servicio óptimo.;servicio;SERVICE#GENERAL;positive;33;41;Perfecto como siempre, el servicio óptimo.
+Es un restaurante seguro para ir y repetir siempre de sus platos tradicionales.;restaurante;RESTAURANT#GENERAL;positive;6;17;Es un restaurante seguro para ir
+Es un restaurante seguro para ir y repetir siempre de sus platos tradicionales.;platos;FOOD#QUALITY;positive;58;64;para ir repetir siempre de sus platos tradicionales.

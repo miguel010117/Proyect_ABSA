@@ -46,7 +46,7 @@ def ensamble_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data, list_
 
     reviews, true_labels = cargar_datos(predict_data)
 
-    all_predictions = procesar_probabilidades(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, list_model, reviews, true_labels)
+    all_predictions = procesar_probabilidades(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, list_model, reviews)
 
     predicted_labels_final = []
     for i in range(len(reviews)): # Iterar sobre cada revisión
@@ -58,8 +58,10 @@ def ensamble_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data, list_
                 predicciones.append(np.pad(pred[i], (0, len_elemnt(true_labels[i]) - len(pred[i])), 'constant')) # Rellenar con ceros
 
         prediccion_final = np.mean(predicciones, axis=0)
+        print(prediccion_final)
         prediccion_final = np.where(prediccion_final >= 0.500, 1, 0)
         predicted_labels_final.append(prediccion_final)
+        
     
     print(f"\n{Fore.CYAN}Métricas:{Style.RESET_ALL}")
     metrics(true_labels, predicted_labels_final)
@@ -69,7 +71,7 @@ def ensamble_weighted_average(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_da
 
     reviews, true_labels = cargar_datos(predict_data)
 
-    all_predictions = procesar_probabilidades(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, list_model, reviews, true_labels)
+    all_predictions = procesar_probabilidades(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, list_model, reviews)
 
     predicted_labels_final = []
     for i in range(len(reviews)): # Iterar sobre cada revisión
@@ -255,9 +257,9 @@ def procesar_probabilidades(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, list_model, 
         for rev in tqdm(reviews):
             tokens, aspects, prob_aspct = pipeline.predict_aspect(rev,name_model)
             all_prob.append(prob_aspct)
+            print(prob_aspct)
             model_predictions.append(predicted_bitmask(eval(rev), aspects))
         all_predictions.append(all_prob)
-        
     return all_predictions
 
 def len_elemnt(elemnt):

@@ -89,7 +89,7 @@ class AspectTermExtraction(AbsaModel):
                 print('epoch:', epoch+1, " batch:", data_processed, "/", num_data, " loss:", np.mean(losses))
 
             # Save the model a   
-            self.save_model(self.model, 'electra_base_spanish_epoch_' + str(epoch+1) + '.pkl')
+            self.save_model(self.model, 'beto_e_spanish_epoch_' + str(epoch+1) + '.pkl')
             # true_labels, predicted_labels = self.test(test_loader)
 
             # print(classification_report(true_labels, predicted_labels, target_names=[str(i) for i in range(2)]))
@@ -176,14 +176,13 @@ class AspectTermExtraction(AbsaModel):
                 for probabilidad in probabilidades:
                     probabilidades_redondeadas.append(round(probabilidad, 4))
 
-
                 # FIN DE PRUEBAS
             _, predictions = torch.max(softmax_outputs, dim=2) 
         predicted_tokens = predictions[0].tolist() 
 
         for i, flag in enumerate(predicted_tokens):
             
-            if flag == 1 and tokenized_sentence[0][0] == '▁':
+            if flag != 0 and tokenized_sentence[0][0] == '▁':
                 
                 if tokenized_sentence[i][0] != '▁':
                     if word:
@@ -204,7 +203,7 @@ class AspectTermExtraction(AbsaModel):
                     terms.append(word.strip())
                     word = ""
 
-            elif flag == 1 and tokenized_sentence[1][0] == 'Ġ':
+            elif flag != 0 and tokenized_sentence[1][0] == 'Ġ':
                 
                 if tokenized_sentence[i][0] != 'Ġ':
                     if word:
@@ -227,7 +226,7 @@ class AspectTermExtraction(AbsaModel):
                     terms.append(word.strip())
                     word = ""
 
-            elif flag == 1:
+            elif flag != 0:
             
                 if tokenized_sentence[i][0] == '▁':
                     word = tokenized_sentence[i].replace('▁', "")
@@ -240,6 +239,19 @@ class AspectTermExtraction(AbsaModel):
                         word = word[:-1] + tokenized_sentence[i].replace("##", "") + ' '
                     else:    
                         word = tokenized_sentence[i-1] + tokenized_sentence[i].replace("##", "") + ' '
+
+                elif tokenized_sentence[i-1].startswith("@"):
+                    if word:
+                        word = word[:-1] + tokenized_sentence[i] + ' '
+                    else:    
+                        word = tokenized_sentence[i-1] + tokenized_sentence[i] + ' '
+
+                elif tokenized_sentence[i-1].startswith("*"):
+                    if word:
+                        word = word[:-1] + tokenized_sentence[i] + ' '
+                    else:    
+                        word = tokenized_sentence[i-1] + tokenized_sentence[i] + ' '
+
                 else:
                     word = tokenized_sentence[i] + ' '
 
@@ -249,6 +261,12 @@ class AspectTermExtraction(AbsaModel):
                     word = ""
 
                 elif tokenized_sentence[i+1].startswith("##"):
+                    pass
+
+                elif tokenized_sentence[i] == "@":
+                    pass
+
+                elif tokenized_sentence[i] == "*":
                     pass
 
                 else:
