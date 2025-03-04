@@ -5,18 +5,20 @@ from tqdm import tqdm
 from sklearn.metrics import confusion_matrix, accuracy_score,recall_score,f1_score,precision_score
 
 
-def predict_polarity(model_base, model_train,data,num):
+def predict_polarity(model_base, model_train,data,name):
     df = pd.read_csv(data, sep=';')
     labels_true = df['polarity']
     textos = list(df['Segmento'])
 
     labels_pred = []
 
-    if num == 1:
+    print(name)
+
+    if name in ['beto', 'bert', 'albert_base', 'albert_large', 'albert-xx_large']:
         for texto in tqdm(textos):
             labels_pred.append(cargar_bert(model_base,model_train,texto))
 
-    elif num == 2:
+    elif name in ['bertin_base', 'bertin_large', 'electra_base', 'electra_small']:
         for texto in tqdm(textos):
             labels_pred.append(cargar_bertin(model_base,model_train,texto))
 
