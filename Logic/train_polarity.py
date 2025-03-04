@@ -45,7 +45,7 @@ class CoahDataset(Dataset):
     
 
 
-def train_polarity(modelo,train_data,num_epochs, batch):
+def train_polarity_model(modelo,train_data,num_epochs, batch):
 
     RANDOM_SEED = 42
     MAX_LEN = 250
@@ -88,7 +88,6 @@ def train_polarity(modelo,train_data,num_epochs, batch):
         num_training_steps= total_steps
     )
     loss_fn = nn.CrossEntropyLoss()
-
     for epoch in range(EPOCHES):
         print('Epoch {} de {}'.format(epoch+1, EPOCHES))
         print('---------------------------')
@@ -124,8 +123,19 @@ def train_model(model, data_loader,loss_fn,optimizer,scheduler,n_examples):
         labels = batch['labels']
         outputs = model(input_ids = input_ids, attention_mask = attention_mask)
         logits = outputs.logits
-        _, preds = torch.max(logits, dim=1)
-        loss = loss_fn(logits, labels)
+
+        try:
+            # Intenta el método para clasificación multiclase simple. Si falla, prueba el otro método.
+            _, preds = torch.max(logits, dim=1)
+            loss = loss_fn(logits, labels)      
+
+        except RuntimeError as e:
+            
+            # Método para modelos que usan el primer token [CLS] para la clasificación.
+            cls_logits = logits[:, 0, :]
+            _, preds = torch.max(cls_logits, dim=1)
+            loss = loss_fn(cls_logits, labels)
+                    
         correct_predictions += torch.sum(preds == labels)
         losses.append(loss.item())
         loss.backward()
@@ -146,8 +156,20 @@ def eval_model(model, data_loader, loss_fn,n_examples):
             labels = batch['labels']
             outputs = model(input_ids = input_ids, attention_mask = attention_mask)
             logits = outputs.logits
-            _, preds = torch.max(logits, dim=1)
-            loss = loss_fn(logits, labels)
+
+            try:
+                # Intenta el método para clasificación multiclase simple. Si falla, prueba el otro método.
+                _, preds = torch.max(logits, dim=1)
+                loss = loss_fn(logits, labels)      
+
+            except RuntimeError as e:
+            
+                # Método para modelos que usan el primer token [CLS] para la clasificación.
+                cls_logits = logits[:, 0, :]
+                _, preds = torch.max(cls_logits, dim=1)
+                loss = loss_fn(cls_logits, labels)
+        
+        
             correct_predictions += torch.sum(preds == labels)
             losses.append(loss.item())
     return correct_predictions.double()/n_examples, np.mean(losses)

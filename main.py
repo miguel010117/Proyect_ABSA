@@ -3,6 +3,7 @@ from Aspect_extraction.absapipeline import ABSAPipeline,metrics,predicted_bitmas
 from colorama import Fore, Style
 from Ensamble.ensamble import *
 from Logic.train_polarity import *
+from Test.test_polarity import *
 
 
 if __name__ == '__main__':
@@ -20,7 +21,7 @@ if __name__ == '__main__':
     ELECTRA_BASE = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/electra-base-discriminator'
     GPT_2 = r'F:/MIGUEL/Estudio/Tesis/Analisis_de_sentimiento/Model/GPT-2'
 
-
+    # Modelos entrenados para extraccion de aspectos
     BETO_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/2. Aspect/beto-base-spanish/bert-base-spanish_epoch_3.pkl'
     BERT_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/2. Aspect/bert-base-multilingual/bert-base-multilingual_epoch_2.pkl'
     BERTIN_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/2. Aspect/bertin_base_spanish/bertin_base_spanish_epoch_2.pkl'
@@ -31,6 +32,18 @@ if __name__ == '__main__':
     ELECTRA_SMALL_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/2. Aspect/electra_small_spanish/electra_small_spanish_epoch_4.pkl'
     ELECTRA_BASE_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/2. Aspect/electra_base_spanish/electra_base_spanish_epoch_2.pkl'
     GPT_2_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/2. Aspect/GPT_2/gpt_2_epoch_5.pkl'
+
+    # Modelos entrenados para clasificacion de polaridad
+    BETO_TRAIN_POLARITY = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/3. Polarity/Beto_Fine_turned/'
+    BERT_TRAIN_POLARITY = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/3. Polarity/Bert_Fine_turned/'
+    BERTIN_BASE_TRAIN_POLARITY = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/3. Polarity/Bertin_Base_Fine_turned/Bertin_Base.pth'
+    BERTIN_LARGE_TRAIN_POLARITY = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/3. Polarity/Bertin_Large_Fine_turned/Bertin_Large.pth'
+    ALBERT_BASE_TRAIN_POLARITY = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/3. Polarity/Albert_Base_Fine_turned/'
+    ALBERT_LARGE_TRAIN_POLARITY = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/3. Polarity/'
+    ALBERT_XX_LARGE_TRAIN_POLARITY = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/3. Polarity/'
+    ELECTRA_SMALL_TRAIN_POLARITY= r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/3. Polarity/Electra_Small_Fine_turned/Electra_Small.pth'
+    ELECTRA_BASE_TRAIN_POLARITY = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/3. Polarity/Electra_Base_Fine_turned/Electra_Base.pth'
+    GPT_2_TRAIN = r'F:/MIGUEL/Estudio/Tesis/Proyecto_ABSA/Model/GPT_2_Fine_turned/GPT_2.pth'
 
     #Modelos entrenados
     model_base = {
@@ -50,15 +63,31 @@ if __name__ == '__main__':
     5: ELECTRA_BASE_TRAIN
 }
     
-    # Datos para entrenar
+    #Modelos entrenados
+    model_train_polarity = {
+    1: BETO_TRAIN_POLARITY,
+    2: BERT_TRAIN_POLARITY,
+    3: ALBERT_BASE_TRAIN_POLARITY,
+    4: BERTIN_BASE_TRAIN_POLARITY,
+    5: ELECTRA_BASE_TRAIN_POLARITY
+}
+    
+    # Datos para entrenar aspectos
     train_data_aspect = "Data/SemEval_Train_Aspect.csv"
-    # Datos para entrenar
+    # Datos para entrenar polaridad
     train_data_polarity = "Data/SemEval_Train_Polarity.csv"
-    # Datos para predecir
+    # Datos para predecir aspectos
     predict_data_aspect = "Data/SemEval_Test_Aspect2.csv"
-    # Datos para predecir
-    predict_data_polarity = "Data/SemEval_Train_Polarity.csv"
+    # Datos para predecir polaridad
+    predict_data_polarity_ventana = "Data/SemEval_Test_Polarity_Ventana.csv"
+    predict_data_polarity_dep = "Data/SemEval_Test_Polarity_Dep.csv"
+    predict_data_polarity_hibrido = "Data/SemEval_Test_Polarity_Hibrido.csv"
 
+    predict_data_polarity = {
+       1: predict_data_polarity_ventana,
+       2: predict_data_polarity_dep,
+       3: predict_data_polarity_hibrido
+    }
 
 #FUNCIONES
     def presentacion():
@@ -113,7 +142,9 @@ if __name__ == '__main__':
 #MAIN
     presentacion()
 
-    opcion = menu_principal() 
+    opcion = menu_principal()
+
+    # ENTRENAMIENTO MODELOS ******************************************************************************************** 
     if opcion == '1':
         print("\nPor favor, selecciona el tipo de modelo:")
         print("  " + Fore.BLUE + "1" + Style.RESET_ALL + " - Aspecto")
@@ -181,7 +212,7 @@ if __name__ == '__main__':
                 entrenamiento_polarity(model_base[5],train_data_polarity,epochs, batch)
 
 
-
+    # CLASIFICACION DE ASPECTOS **********************************************************************************************
     elif opcion == '2':
         print("\nPor favor, selecciona el metodo de clasificacion de aspecto")
         print("  " + Fore.BLUE + "1" + Style.RESET_ALL + " - Individual")
@@ -230,26 +261,45 @@ if __name__ == '__main__':
 
             for num in numeros:
                 if 1 <= num <= 5:
-                    # #Lista de modelos para ensamble
                     MODEL_ENSAMBLE.append(model_base[num])
-                    # #Lista de modelos entrenados para ensamble
                     TRAINED_MODEL_ENSABMLE.append(model_train[num])
-                    #Lista de modelos
                     list_model.append("")
                 else:
                     print(f"Número {num} inválido. Debe estar entre 1 y 5.")
 
             ensamble_max(MODEL_ENSAMBLE,TRAINED_MODEL_ENSABMLE,predict_data_aspect,list_model)
    
-
-
-
-
-
-
-
+    # CLASIFICACION DE POLARIDAD ********************************************************************************************
     elif opcion == '3':
-        print("\nPor favor, selecciona el modelo")
+        print("\nPor favor, selecciona el modelo para clasificar:")
         print("  " + Fore.BLUE + "1" + Style.RESET_ALL + " - Beto")
         print("  " + Fore.BLUE + "2" + Style.RESET_ALL + " - Bert")
-        valor = input("Ingrese su opción: ").strip().lower()
+        print("  " + Fore.BLUE + "3" + Style.RESET_ALL + " - Albert_base")
+        print("  " + Fore.BLUE + "4" + Style.RESET_ALL + " - Bertin_base")
+        print("  " + Fore.BLUE + "5" + Style.RESET_ALL + " - Electra_base")
+        num_modelo = input("Ingrese su opción: ").strip().lower()
+
+        print("\nPor favor, selecciona el metodo de seleccion de caracteristicas:")
+        print("  " + Fore.BLUE + "1" + Style.RESET_ALL + " - Ventana de palabras")
+        print("  " + Fore.BLUE + "2" + Style.RESET_ALL + " - Analisis de dependencias")
+        print("  " + Fore.BLUE + "3" + Style.RESET_ALL + " - Enfoque hibrido")
+        metodo = int(input("Ingrese su opción: ").strip().lower())
+
+        if num_modelo == "1":
+            predict_polarity(model_base[1],model_train_polarity[1],predict_data_polarity[metodo],1)
+
+        elif num_modelo == "2":
+            predict_polarity(model_base[2],model_train_polarity[2],predict_data_polarity[metodo],1)
+
+        elif num_modelo == "3":
+            predict_polarity(model_base[3],model_train_polarity[3],predict_data_polarity[metodo],1)
+
+        elif num_modelo == "4":
+            predict_polarity(model_base[4],model_train_polarity[4],predict_data_polarity[metodo],2)
+
+        elif num_modelo == "5":
+            predict_polarity(model_base[5],model_train_polarity[5],predict_data_polarity[metodo],2)
+
+
+##############################################################################################################################
+

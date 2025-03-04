@@ -1,4 +1,4 @@
-review;aspect;polarity;Segmento;ventana
+review;aspect;polarity;Segmentos;Segmento
 La comida estuvo muy sabrosa.;comida;1;La comida estuvo muy sabrosa.;La comida estuvo muy sabrosa.
 Quien sea amante de la carne tiene una carta bastante amplia para elegir., aunque ayer  no tenían  chuleton.;carta;1;amante de la carne tiene una carta bastante amplia para elegir. aunque ayer;amante de la carne tiene una carta bastante amplia para elegir., aunque ayer
 Quien sea amante de la carne tiene una carta bastante amplia para elegir., aunque ayer  no tenían  chuleton.;chuleton;0;para elegir. aunque ayer no tenían chuleton.;Quien sea amante de la carne tiene una carta bastante amplia para elegir., aunque ayer  no tenían  chuleton.
