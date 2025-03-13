@@ -8,14 +8,14 @@ class ABSAPipeline:
     def __init__(self, aspect_model):
         self.aspect_model = AspectTermExtraction(model=aspect_model, tokenizer=aspect_model, seed=50)
 
-    def train_aspect_model(self, train_file, test_file, model_type, batch_size, num_epochs):
+    def train_aspect_model(self, train_file, test_file, model_type,name, batch_size, num_epochs):
         train_ds_aspect = DatasetLoaderAspect(pd.read_csv(train_file, sep=';'), model_type)
         test_ds_aspect = DatasetLoaderAspect(pd.read_csv(test_file, sep=';'), model_type)
         aspect_train_loader = DataLoader(train_ds_aspect, batch_size=batch_size,
                                          collate_fn=self.aspect_model.create_mini_batch)
         aspect_test_loader = DataLoader(test_ds_aspect, batch_size=batch_size,
                                         collate_fn=self.aspect_model.create_mini_batch)
-        self.aspect_model.train(aspect_train_loader, aspect_test_loader,num_epochs)
+        self.aspect_model.train(aspect_train_loader, aspect_test_loader,num_epochs, name)
 
     def predict_aspect(self, text, name):
         max_length = 512  # Longitud máxima de la secuencia admitida por BERT

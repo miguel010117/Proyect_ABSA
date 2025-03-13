@@ -59,7 +59,7 @@ class AspectTermExtraction(AbsaModel):
         masks_tensors = masks_tensors.masked_fill(ids_tensors != 0, 1)
         return ids_tensors, tags_tensors, masks_tensors
 
-    def train(self, train_loader,test_loader, epochs):
+    def train(self, train_loader,test_loader, epochs, name):
     
         num_data = len(train_loader) # = 140s
 
@@ -88,11 +88,8 @@ class AspectTermExtraction(AbsaModel):
                 data_processed += 1
                 print('epoch:', epoch+1, " batch:", data_processed, "/", num_data, " loss:", np.mean(losses))
 
-            # Save the model a   
-            self.save_model(self.model, 'beto_e_spanish_epoch_' + str(epoch+1) + '.pkl')
-            # true_labels, predicted_labels = self.test(test_loader)
-
-            # print(classification_report(true_labels, predicted_labels, target_names=[str(i) for i in range(2)]))
+            # Save the model 
+            self.save_model(self.model, name + '_train_aspect_epoch_' + str(epoch+1) + '.pkl')
 
     def test(self, data_loader):
         """

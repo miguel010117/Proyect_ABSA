@@ -44,7 +44,7 @@ class CoahDataset(Dataset):
     
 
 
-def train_polarity_model(modelo,train_data,num_epochs, batch):
+def train_polarity_model(modelo,train_data,num_epochs, batch, name):
 
     RANDOM_SEED = 42
     MAX_LEN = 250
@@ -98,7 +98,8 @@ def train_polarity_model(modelo,train_data,num_epochs, batch):
             model, test_data_loader, loss_fn, len(df_test)
         )
         print('Validacion: Loss: {}, accuracy: {}'.format(test_loss,test_acc) )
-        torch.save(model, 'Albert_Large.pth')
+
+        torch.save(model, name + '_train_polarity_epoch_' + str(epoch+1) + '.pth')
 
 
 def data_loader(df,tokenizer, max_len , batch_size):

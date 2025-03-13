@@ -8,6 +8,7 @@ from sklearn.metrics import classification_report
 from sklearn.ensemble import RandomForestClassifier 
 from Aspect_extraction.absapipeline import ABSAPipeline
 from Aspect_extraction.absapipeline import metrics,predicted_bitmask
+import unicodedata
 
 def ensamble_max(MODEL_ENSAMBLE, TRAINED_MODEL_ENSAMBLE, predict_data, list_model):
 
@@ -270,10 +271,16 @@ def len_elemnt(elemnt):
     
     return len(lista_int)
 
+
+def remover_tildes(texto):
+  """Remueve las tildes de un texto."""
+  return ''.join(c for c in unicodedata.normalize('NFD', texto)
+                 if unicodedata.category(c) != 'Mn')
+
 def predicted_bitmask(rev, aspects):
     binary_list = []
     for palabra in rev:
-        if palabra.lower() in aspects:
+        if remover_tildes(palabra.lower()) in aspects:
             binary_list.append(1)
         else:
             binary_list.append(0)

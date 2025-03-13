@@ -1,10 +1,11 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification,AutoTokenizer
 import pandas as pd
 import torch
-import matplotlib.pyplot as plt # Asegúrate de importar también Matplotlib
+from colorama import Fore, Style
+import matplotlib.pyplot as plt 
 import seaborn as sns
 from tqdm import tqdm
-from sklearn.metrics import confusion_matrix, accuracy_score,recall_score,f1_score,precision_score
+from sklearn.metrics import confusion_matrix,classification_report
 
 
 def predict_polarity(model_base, model_train,data,name):
@@ -14,11 +15,9 @@ def predict_polarity(model_base, model_train,data,name):
 
     labels_pred = []
 
-    print(name)
-
-    if name in ['beto', 'bert', 'albert_base', 'albert_large', 'albert-xx_large']:
+    if name in ['beto', 'bert', 'albert_base', 'albert_large', 'albert_xx_large']:
         for texto in tqdm(textos):
-            labels_pred.append(cargar_bert(model_base,model_train,texto))
+            labels_pred.append(cargar_bert(model_base,model_train,texto, name))
 
     elif name in ['bertin_base', 'bertin_large', 'electra_base', 'electra_small']:
         for texto in tqdm(textos):
@@ -28,15 +27,14 @@ def predict_polarity(model_base, model_train,data,name):
         for texto in tqdm(textos):
             labels_pred.append(cargar_gpt(model_base,model_train,texto))
 
-    accuracy = accuracy_score(labels_true, labels_pred)
-    precision = precision_score(labels_true, labels_pred)
-    recall = recall_score(labels_true, labels_pred)
-    f1 = f1_score(labels_true, labels_pred)
-    print("accuracy:" , accuracy)
-    print("precision:" , precision)
-    print("recall:" , recall)
-    print("f1:" , f1)
+
+    print("\n" + Fore.CYAN + "Métricas:" + Style.RESET_ALL)
+    print(classification_report(labels_true, labels_pred, 
+                                target_names=[str(i) for i in range(2)], 
+                                digits=4)
+    )
     matriz(labels_true, labels_pred)
+
 
     
 
@@ -57,9 +55,14 @@ def classifySentiment(review_text, tokenizer):
 
 
 # Cargar Bert, Beto, Albert
-def cargar_bert(model_base, model_train, review_text):
+def cargar_bert(model_base, model_train, review_text, name):
     tokenizer = AutoTokenizer.from_pretrained(model_base)
-    model = AutoModelForSequenceClassification.from_pretrained(model_train)
+    if name in [ 'albert_large', 'albert_xx_large']:
+        model = torch.load(model_train)
+        model.eval()
+    else:
+        model = AutoModelForSequenceClassification.from_pretrained(model_train)
+    
     
     encoding = classifySentiment(review_text, tokenizer)
 
@@ -74,7 +77,6 @@ def cargar_bert(model_base, model_train, review_text):
 
     _, prediction = torch.max(logits, dim=1)
 
-    print(prediction.item())
 
     return prediction.item()
 
