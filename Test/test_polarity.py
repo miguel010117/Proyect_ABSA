@@ -1,6 +1,8 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification,AutoTokenizer
 import pandas as pd
 import torch
+import matplotlib.pyplot as plt # Asegúrate de importar también Matplotlib
+import seaborn as sns
 from tqdm import tqdm
 from sklearn.metrics import confusion_matrix, accuracy_score,recall_score,f1_score,precision_score
 
@@ -34,6 +36,7 @@ def predict_polarity(model_base, model_train,data,name):
     print("precision:" , precision)
     print("recall:" , recall)
     print("f1:" , f1)
+    matriz(labels_true, labels_pred)
 
     
 
@@ -120,3 +123,12 @@ def cargar_gpt(model_base, model_train, review_text):
     _, prediction = torch.max(logits, dim=1)
 
     return prediction.item()
+
+def matriz(labels_true, labels_pred):
+    df_cm = confusion_matrix(labels_true, labels_pred,labels=[0,1])
+    heatmap = sns.heatmap(df_cm,annot=True,fmt="d")
+    heatmap.yaxis.set_ticklabels([0,1],rotation=0,ha='right')
+    heatmap.xaxis.set_ticklabels([0,1],rotation=45,ha='right')
+    plt.ylabel('Valor Verdadero')
+    plt.xlabel('Valor Predicho')
+    plt.show()

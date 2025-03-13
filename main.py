@@ -2,8 +2,8 @@ from pathlib import Path
 from colorama import Fore, Style
 from Aspect_extraction.absapipeline import ABSAPipeline,metrics,predicted_bitmask
 from colorama import Fore, Style
-from Ensamble.ensamble import *
-from Logic.train_polarity import *
+from Ensemble.ensemble import *
+from Sentiment_Analysis.sentiment_analysis import *
 from Test.test_polarity import *
 
 # ================= CONFIGURACIÓN =================
